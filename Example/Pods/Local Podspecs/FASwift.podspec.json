@@ -1,9 +1,9 @@
 {
   "name": "FASwift",
-  "version": "0.1.0",
-  "summary": "A short description of FASwift.",
+  "version": "0.0.1",
+  "summary": "Swift implementation of Font Awesome 5!",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Ondrej Rafaj/FASwift",
+  "homepage": "https://github.com/manGoweb/FASwift",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,21 @@
     "Ondrej Rafaj": "opensource@mangoweb.cz"
   },
   "source": {
-    "git": "https://github.com/Ondrej Rafaj/FASwift.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/manGoweb/FASwift.git",
+    "tag": "0.0.1"
   },
+  "social_media_url": "https://twitter.com/rafiki270",
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.3"
   },
-  "source_files": "FASwift/Classes/**/*"
+  "source_files": "FASwift/Classes/**/*",
+  "resource_bundles": {
+    "FASwift": [
+      "FASwift/Assets/*.ttf"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "CoreText"
+  ]
 }

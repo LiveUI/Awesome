@@ -103,9 +103,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FASwift/FASwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Presentables/Presentables.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FASwift/FASwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Presentables/Presentables.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

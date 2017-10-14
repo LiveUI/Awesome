@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import Presentables
 
-class ViewController: UIViewController {
+
+class ViewController: UITableViewController {
+    
+    let dataController = DataManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib. :)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        title = "Font Awesome 5"
+        
+        var dc: PresentableManager = dataController
+        tableView.bind(withPresentableManager: &dc)
     }
 
 }
