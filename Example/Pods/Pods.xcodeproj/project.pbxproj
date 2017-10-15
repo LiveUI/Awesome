@@ -18,8 +18,9 @@
 		0C75EFEB66391CE4B2A4E73D0B915D21 /* QuickSpecBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B14062688CA12C9C216F846FD62998 /* QuickSpecBase.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0FBD7A84AB56C014240FD5767628CFE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8C1CD03521310152254CDC976FEC7D /* Foundation.framework */; };
 		15F9BA011F92EA4C00245DF2 /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F9BA001F92EA4C00245DF2 /* Amazing.swift */; };
+		15F9BA031F934CB500245DF2 /* NSAttributedString+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F9BA021F934CB500245DF2 /* NSAttributedString+Awesome.swift */; };
 		16409C737271C4F1D7FEEFB91E317D5A /* CwlPreconditionTesting.h in Headers */ = {isa = PBXBuildFile; fileRef = C923AAA59CF5A1F534AC4B9D2E58277B /* CwlPreconditionTesting.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1772462F1093A3334E618CE05B57846B /* FA+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60C499C2136BF52ADEB89993A3690E /* FA+UIImage.swift */; };
+		1772462F1093A3334E618CE05B57846B /* UIImage+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC60C499C2136BF52ADEB89993A3690E /* UIImage+Awesome.swift */; };
 		17C8EE7DF3F57C8F99EAF63C6E61EA99 /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4371AA69B56636CFD2EFA251E36A721 /* FailureMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		1969AEE041BFCB33D10EFC35F20B667C /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D01C184BC05DAD0FE87062DDDEB8787 /* SuiteHooks.swift */; };
 		196F2642DC0164C82EAA58418648E598 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25ACE137C72AC4D5A362E2760A838DE7 /* ExampleMetadata.swift */; };
@@ -100,7 +101,6 @@
 		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = C686BACF77ACC47ACE48D5CA31763FA2 /* UIImage+Snapshot.m */; };
 		75ABB48E3C30C2D736C3D05D6FD566A8 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A335DA360DA3EF960CDA6CFA748C7A /* BeNil.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		75DE1F0D9EB02BDDBD1FB819876A127D /* World.h in Headers */ = {isa = PBXBuildFile; fileRef = DB4EF8F3147BBE71DC8CD6F352C91BC9 /* World.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7905FAC1B0A1B648B5148268A9C1D914 /* FASwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F531E6995CBE4703A372ACD0FECC37 /* FASwift.swift */; };
 		7E0C9AE6468A5DF91F0F4C7A387D725C /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729CB99F1408AE31C281D37978628813 /* BeAKindOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		7E9B14D5F8842A86CA86F2AF45230725 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59A54CD00E7F7D1BBB70FD798564C2A /* XCTest.framework */; };
 		7EB0B4F5FA2357C3DC580661FBB1CCC0 /* Pods-FASwift_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 517C3B75A102D3ECBB03EB1C98A10211 /* Pods-FASwift_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -282,6 +282,7 @@
 		15620D6B14D81FBF46EA8D934B570FFA /* NMBStringify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NMBStringify.m; path = Sources/NimbleObjectiveC/NMBStringify.m; sourceTree = "<group>"; };
 		15D97E5EDEC1488EE1363AD83FA37202 /* Closures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Closures.swift; path = Sources/Quick/Hooks/Closures.swift; sourceTree = "<group>"; };
 		15F9BA001F92EA4C00245DF2 /* Amazing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amazing.swift; sourceTree = "<group>"; };
+		15F9BA021F934CB500245DF2 /* NSAttributedString+Awesome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Awesome.swift"; sourceTree = "<group>"; };
 		16B40D6F8404267D17C1528FAE0A7C73 /* Nimble-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-prefix.pch"; sourceTree = "<group>"; };
 		18D438DE50BF306B9A62709C151D32C4 /* World+DSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "World+DSL.swift"; path = "Sources/Quick/DSL/World+DSL.swift"; sourceTree = "<group>"; };
 		190DB9FEC8EFA79202F191C8EF947138 /* Nimble.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Nimble.xcconfig; sourceTree = "<group>"; };
@@ -381,7 +382,6 @@
 		80D7F4D33230970CEC258719779B72CF /* BeLogical.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLogical.swift; path = Sources/Nimble/Matchers/BeLogical.swift; sourceTree = "<group>"; };
 		82FDEF0B0C6AF36F6E5819842D7410AA /* QuickSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QuickSpec.h; path = Sources/QuickObjectiveC/QuickSpec.h; sourceTree = "<group>"; };
 		83BC6DEF0828F9C1DB9C299B14874593 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Sources/Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
-		83F531E6995CBE4703A372ACD0FECC37 /* FASwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FASwift.swift; path = FASwift/Classes/FASwift.swift; sourceTree = "<group>"; };
 		85EEA13262B236D357A68F4B10AA4462 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A6D48408F3746768FD735F0150D4621 /* XCTestSuite+QuickTestSuiteBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestSuite+QuickTestSuiteBuilder.m"; path = "Sources/QuickObjectiveC/XCTestSuite+QuickTestSuiteBuilder.m"; sourceTree = "<group>"; };
 		8B436E71299764127A0039F40E0F01DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -482,7 +482,7 @@
 		F8CD5C58BC4C6BAA9274C0242E157FD8 /* FASwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FASwift-dummy.m"; sourceTree = "<group>"; };
 		F9B4AA5E103A0324185E0D83922B5912 /* Quick.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Quick.xcconfig; sourceTree = "<group>"; };
 		FA317197915C49AC9AD590260A19923F /* QuickSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickSpec.m; path = Sources/QuickObjectiveC/QuickSpec.m; sourceTree = "<group>"; };
-		FC60C499C2136BF52ADEB89993A3690E /* FA+UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "FA+UIImage.swift"; sourceTree = "<group>"; };
+		FC60C499C2136BF52ADEB89993A3690E /* UIImage+Awesome.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Awesome.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -573,8 +573,8 @@
 		003989AE932D525E2900CFB2F1725415 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FC60C499C2136BF52ADEB89993A3690E /* FA+UIImage.swift */,
-				EFF2D26C50E701ADBE3795DF0BAC05AD /* Amazing+Tools.swift */,
+				FC60C499C2136BF52ADEB89993A3690E /* UIImage+Awesome.swift */,
+				15F9BA021F934CB500245DF2 /* NSAttributedString+Awesome.swift */,
 			);
 			name = Extensions;
 			path = FASwift/Classes/Extensions;
@@ -617,6 +617,7 @@
 			isa = PBXGroup;
 			children = (
 				15F9BA001F92EA4C00245DF2 /* Amazing.swift */,
+				EFF2D26C50E701ADBE3795DF0BAC05AD /* Amazing+Tools.swift */,
 			);
 			name = Protocols;
 			path = FASwift/Classes/Protocols;
@@ -791,7 +792,6 @@
 			isa = PBXGroup;
 			children = (
 				15F9B9FF1F92EA4200245DF2 /* Protocols */,
-				83F531E6995CBE4703A372ACD0FECC37 /* FASwift.swift */,
 				7D57416B4E5DEFA8368EB6BC3A4B3C2D /* Enums */,
 				003989AE932D525E2900CFB2F1725415 /* Extensions */,
 				8A65AE396A83A586DBB1ECE324E2BC72 /* Libs */,
@@ -1468,12 +1468,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1772462F1093A3334E618CE05B57846B /* FA+UIImage.swift in Sources */,
+				1772462F1093A3334E618CE05B57846B /* UIImage+Awesome.swift in Sources */,
 				EF71EAF36E38EC3C87CEFA6098AF7C76 /* FASwift-dummy.m in Sources */,
 				15F9BA011F92EA4C00245DF2 /* Amazing.swift in Sources */,
-				7905FAC1B0A1B648B5148268A9C1D914 /* FASwift.swift in Sources */,
 				225B9206EC60FED28B22C68274518F67 /* Fonts.swift in Sources */,
 				614C7B57E4FC2E545C1CE8B0092B50BE /* Amazing+Tools.swift in Sources */,
+				15F9BA031F934CB500245DF2 /* NSAttributedString+Awesome.swift in Sources */,
 				F6912D8E5529D2837D9D7E21BF072FF9 /* Types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

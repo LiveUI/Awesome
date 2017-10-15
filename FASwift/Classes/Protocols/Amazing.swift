@@ -17,6 +17,22 @@ public protocol Amazing {
     static var keys: [String] { get }
     static var labels: [String] { get }
     
-    var fontType: Font { get }
+    var fontType: Awesome.Font { get }
+    
+    var name: String { get }
+    var label: String { get }
 
+}
+
+
+public extension Amazing {
+    
+    public func asImage(size: CGSize, color: UIColor = UIColor.black, backgroundColor: UIColor = UIColor.clear) -> UIImage {
+        return UIImage.init(icon: self, size: size, color: color, backgroundColor: backgroundColor)
+    }
+    
+    public func asAttributedText(fontSize: CGFloat, color: UIColor = UIColor.black, backgroundColor: UIColor = UIColor.clear) -> NSAttributedString {
+        return NSAttributedString.awesome(icon: self, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
+    }
+    
 }

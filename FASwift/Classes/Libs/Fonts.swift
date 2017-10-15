@@ -8,33 +8,38 @@
 import Foundation
 
 
-public enum Font: String {
-    case brand = "fontawesome-pro-brands-900"
-    case light = "fontawesome-pro-light-300"
-    case regular = "fontawesome-pro-regular-400"
-    case solid = "fontawesome-pro-solid-900"
+public extension Awesome {
     
-    var file: String {
-        return rawValue
-    }
-    
-    var name: String {
-        switch self {
-        case .brand:
-            return "Font Awesome 5 Pro Brands"
-        case .light:
-            return "Font Awesome 5 Pro Light"
-        case .regular:
-            return "Font Awesome 5 Pro Regular"
-        case .solid:
-            return "Font Awesome 5 Pro Solid"
+    public enum Font: String {
+        case brand = "fontawesome-pro-brands-900"
+        case light = "fontawesome-pro-light-300"
+        case regular = "fontawesome-pro-regular-400"
+        case solid = "fontawesome-pro-solid-900"
+        
+        public var file: String {
+            return rawValue
+        }
+        
+        public var name: String {
+            switch self {
+            case .brand:
+                return "Font Awesome 5 Pro Brands"
+            case .light:
+                return "Font Awesome 5 Pro Light"
+            case .regular:
+                return "Font Awesome 5 Pro Regular"
+            case .solid:
+                return "Font Awesome 5 Pro Solid"
+            }
         }
     }
+    
 }
+
 
 class Fonts {
     
-    static func load(type: Font) {
+    static func load(type: Awesome.Font) {
         if (UIFont.fontNames(forFamilyName: type.name).count == 0) {
             let bundle = Bundle(for: Fonts.self)
             var fontURL: URL!

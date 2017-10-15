@@ -26,6 +26,12 @@ extension Awesome.brand {
         return name
     }
     
+    public var label: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.labels[index]
+        return name
+    }
+    
 }
 
 extension Awesome.light {
@@ -42,6 +48,12 @@ extension Awesome.light {
     public var name: String {
         let index = AwesomeType.all.index(of: self)!
         let name = AwesomeType.keys[index]
+        return name
+    }
+    
+    public var label: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.labels[index]
         return name
     }
     
@@ -64,6 +76,12 @@ extension Awesome.regular {
         return name
     }
     
+    public var label: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.labels[index]
+        return name
+    }
+    
 }
 
 extension Awesome.solid {
@@ -80,6 +98,12 @@ extension Awesome.solid {
     public var name: String {
         let index = AwesomeType.all.index(of: self)!
         let name = AwesomeType.keys[index]
+        return name
+    }
+    
+    public var label: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.labels[index]
         return name
     }
     

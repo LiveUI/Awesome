@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FASwift
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Status bar
+        UIApplication.shared.statusBarStyle = .lightContent
+        
+        // Nav bar
+        UINavigationBar.appearance().barTintColor = UIColor(red: 0.23, green: 0.48, blue: 0.81, alpha: 1.0)
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedStringKey.foregroundColor: UIColor.white
+        ]
+        
         let c = ViewController()
         c.view.backgroundColor = .white
         window = UIWindow(frame: UIScreen.main.bounds)

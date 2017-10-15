@@ -18,15 +18,20 @@ class DataManager: PresentableTableViewDataManager {
     override init() {
         super.init()
         
+        func configure(cell presentable: Presentable, type: Amazing) {
+            guard let cell = presentable as? IconTableViewCell else {
+                return
+            }
+            cell.textLabel?.text = type.name
+            cell.detailTextLabel?.text = type.label
+            cell.imageView?.image = UIImage(icon: type, size: CGSize(width: 30, height: 30))
+        }
+        
         var section = PresentableSection()
         for type in Awesome.brand.all {
             let presenter = IconTableViewCellPresenter()
             presenter.configure = { presentable in
-                guard let cell = presentable as? IconTableViewCell else {
-                    return
-                }
-                cell.textLabel?.text = type.name
-                cell.imageView?.image = UIImage.init(icon: type, size: CGSize(width: 30, height: 30))
+                configure(cell: presentable, type: type)
             }
             section.presenters.append(presenter)
         }
@@ -36,11 +41,7 @@ class DataManager: PresentableTableViewDataManager {
         for type in Awesome.light.all {
             let presenter = IconTableViewCellPresenter()
             presenter.configure = { presentable in
-                guard let cell = presentable as? IconTableViewCell else {
-                    return
-                }
-                cell.textLabel?.text = type.name
-                cell.imageView?.image = UIImage.init(icon: type, size: CGSize(width: 30, height: 30))
+                configure(cell: presentable, type: type)
             }
             section.presenters.append(presenter)
         }
@@ -50,11 +51,7 @@ class DataManager: PresentableTableViewDataManager {
         for type in Awesome.regular.all {
             let presenter = IconTableViewCellPresenter()
             presenter.configure = { presentable in
-                guard let cell = presentable as? IconTableViewCell else {
-                    return
-                }
-                cell.textLabel?.text = type.name
-                cell.imageView?.image = UIImage.init(icon: type, size: CGSize(width: 30, height: 30))
+                configure(cell: presentable, type: type)
             }
             section.presenters.append(presenter)
         }
@@ -64,11 +61,7 @@ class DataManager: PresentableTableViewDataManager {
         for type in Awesome.solid.all {
             let presenter = IconTableViewCellPresenter()
             presenter.configure = { presentable in
-                guard let cell = presentable as? IconTableViewCell else {
-                    return
-                }
-                cell.textLabel?.text = type.name
-                cell.imageView?.image = UIImage.init(icon: type, size: CGSize(width: 30, height: 30))
+                configure(cell: presentable, type: type)
             }
             section.presenters.append(presenter)
         }
@@ -78,22 +71,21 @@ class DataManager: PresentableTableViewDataManager {
     // MARK: Table datasource & delegate methods
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        return 54
     }
     
+    var sectionTitles = ["Brands", "Light", "Regular", "Solid"]
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch section {
-        case 0:
-            return "Brands"
-        case 1:
-            return "Light"
-        case 2:
-            return "Regular"
-        case 3:
-            return "Solid"
-        default:
-            fatalError("There should be only 4 sections")
-        }
+        return sectionTitles[section]
+    }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return ["B", "L", "R", "S"]
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 0
     }
     
 }
