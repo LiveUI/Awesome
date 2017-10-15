@@ -18,10 +18,8 @@ class DataManager: PresentableTableViewDataManager {
     override init() {
         super.init()
         
-        let section = PresentableSection()
-        
-        // Create some basic cells
-        for type in Type.all() {
+        var section = PresentableSection()
+        for type in Awesome.brand.all {
             let presenter = IconTableViewCellPresenter()
             presenter.configure = { presentable in
                 guard let cell = presentable as? IconTableViewCell else {
@@ -32,8 +30,48 @@ class DataManager: PresentableTableViewDataManager {
             }
             section.presenters.append(presenter)
         }
+        data.append(section)
         
-        // Add section to the data set
+        section = PresentableSection()
+        for type in Awesome.light.all {
+            let presenter = IconTableViewCellPresenter()
+            presenter.configure = { presentable in
+                guard let cell = presentable as? IconTableViewCell else {
+                    return
+                }
+                cell.textLabel?.text = type.name
+                cell.imageView?.image = UIImage.init(icon: type, size: CGSize(width: 30, height: 30))
+            }
+            section.presenters.append(presenter)
+        }
+        data.append(section)
+        
+        section = PresentableSection()
+        for type in Awesome.regular.all {
+            let presenter = IconTableViewCellPresenter()
+            presenter.configure = { presentable in
+                guard let cell = presentable as? IconTableViewCell else {
+                    return
+                }
+                cell.textLabel?.text = type.name
+                cell.imageView?.image = UIImage.init(icon: type, size: CGSize(width: 30, height: 30))
+            }
+            section.presenters.append(presenter)
+        }
+        data.append(section)
+        
+        section = PresentableSection()
+        for type in Awesome.solid.all {
+            let presenter = IconTableViewCellPresenter()
+            presenter.configure = { presentable in
+                guard let cell = presentable as? IconTableViewCell else {
+                    return
+                }
+                cell.textLabel?.text = type.name
+                cell.imageView?.image = UIImage.init(icon: type, size: CGSize(width: 30, height: 30))
+            }
+            section.presenters.append(presenter)
+        }
         data.append(section)
     }
     
@@ -41,6 +79,21 @@ class DataManager: PresentableTableViewDataManager {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "Brands"
+        case 1:
+            return "Light"
+        case 2:
+            return "Regular"
+        case 3:
+            return "Solid"
+        default:
+            fatalError("There should be only 4 sections")
+        }
     }
     
 }

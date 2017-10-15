@@ -9,7 +9,7 @@
 import Foundation
 
 
-public struct AwesomableProperty<T> {
+public struct LovelyProperty<T> {
     
     let element: T
     
@@ -27,23 +27,23 @@ public struct AwesomableProperty<T> {
     
 }
 
-public protocol Awesomable {
+public protocol Lovely {
     
     associatedtype ThemablePropertyParentType
-    var fa: AwesomableProperty<ThemablePropertyParentType> { get }
+    var fa: LovelyProperty<ThemablePropertyParentType> { get }
     
 }
 
 
-extension Awesomable {
+extension Lovely {
     
-    public var fa: AwesomableProperty<Self> {
+    public var fa: LovelyProperty<Self> {
         get {
-            return AwesomableProperty(self)
+            return LovelyProperty(self)
         }
     }
     
 }
 
 
-extension UIImage: Awesomable { }
+extension UIImage: Lovely { }

@@ -9,7 +9,7 @@ import Foundation
 
 
 public enum Font: String {
-    case brands = "fontawesome-pro-brands-900"
+    case brand = "fontawesome-pro-brands-900"
     case light = "fontawesome-pro-light-300"
     case regular = "fontawesome-pro-regular-400"
     case solid = "fontawesome-pro-solid-900"
@@ -20,7 +20,7 @@ public enum Font: String {
     
     var name: String {
         switch self {
-        case .brands:
+        case .brand:
             return "Font Awesome 5 Pro Brands"
         case .light:
             return "Font Awesome 5 Pro Light"
@@ -34,7 +34,7 @@ public enum Font: String {
 
 class Fonts {
     
-    private static func prepare(type: Font) {
+    static func load(type: Font) {
         if (UIFont.fontNames(forFamilyName: type.name).count == 0) {
             let bundle = Bundle(for: Fonts.self)
             var fontURL: URL!
@@ -57,13 +57,6 @@ class Fonts {
                 let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
                 NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
             }
-        }
-    }
-    
-    static func load(type: Font) {
-        prepare(type: .brands)
-        if type != .brands {
-            prepare(type: type)
         }
     }
     

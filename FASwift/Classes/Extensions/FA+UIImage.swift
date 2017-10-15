@@ -11,14 +11,13 @@ import Foundation
 
 public extension UIImage {
     
-    public convenience init(icon: Type, size: CGSize, color: UIColor = UIColor.black, backgroundColor: UIColor = UIColor.clear) {
-        let fontType: Font = .light
-        Fonts.load(type: fontType)
+    public convenience init(icon: Amazing, size: CGSize, color: UIColor = UIColor.black, backgroundColor: UIColor = UIColor.clear) {
+        Fonts.load(type: icon.fontType)
         
         let fontAspectRatio: CGFloat = 1.28571429
         let fontSize = min(size.width / fontAspectRatio, size.height)
         
-        guard let font = UIFont(name: fontType.name, size: fontSize) else {
+        guard let font = UIFont(name: icon.fontType.name, size: fontSize) else {
             fatalError("Error! Font did not load properly")
         }
         
@@ -40,7 +39,7 @@ public extension UIImage {
         }
     }
     
-    public convenience init(topIcon: Type, bottomIcon: Type, topIconColor: UIColor = .black, bottomIconColor: UIColor = .black, backgroundColor: UIColor = .clear, bottomIconBigger: Bool? = true, size: CGSize? = nil) {
+    public convenience init(topIcon: Amazing, bottomIcon: Amazing, topIconColor: UIColor = .black, bottomIconColor: UIColor = .black, backgroundColor: UIColor = .clear, bottomIconBigger: Bool? = true, size: CGSize? = nil) {
         
         let bgSize: CGSize!
         let topSize: CGSize!
@@ -86,4 +85,5 @@ public extension UIImage {
     }
     
 }
+
 
