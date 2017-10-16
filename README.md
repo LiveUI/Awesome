@@ -1,6 +1,5 @@
-# FASwift
+# Awesome
 
-[![CI Status](http://img.shields.io/travis/Ondrej Rafaj/FASwift.svg?style=flat)](https://travis-ci.org/Ondrej Rafaj/FASwift)
 [![Version](https://img.shields.io/cocoapods/v/FASwift.svg?style=flat)](http://cocoapods.org/pods/FASwift)
 [![License](https://img.shields.io/cocoapods/l/FASwift.svg?style=flat)](http://cocoapods.org/pods/FASwift)
 [![Platform](https://img.shields.io/cocoapods/p/FASwift.svg?style=flat)](http://cocoapods.org/pods/FASwift)
