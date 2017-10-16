@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import FASwift
+import Awesome
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {

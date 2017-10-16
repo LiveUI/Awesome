@@ -1,0 +1,32 @@
+{
+  "name": "Awesome",
+  "version": "0.0.1",
+  "summary": "Swift implementation of Font Awesome 5!",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/manGoweb/Awesome",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Ondrej Rafaj": "opensource@mangoweb.cz"
+  },
+  "source": {
+    "git": "https://github.com/manGoweb/Awesome.git",
+    "tag": "0.0.1"
+  },
+  "social_media_url": "https://twitter.com/rafiki270",
+  "platforms": {
+    "ios": "10.3"
+  },
+  "source_files": "Awesome/Classes/**/*",
+  "resource_bundles": {
+    "Awesome": [
+      "Awesome/Assets/*.ttf"
+    ]
+  },
+  "frameworks": [
+    "UIKit",
+    "CoreText"
+  ]
+}

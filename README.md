@@ -12,17 +12,17 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-FASwift is available through [CocoaPods](http://cocoapods.org). To install
+Awesome is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'FASwift'
+pod 'Awesome'
 ```
 
 ## Author
 
-Ondrej Rafaj, opensource@mangoweb.cz
+manGoweb, development@mangoweb.cz
 
 ## License
 
-FASwift is available under the MIT license. See the LICENSE file for more info.
+Awesome is available under the MIT license. See the LICENSE file for more info.

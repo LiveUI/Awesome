@@ -1,6 +1,0 @@
-framework module FASwift {
-  umbrella header "FASwift-umbrella.h"
-
-  export *
-  module * { export * }
-}
