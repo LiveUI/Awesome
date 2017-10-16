@@ -17,11 +17,10 @@ Pod::Spec.new do |s|
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Ondrej Rafaj' => 'opensource@mangoweb.cz' }
-    s.source           = { :git => 'https://github.com/manGoweb/Awesome.git', :tag => s.version.to_s }
+    s.source           = { :git => 'git@github.com:manGoweb/Awesome.git', :tag => s.version.to_s }
     s.social_media_url = 'https://twitter.com/rafiki270'
 
     s.ios.deployment_target = '10.3'
-    s.watchos.deployment_target = '10.3'
     s.tvos.deployment_target = '10.3'
     # s.osx.deployment_target = "10.13"
     

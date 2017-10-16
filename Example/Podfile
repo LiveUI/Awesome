@@ -1,4 +1,5 @@
 # Settings
+source 'git@github.com:manGoweb/manGoPods.git'
 use_frameworks!
 
 # Define pods
