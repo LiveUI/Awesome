@@ -9,6 +9,23 @@
 import Foundation
 
 
+public extension Amazing {
+    
+    public func asImage(size: CGSize, color: Color = Color.black, backgroundColor: Color = Color.clear) -> Image {
+        return Image(icon: self, size: size, color: color, backgroundColor: backgroundColor)
+    }
+    
+    public func asImage(size: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> Image {
+        return Image(icon: self, size: CGSize(width: size, height: size), color: color, backgroundColor: backgroundColor)
+    }
+    
+    public func asAttributedText(fontSize: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> NSAttributedString {
+        return NSAttributedString.awesome(icon: self, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
+    }
+    
+}
+
+
 extension Awesome.brand {
     
     public typealias AwesomeType = Awesome.brand

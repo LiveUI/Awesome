@@ -24,15 +24,3 @@ public protocol Amazing {
 
 }
 
-
-public extension Amazing {
-    
-    public func asImage(size: CGSize, color: Color = UIColor.black, backgroundColor: Color = UIColor.clear) -> UIImage {
-        return UIImage.init(icon: self, size: size, color: color, backgroundColor: backgroundColor)
-    }
-    
-    public func asAttributedText(fontSize: CGFloat, color: Color = Color.black, backgroundColor: Color = UIColor.clear) -> NSAttributedString {
-        return NSAttributedString.awesome(icon: self, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
-    }
-    
-}

@@ -30,5 +30,7 @@ Pod::Spec.new do |s|
     s.resource_bundles = {
         'Awesome' => ['Awesome/Assets/*.ttf']
     }
-    s.frameworks = 'UIKit', 'CoreText'
+    s.ios.frameworks = 'UIKit', 'CoreText'
+    s.tvos.frameworks = 'UIKit', 'CoreText'
+    s.osx.frameworks = 'Cocoa', 'CoreText'
 end

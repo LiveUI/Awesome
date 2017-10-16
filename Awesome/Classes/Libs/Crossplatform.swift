@@ -13,6 +13,7 @@ import Foundation
     
     public typealias Color = UIColor
     public typealias Font = UIFont
+    public typealias Image = UIImage
     
 #elseif os(OSX)
     
@@ -20,5 +21,6 @@ import Foundation
     
     public typealias Color = NSColor
     public typealias Font = NSFont
+    public typealias Image = NSImage
     
 #endif

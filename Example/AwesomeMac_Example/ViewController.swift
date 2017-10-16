@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Awesome
 
 
 class ViewController: NSViewController {
@@ -21,7 +22,7 @@ class ViewController: NSViewController {
 
         imageView.layer?.borderWidth = 1
         imageView.layer?.borderColor = NSColor.gray.cgColor
-        
+        imageView.image = Awesome.brand.fortAwesome.asImage(size: 100)
     }
 
 }

@@ -7,17 +7,37 @@
 //
 
 import UIKit
+import Awesome
+import SnapKit
+
 
 class ViewController: UIViewController {
+    
+    let imageView = UIImageView()
+    
+    
+    // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        configureImageView()
+        
+        imageView.image = Awesome.brand.fortAwesome.asImage(size: 300.0)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: Configuring elements
+    
+    func configureImageView() {
+        view.addSubview(imageView)
+        imageView.backgroundColor = .white
+        imageView.layer.cornerRadius = 20
+        imageView.backgroundColor = UIColor(white: 1, alpha: 0.5)
+        imageView.contentMode = .center
+        imageView.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+            make.width.height.equalTo(300)
+        }
     }
 
 

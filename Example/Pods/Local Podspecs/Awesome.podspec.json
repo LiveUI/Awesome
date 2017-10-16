@@ -28,8 +28,22 @@
       "Awesome/Assets/*.ttf"
     ]
   },
-  "frameworks": [
-    "UIKit",
-    "CoreText"
-  ]
+  "ios": {
+    "frameworks": [
+      "UIKit",
+      "CoreText"
+    ]
+  },
+  "tvos": {
+    "frameworks": [
+      "UIKit",
+      "CoreText"
+    ]
+  },
+  "osx": {
+    "frameworks": [
+      "Cocoa",
+      "CoreText"
+    ]
+  }
 }

@@ -40,29 +40,34 @@ public extension Awesome {
 class Fonts {
     
     static func load(type: Awesome.Font) {
-        if (UIFont.fontNames(forFamilyName: type.name).count == 0) {
-            let bundle = Bundle(for: Fonts.self)
-            var fontURL: URL!
-            let identifier = bundle.bundleIdentifier
-            
-            if identifier?.hasPrefix("org.cocoapods") == true {
-                fontURL = bundle.url(forResource: type.file, withExtension: "ttf", subdirectory: "Awesome.bundle")
+        #if os(iOS) || os(watchOS) || os(tvOS)
+            if (Font.fontNames(forFamilyName: type.name).count == 0) {
+                let bundle = Bundle(for: Fonts.self)
+                var fontURL: URL!
+                let identifier = bundle.bundleIdentifier
+                
+                if identifier?.hasPrefix("org.cocoapods") == true {
+                    fontURL = bundle.url(forResource: type.file, withExtension: "ttf", subdirectory: "Awesome.bundle")
+                }
+                else {
+                    fontURL = bundle.url(forResource: type.file, withExtension: "ttf")
+                }
+                let data = try! Data(contentsOf: fontURL as URL)
+                let provider = CGDataProvider(data: data as CFData)
+                let font = CGFont(provider!)
+                
+                var error: Unmanaged<CFError>?
+                
+                if CTFontManagerRegisterGraphicsFont(font!, &error) == false {
+                    let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
+                    let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
+                    NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
+                }
             }
-            else {
-                fontURL = bundle.url(forResource: type.file, withExtension: "ttf")
-            }
-            let data = try! Data(contentsOf: fontURL as URL)
-            let provider = CGDataProvider(data: data as CFData)
-            let font = CGFont(provider!)
+        #elseif os(OSX)
             
-            var error: Unmanaged<CFError>?
-            
-            if CTFontManagerRegisterGraphicsFont(font!, &error) == false {
-                let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
-                let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
-                NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
-            }
-        }
+        #endif
+        
     }
     
 }
