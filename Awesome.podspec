@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '10.3'
     s.watchos.deployment_target = '10.3'
     s.tvos.deployment_target = '10.3'
-    s.osx.deployment_target = "10.13"
+    # s.osx.deployment_target = "10.13"
     
     s.source_files = 'Awesome/Classes/**/*'
 
@@ -32,5 +32,5 @@ Pod::Spec.new do |s|
     }
     s.ios.frameworks = 'UIKit', 'CoreText'
     s.tvos.frameworks = 'UIKit', 'CoreText'
-    s.osx.frameworks = 'Cocoa', 'CoreText'
+    #s.osx.frameworks = 'Cocoa', 'CoreText'
 end

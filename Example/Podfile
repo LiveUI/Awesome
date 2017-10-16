@@ -13,11 +13,11 @@ target 'AwesomeTV_Example' do
     pods
 end
 
-# macOS
-target 'AwesomeMac_Example' do
-    platform :macos, '10.13'
-    pods
-end
+## macOS
+#target 'AwesomeMac_Example' do
+#    platform :macos, '10.13'
+#    pods
+#end
 
 #iOS
 target 'Awesome_Example' do
