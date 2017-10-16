@@ -6,15 +6,19 @@
 //
 
 import Foundation
-import UIKit
+#if os(iOS) || os(watchOS) || os(tvOS)
+    import UIKit
+#elseif os(OSX)
+    import Cocoa
+#endif
 
 
 public extension NSAttributedString {
     
-    public static func awesome(icon: Amazing, fontSize: CGFloat, color: UIColor = UIColor.black, backgroundColor: UIColor = UIColor.clear) -> NSAttributedString {
+    public static func awesome(icon: Amazing, fontSize: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> NSAttributedString {
         Fonts.load(type: icon.fontType)
         
-        guard let font = UIFont(name: icon.fontType.name, size: fontSize) else {
+        guard let font = Font(name: icon.fontType.name, size: fontSize) else {
             fatalError("Error! Font did not load properly")
         }
         

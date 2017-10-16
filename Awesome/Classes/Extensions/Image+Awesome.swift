@@ -1,5 +1,5 @@
 //
-//  FA+UIImage.swift
+//  Image+Awesome.swift
 //  Awesome
 //
 //  Created by Ondrej Rafaj on 13/10/2017.

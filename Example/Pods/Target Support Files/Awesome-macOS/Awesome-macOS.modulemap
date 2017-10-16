@@ -1,0 +1,6 @@
+framework module Awesome {
+  umbrella header "Awesome-macOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

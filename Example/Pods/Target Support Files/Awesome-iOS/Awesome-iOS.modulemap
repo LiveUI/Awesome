@@ -1,0 +1,6 @@
+framework module Awesome {
+  umbrella header "Awesome-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

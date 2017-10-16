@@ -4,7 +4,6 @@ use_frameworks!
 # Define pods
 def pods
     pod 'Awesome', :path => '../'
-    pod 'Presentables'
     pod 'SnapKit'
 end
 
@@ -24,6 +23,7 @@ end
 target 'Awesome_Example' do
     platform :ios, '11.0'
     pods
+    pod 'Presentables'
     
     target 'Awesome_Tests' do
         inherit! :search_paths

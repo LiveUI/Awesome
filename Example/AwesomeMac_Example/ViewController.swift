@@ -8,20 +8,21 @@
 
 import Cocoa
 
+
 class ViewController: NSViewController {
+    
+    @IBOutlet var imageView: NSImageView!
+    
+    
+    // MARK: View lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageView.layer?.borderWidth = 1
+        imageView.layer?.borderColor = NSColor.gray.cgColor
+        
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-
 
 }
 

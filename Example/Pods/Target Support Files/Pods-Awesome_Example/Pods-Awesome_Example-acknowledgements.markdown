@@ -24,9 +24,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## Presentables
+## SnapKit
 
-Copyright (c) 2017 Ondrej Rafaj <dev@mangoweb.cz>
+Copyright (c) 2011-Present SnapKit Team - https://github.com/SnapKit
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -47,9 +47,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## SnapKit
+## Presentables
 
-Copyright (c) 2011-Present SnapKit Team - https://github.com/SnapKit
+Copyright (c) 2017 Ondrej Rafaj <dev@mangoweb.cz>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
