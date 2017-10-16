@@ -19,8 +19,7 @@
   "platforms": {
     "ios": "10.3",
     "watchos": "10.3",
-    "tvos": "10.3",
-    "osx": "10.13"
+    "tvos": "10.3"
   },
   "source_files": "Awesome/Classes/**/*",
   "resource_bundles": {
@@ -37,12 +36,6 @@
   "tvos": {
     "frameworks": [
       "UIKit",
-      "CoreText"
-    ]
-  },
-  "osx": {
-    "frameworks": [
-      "Cocoa",
       "CoreText"
     ]
   }
