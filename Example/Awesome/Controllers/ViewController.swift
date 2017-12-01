@@ -21,10 +21,8 @@ class ViewController: UITableViewController {
     func element(indexPath: IndexPath) -> Amazing {
         switch indexPath.section {
         case 1:
-            return Awesome.light.all[indexPath.row]
-        case 2:
             return Awesome.regular.all[indexPath.row]
-        case 3:
+        case 2:
             return Awesome.solid.all[indexPath.row]
         default:
             return Awesome.brand.all[indexPath.row]
