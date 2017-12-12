@@ -17,7 +17,7 @@ it, simply add the following line to your Podfile:
 pod 'Awesome'
 ```
 
-for Cocoapods just do:
+for Carthage just do:
 
 ```ruby
 github "manGoweb/Awesome"
