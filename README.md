@@ -1,8 +1,17 @@
 # Awesome
 
+[![Slack](https://img.shields.io/badge/join-slack-745EAF.svg?style=flat)](http://bit.ly/2B0dEyt)
 [![Version](https://img.shields.io/cocoapods/v/FASwift.svg?style=flat)](http://cocoapods.org/pods/FASwift)
 [![License](https://img.shields.io/cocoapods/l/FASwift.svg?style=flat)](http://cocoapods.org/pods/FASwift)
 [![Platform](https://img.shields.io/cocoapods/p/FASwift.svg?style=flat)](http://cocoapods.org/pods/FASwift)
+
+## 
+
+Super easy to use library containing the brand new FontAwesome 5, completely redesigned for Swift 4
+
+## Slack
+
+Get help using and installing this product on our [Slack](http://bit.ly/2B0dEyt), channel #spectools
 
 ## Example
 
