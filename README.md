@@ -11,7 +11,7 @@ Super easy to use library containing the brand new FontAwesome 5, completely red
 
 ## Slack
 
-Get help using and installing this product on our [Slack](http://bit.ly/2B0dEyt), channel #spectools
+Get help using and installing this product on our [Slack](http://bit.ly/2B0dEyt), channel <b>#help-awesome</b>
 
 ## Example
 
