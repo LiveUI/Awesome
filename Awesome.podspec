@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'Awesome'
-    s.version          = '0.0.1'
+    s.version          = '0.1.1'
     s.summary          = 'Swift implementation of Font Awesome 5!'
 
     s.description      = 'Swift implementation of Font Awesome 5 allows you to implement this amazing web font on iOS, tvOS and macOS devices easily!'
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '10.3'
     s.tvos.deployment_target = '10.3'
-    # s.osx.deployment_target = "10.13"
+    s.osx.deployment_target = "10.13"
     
     s.source_files = 'Awesome/Classes/**/*'
 
@@ -31,5 +31,5 @@ Pod::Spec.new do |s|
     }
     s.ios.frameworks = 'UIKit', 'CoreText'
     s.tvos.frameworks = 'UIKit', 'CoreText'
-    #s.osx.frameworks = 'Cocoa', 'CoreText'
+    s.osx.frameworks = 'Cocoa', 'CoreText'
 end
