@@ -38,16 +38,6 @@ class DataManager: PresentableTableViewDataManager {
         data.append(section)
         
         section = PresentableSection()
-        for type in Awesome.light.all {
-            let presenter = IconTableViewCellPresenter()
-            presenter.configure = { presentable in
-                configure(cell: presentable, type: type)
-            }
-            section.presenters.append(presenter)
-        }
-        data.append(section)
-        
-        section = PresentableSection()
         for type in Awesome.regular.all {
             let presenter = IconTableViewCellPresenter()
             presenter.configure = { presentable in

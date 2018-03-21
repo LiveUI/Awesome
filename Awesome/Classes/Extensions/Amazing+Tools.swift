@@ -51,31 +51,6 @@ extension Awesome.brand {
     
 }
 
-extension Awesome.light {
-    
-    public typealias AwesomeType = Awesome.light
-    
-    public static func fromType(_ code: String) -> AwesomeType? {
-        guard let icon = AwesomeType(rawValue: code) else {
-            return nil
-        }
-        return icon
-    }
-    
-    public var name: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.keys[index]
-        return name
-    }
-    
-    public var label: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.labels[index]
-        return name
-    }
-    
-}
-
 extension Awesome.regular {
     
     public typealias AwesomeType = Awesome.regular

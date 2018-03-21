@@ -53,6 +53,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		15D73C962063143F0011D5C9 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		15F9BA091F94B1AF00245DF2 /* IconTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconTableViewCell.swift; sourceTree = "<group>"; };
 		15F9BA0B1F94B1AF00245DF2 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		15F9BA0D1F94B1AF00245DF2 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -275,6 +276,7 @@
 				73A8171F133C1D57CE37C088 /* Awesome.podspec */,
 				515F86D27A95166772DCBD78 /* README.md */,
 				7DCEB7A958ED37633ABD1350 /* LICENSE */,
+				15D73C962063143F0011D5C9 /* Podfile */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";

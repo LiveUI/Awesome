@@ -1,11 +1,10 @@
 # Settings
-source 'git@github.com:manGoweb/manGoPods.git'
 use_frameworks!
 
 # Define pods
 def pods
     pod 'Awesome', :path => '../'
-    pod 'SnapKit'
+    pod 'SnapKit', '~>4.0.0'
 end
 
 # tvOS
