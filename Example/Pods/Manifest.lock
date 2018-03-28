@@ -1,5 +1,5 @@
 PODS:
-  - AwesomeEnum (0.1.5)
+  - AwesomeEnum (0.1.7)
   - Nimble (7.0.2)
   - Presentables (0.1.3)
   - Quick (1.2.0)
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  AwesomeEnum: 4f033ed9e3e33f1119ae7cf22987541522c9f73f
+  AwesomeEnum: 607e8e91a0b40624bb5e8fbf7418a9f3ca02afae
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   Presentables: 5348e25a0bb03192dbe3acda4c03fcbbb56851ba
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08

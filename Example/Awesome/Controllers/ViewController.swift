@@ -34,7 +34,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Font Awesome 5"
+        title = "Font Awesome 5 Free"
         
         dataController.didTapCell = { info in
             let icon = self.element(indexPath: info.indexPath)

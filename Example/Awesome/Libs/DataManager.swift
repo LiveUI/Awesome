@@ -64,14 +64,14 @@ class DataManager: PresentableTableViewDataManager {
         return 54
     }
     
-    var sectionTitles = ["Brands", "Light", "Regular", "Solid"]
+    var sectionTitles = ["Brands", "Regular", "Solid"]
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionTitles[section]
     }
     
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return ["B", "L", "R", "S"]
+        return ["B", "R", "S"]
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {

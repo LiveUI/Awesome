@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15B4865C206BBED70086D60E /* AwesomeEnum.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 15B4865B206BBED70086D60E /* AwesomeEnum.podspec */; };
 		15F9BA0E1F94B1AF00245DF2 /* IconTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F9BA091F94B1AF00245DF2 /* IconTableViewCell.swift */; };
 		15F9BA0F1F94B1AF00245DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F9BA0B1F94B1AF00245DF2 /* ViewController.swift */; };
 		15F9BA101F94B1AF00245DF2 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F9BA0D1F94B1AF00245DF2 /* DataManager.swift */; };
@@ -441,7 +440,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15B4865C206BBED70086D60E /* AwesomeEnum.podspec in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
