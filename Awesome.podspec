@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'Awesome'
-    s.version          = '0.1.3'
+    s.version          = '0.1.4'
     s.summary          = 'Swift implementation of Font Awesome 5!'
 
     s.description      = 'Swift implementation of Font Awesome 5 allows you to implement this amazing web font on iOS, tvOS and macOS devices easily!'
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'Ondrej Rafaj' => 'opensource@mangoweb.cz' }
-    s.source           = { :git => 'git@github.com:LiveUI/Awesome.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://github.com/LiveUI/Awesome.git', :tag => s.version.to_s }
     s.social_media_url = 'https://twitter.com/rafiki270'
 
     s.ios.deployment_target = '10.3'
