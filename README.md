@@ -1,9 +1,9 @@
 # Awesome
 
 [![Slack](https://img.shields.io/badge/join-slack-745EAF.svg?style=flat)](http://bit.ly/2B0dEyt)
-[![Version](https://img.shields.io/cocoapods/v/FASwift.svg?style=flat)](http://cocoapods.org/pods/FASwift)
-[![License](https://img.shields.io/cocoapods/l/FASwift.svg?style=flat)](http://cocoapods.org/pods/FASwift)
-[![Platform](https://img.shields.io/cocoapods/p/FASwift.svg?style=flat)](http://cocoapods.org/pods/FASwift)
+[![Version](https://img.shields.io/cocoapods/v/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
+[![License](https://img.shields.io/cocoapods/l/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
+[![Platform](https://img.shields.io/cocoapods/p/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
 
 ## 
 
