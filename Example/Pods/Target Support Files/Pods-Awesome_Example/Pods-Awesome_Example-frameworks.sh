@@ -134,12 +134,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Awesome-iOS/Awesome.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AwesomeEnum-iOS/AwesomeEnum.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit-iOS/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Presentables/Presentables.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Awesome-iOS/Awesome.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AwesomeEnum-iOS/AwesomeEnum.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SnapKit-iOS/SnapKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Presentables/Presentables.framework"
 fi

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double AwesomeVersionNumber;
-FOUNDATION_EXPORT const unsigned char AwesomeVersionString[];
+FOUNDATION_EXPORT double AwesomeEnumVersionNumber;
+FOUNDATION_EXPORT const unsigned char AwesomeEnumVersionString[];
 

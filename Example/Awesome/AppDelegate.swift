@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Awesome
+import AwesomeEnum
 
 
 @UIApplicationMain
@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let c = ViewController()
         c.view.backgroundColor = .white
         window = UIWindow(frame: UIScreen.main.bounds)
-        let nc = UINavigationController.init(rootViewController: c)
+        let nc = UINavigationController(rootViewController: c)
         window?.rootViewController = nc
         window?.makeKeyAndVisible()
         

@@ -8,7 +8,7 @@
 
 import UIKit
 import Presentables
-import Awesome
+import AwesomeEnum
 
 
 class ViewController: UITableViewController {

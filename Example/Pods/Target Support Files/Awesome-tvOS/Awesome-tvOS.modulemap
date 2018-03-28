@@ -1,6 +1,0 @@
-framework module Awesome {
-  umbrella header "Awesome-tvOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

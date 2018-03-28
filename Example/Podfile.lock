@@ -1,28 +1,28 @@
 PODS:
-  - Awesome (0.1.1)
+  - AwesomeEnum (0.1.5)
   - Nimble (7.0.2)
   - Presentables (0.1.3)
   - Quick (1.2.0)
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
-  - Awesome (from `../`)
+  - AwesomeEnum (from `../`)
   - Nimble (~> 7.0.2)
   - Presentables
   - Quick (~> 1.2.0)
   - SnapKit (~> 4.0.0)
 
 EXTERNAL SOURCES:
-  Awesome:
+  AwesomeEnum:
     :path: ../
 
 SPEC CHECKSUMS:
-  Awesome: b311db84647f9aced7f0c030ae8462efec09526c
+  AwesomeEnum: 4f033ed9e3e33f1119ae7cf22987541522c9f73f
   Nimble: bfe1f814edabba69ff145cb1283e04ed636a67f2
   Presentables: 5348e25a0bb03192dbe3acda4c03fcbbb56851ba
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 05b28d6338204072e347bbe4c9cee53167db38f5
+PODFILE CHECKSUM: 8f4359d071851f41ea2ddbf25f79b67615e1b5ea
 
 COCOAPODS: 1.4.0

@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-import Awesome
+import AwesomeEnum
 import SnapKit
 
 

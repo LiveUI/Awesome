@@ -8,7 +8,7 @@
 
 import Foundation
 import Presentables
-import Awesome
+import AwesomeEnum
 
 
 class DataManager: PresentableTableViewDataManager {

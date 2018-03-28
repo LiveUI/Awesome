@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import Awesome
+import AwesomeEnum
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {

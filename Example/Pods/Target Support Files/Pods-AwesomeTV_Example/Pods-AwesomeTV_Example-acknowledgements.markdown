@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## Awesome
+## AwesomeEnum
 
 Copyright (c) 2017 manGoweb <development@mangoweb.cz>
 

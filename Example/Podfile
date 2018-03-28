@@ -3,7 +3,7 @@ use_frameworks!
 
 # Define pods
 def pods
-    pod 'Awesome', :path => '../'
+    pod 'AwesomeEnum', :path => '../'
     pod 'SnapKit', '~>4.0.0'
 end
 
