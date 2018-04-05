@@ -8,8 +8,9 @@
 
 Pod::Spec.new do |s|
     s.name             = 'AwesomeEnum'
-    s.version          = '1.0.0'
+    s.version          = '1.1.0'
     s.summary          = 'Swift implementation of Font Awesome 5!'
+    s.swift_version    = '4.0'
 
     s.description      = 'Swift implementation of Font Awesome 5 allows you to implement this amazing web font on iOS, tvOS and macOS devices easily!'
 
@@ -20,16 +21,16 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/LiveUI/Awesome.git', :tag => s.version.to_s }
     s.social_media_url = 'https://twitter.com/rafiki270'
 
-    s.ios.deployment_target = '10.3'
-    s.tvos.deployment_target = '10.3'
-    s.osx.deployment_target = '10.13'
+    s.ios.deployment_target = '9.0'
+    s.tvos.deployment_target = '9.0'
+    s.osx.deployment_target = '10.11'
     
-    s.source_files = 'Awesome/Classes/**/*'
+    s.source_files = 'Classes/**/*'
 
     s.resource_bundles = {
-        'Awesome' => ['Awesome/Assets/*.ttf']
+        'Awesome' => ['Assets/*.ttf']
     }
-    s.ios.frameworks = 'UIKit', 'CoreText'
-    s.tvos.frameworks = 'UIKit', 'CoreText'
-    s.osx.frameworks = 'Cocoa', 'CoreText'
+    s.ios.frameworks = 'UIKit', 'CoreText', 'CoreGraphics'
+    s.tvos.frameworks = 'UIKit', 'CoreText', 'CoreGraphics'
+    s.osx.frameworks = 'Cocoa', 'CoreText', 'CoreGraphics'
 end

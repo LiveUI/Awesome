@@ -1,6 +1,0 @@
-framework module AwesomeEnum {
-  umbrella header "AwesomeEnum-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
