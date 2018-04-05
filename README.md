@@ -29,7 +29,7 @@ pod 'Awesome'
 for Carthage just do:
 
 ```ruby
-github "manGoweb/Awesome"
+github "LiveUI/Awesome"
 ```
 
 ## Usage
