@@ -43,7 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15116D1820761BAD00BC08D3 /* AwesomeEnum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomeEnum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15116D1820761BAD00BC08D3 /* Awesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Awesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15116D1B20761BAD00BC08D3 /* AwesomeEnum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeEnum.h; sourceTree = "<group>"; };
 		15116D1C20761BAD00BC08D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15116D2520761C3300BC08D3 /* Awesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Awesome.swift; sourceTree = "<group>"; };
@@ -56,13 +56,15 @@
 		15116D3020761C3300BC08D3 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
 		15116D3120761C3300BC08D3 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
 		15116D3220761C3300BC08D3 /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
-		15116D4420761EBF00BC08D3 /* AwesomeEnum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomeEnum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15116D4420761EBF00BC08D3 /* Awesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Awesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15116D4620761EBF00BC08D3 /* AwesomeEnum_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeEnum_macOS.h; sourceTree = "<group>"; };
 		15116D4720761EBF00BC08D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		15116D5120761ED400BC08D3 /* AwesomeEnum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AwesomeEnum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		15116D5120761ED400BC08D3 /* Awesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Awesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15116D5320761ED400BC08D3 /* AwesomeEnum_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeEnum_tvOS.h; sourceTree = "<group>"; };
 		15116D5420761ED400BC08D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15116D6F2076203F00BC08D3 /* AwesomeEnum.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AwesomeEnum.podspec; sourceTree = "<group>"; };
+		156225A9207B9FF90037CECA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		156225AA207B9FF90037CECA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,9 +106,9 @@
 		15116D1920761BAD00BC08D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				15116D1820761BAD00BC08D3 /* AwesomeEnum.framework */,
-				15116D4420761EBF00BC08D3 /* AwesomeEnum.framework */,
-				15116D5120761ED400BC08D3 /* AwesomeEnum.framework */,
+				15116D1820761BAD00BC08D3 /* Awesome.framework */,
+				15116D4420761EBF00BC08D3 /* Awesome.framework */,
+				15116D5120761ED400BC08D3 /* Awesome.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				15116D6F2076203F00BC08D3 /* AwesomeEnum.podspec */,
+				156225AA207B9FF90037CECA /* README.md */,
+				156225A9207B9FF90037CECA /* LICENSE */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -257,7 +261,7 @@
 			);
 			name = "AwesomeEnum-iOS";
 			productName = AwesomeEnum;
-			productReference = 15116D1820761BAD00BC08D3 /* AwesomeEnum.framework */;
+			productReference = 15116D1820761BAD00BC08D3 /* Awesome.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		15116D4320761EBF00BC08D3 /* AwesomeEnum-macOS */ = {
@@ -275,7 +279,7 @@
 			);
 			name = "AwesomeEnum-macOS";
 			productName = "AwesomeEnum-macOS";
-			productReference = 15116D4420761EBF00BC08D3 /* AwesomeEnum.framework */;
+			productReference = 15116D4420761EBF00BC08D3 /* Awesome.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		15116D5020761ED400BC08D3 /* AwesomeEnum-tvOS */ = {
@@ -293,7 +297,7 @@
 			);
 			name = "AwesomeEnum-tvOS";
 			productName = "AwesomeEnum-tvOS";
-			productReference = 15116D5120761ED400BC08D3 /* AwesomeEnum.framework */;
+			productReference = 15116D5120761ED400BC08D3 /* Awesome.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -552,7 +556,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.AwesomeEnum;
-				PRODUCT_NAME = AwesomeEnum;
+				PRODUCT_NAME = Awesome;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -577,7 +581,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.AwesomeEnum;
-				PRODUCT_NAME = AwesomeEnum;
+				PRODUCT_NAME = Awesome;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,7 +608,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-macOS";
-				PRODUCT_NAME = AwesomeEnum;
+				PRODUCT_NAME = Awesome;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -631,7 +635,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-macOS";
-				PRODUCT_NAME = AwesomeEnum;
+				PRODUCT_NAME = Awesome;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -655,7 +659,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-tvOS";
-				PRODUCT_NAME = AwesomeEnum;
+				PRODUCT_NAME = Awesome;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -681,7 +685,7 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-tvOS";
-				PRODUCT_NAME = AwesomeEnum;
+				PRODUCT_NAME = Awesome;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'AwesomeEnum'
-    s.version          = '1.1.1'
+    s.version          = '1.2.0'
     s.summary          = 'Swift implementation of Font Awesome 5!'
     s.swift_version    = '4.0'
 
