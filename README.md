@@ -47,6 +47,10 @@ let image = Awesome.brand.android.asImage(size: CGSize(width: 40, height: 40), c
 let attributedText = Awesome.regular.envelopeOpen.asAttributedText(fontSize: 17, color: .red, backgroundColor: .blue)
 ```
 
+## Font Awesome Pro
+
+The enum `AwesomePro` works analogously to `Awesome`, but contains all icons available to FontAwesome 5 Pro at the current version. You will however need to add the fonts to your Xcode projects manually.
+
 ## Author
 
 Ondrej Rafaj , development@mangoweb.cz
