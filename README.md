@@ -49,7 +49,21 @@ let attributedText = Awesome.regular.envelopeOpen.asAttributedText(fontSize: 17,
 
 ## Font Awesome Pro
 
-The enum `AwesomePro` works analogously to `Awesome`, but contains all icons available to FontAwesome 5 Pro at the current version. You will however need to add the fonts to your Xcode projects manually.
+The FontAwesome Free files are included and loaded for you out of the box. FontAwesome Pro licensing terms don't allow to publish the font files however, so we can't add those for you. As such you will need to provide the fonts you need yourself and register them once before using them:
+
+```swift
+// AppDelegate application(:didFinishLaunchingWithOptions:)
+
+// Load all fonts
+AwesomePro.loadFonts(from: Bundle.main)
+
+// Load only some fonts
+AwesomePro.loadFonts(from: Bundle.main, only: [.brands, .solid])
+```
+
+The filenames have to match FontAwesome's naming scheme (`fa-brands-400.ttf`, `fa-light-300.ttf`, `fa-regular-400.ttf`, `fa-solid-900.ttf`). You only have to include the fonts you are using.
+
+Once the fonts are registered you can use `AwesomePro` enum just as you'd use the `Awesome` enum, except that you now have access to all FontAwesome Pro icons.
 
 ## Author
 

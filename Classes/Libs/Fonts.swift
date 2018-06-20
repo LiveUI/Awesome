@@ -79,8 +79,12 @@ public extension AwesomePro {
         }
     }
 
-    static func loadFonts(from bundle: Bundle) {
-        let fonts: [Font] = [.brand, .regular, .solid, .light]
+    static func loadFonts(from bundle: Bundle, only: [Font] = []) {
+        var fonts: [Font] = [.brand, .regular, .solid, .light]
+
+        if only.count > 0 {
+            fonts = fonts.filter { element in only.contains(element) }
+        }
 
         for font in fonts {
             Fonts.load(type: font, from: bundle)
@@ -104,20 +108,15 @@ class Fonts {
             fontBundle = bundle
         }
 
-        var fontURL: URL!
         let identifier = fontBundle.bundleIdentifier
+        let isCocoapods = identifier?.hasPrefix("org.cocoapods") == true
 
-        if identifier?.hasPrefix("org.cocoapods") == true {
-            fontURL = fontBundle.url(forResource: type.file, withExtension: "ttf", subdirectory: "Awesome.bundle")
-        } else {
-            print(identifier)
-            print(type.file)
-            fontURL = fontBundle.url(forResource: type.file, withExtension: "ttf")
+        let fontURL = fontBundle.url(forResource: type.file, withExtension: "ttf", subdirectory: isCocoapods ? "Awesome.bundle" : nil)
+        guard let url = fontURL else {
+            return
         }
 
-        print(fontURL)
-
-        let data = try! Data(contentsOf: fontURL as URL)
+        let data = try! Data(contentsOf: url as URL)
         let provider = CGDataProvider(data: data as CFData)
         let font = CGFont(provider!)
 
