@@ -13,10 +13,6 @@ Super easy to use library containing the brand new FontAwesome 5, completely red
 
 Get help using and installing this product on our [Slack](http://bit.ly/2B0dEyt), channel <b>#help-awesome</b>
 
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Installation
 
 Awesome is available through [CocoaPods](http://cocoapods.org). To install

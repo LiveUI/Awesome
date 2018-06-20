@@ -40,6 +40,12 @@
 		15116D6A20761F0A00BC08D3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2B20761C3300BC08D3 /* Fonts.swift */; };
 		15116D6B20761F0A00BC08D3 /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
 		15116D6C20761F0A00BC08D3 /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
+		9D338AF620DA7A04001F8AEA /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
+		9D338AF720DA7A04001F8AEA /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
+		9D338AF820DA7A04001F8AEA /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
+		9D338AFA20DA7A52001F8AEA /* AwesomeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */; };
+		9D338AFB20DA7A52001F8AEA /* AwesomeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */; };
+		9D338AFC20DA7A52001F8AEA /* AwesomeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +71,8 @@
 		15116D6F2076203F00BC08D3 /* AwesomeEnum.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AwesomeEnum.podspec; sourceTree = "<group>"; };
 		156225A9207B9FF90037CECA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		156225AA207B9FF90037CECA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9D338AF520DA7A04001F8AEA /* AwesomePro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomePro.swift; sourceTree = "<group>"; };
+		9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				15116D2520761C3300BC08D3 /* Awesome.swift */,
+				9D338AF520DA7A04001F8AEA /* AwesomePro.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -164,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				15116D2E20761C3300BC08D3 /* Amazing.swift */,
+				9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -382,6 +392,8 @@
 				15116D3920761C3300BC08D3 /* Amazing.swift in Sources */,
 				15116D3620761C3300BC08D3 /* Image+Awesome.swift in Sources */,
 				15116D3820761C3300BC08D3 /* Crossplatform.swift in Sources */,
+				9D338AF620DA7A04001F8AEA /* AwesomePro.swift in Sources */,
+				9D338AFA20DA7A52001F8AEA /* AwesomeFont.swift in Sources */,
 				15116D3320761C3300BC08D3 /* Awesome.swift in Sources */,
 				15116D3520761C3300BC08D3 /* Amazing+Tools.swift in Sources */,
 			);
@@ -396,6 +408,8 @@
 				15116D6220761F0A00BC08D3 /* Amazing.swift in Sources */,
 				15116D5F20761F0A00BC08D3 /* Image+Awesome.swift in Sources */,
 				15116D6120761F0A00BC08D3 /* Crossplatform.swift in Sources */,
+				9D338AF720DA7A04001F8AEA /* AwesomePro.swift in Sources */,
+				9D338AFB20DA7A52001F8AEA /* AwesomeFont.swift in Sources */,
 				15116D5C20761F0A00BC08D3 /* Awesome.swift in Sources */,
 				15116D5E20761F0A00BC08D3 /* Amazing+Tools.swift in Sources */,
 			);
@@ -410,6 +424,8 @@
 				15116D6C20761F0A00BC08D3 /* Amazing.swift in Sources */,
 				15116D6920761F0A00BC08D3 /* Image+Awesome.swift in Sources */,
 				15116D6B20761F0A00BC08D3 /* Crossplatform.swift in Sources */,
+				9D338AF820DA7A04001F8AEA /* AwesomePro.swift in Sources */,
+				9D338AFC20DA7A52001F8AEA /* AwesomeFont.swift in Sources */,
 				15116D6620761F0A00BC08D3 /* Awesome.swift in Sources */,
 				15116D6820761F0A00BC08D3 /* Amazing+Tools.swift in Sources */,
 			);

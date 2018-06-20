@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 public protocol Amazing {
     
     init?(rawValue: String)
@@ -17,10 +16,9 @@ public protocol Amazing {
     static var keys: [String] { get }
     static var labels: [String] { get }
     
-    var fontType: Awesome.Font { get }
+    var fontType: AwesomeFont { get }
     
     var name: String { get }
     var label: String { get }
 
 }
-

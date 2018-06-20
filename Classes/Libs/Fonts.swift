@@ -12,7 +12,7 @@ import CoreText
 
 public extension Awesome {
     
-    public enum Font: String {
+    public enum Font: String, AwesomeFont {
         case brand = "fa-brands-400"
         case regular = "fa-regular-400"
         case solid = "fa-solid-900"
@@ -44,10 +44,46 @@ public extension Awesome {
     
 }
 
+public extension AwesomePro {
+
+    public enum Font: String, AwesomeFont {
+        case brand = "fa-brand-400"
+        case regular = "fa-regular-400"
+        case solid = "fa-solid-900"
+        case light = "fa-light-300"
+
+        public var file: String {
+            return rawValue
+        }
+
+        public var name: String {
+            switch self {
+                case .brand:
+                    return "Font Awesome 5 Brands"
+                case .regular, .solid, .light:
+                    return "Font Awesome 5 Pro"
+            }
+        }
+
+        public var memberName: String {
+            switch self {
+                case .brand:
+                    return "FontAwesome5ProBrands"
+                case .regular:
+                    return "FontAwesome5ProRegular"
+                case .solid:
+                    return "FontAwesome5ProSolid"
+                case .light:
+                    return "FontAwesome5ProLight"
+            }
+        }
+    }
+
+}
 
 class Fonts {
     
-    static func load(type: Awesome.Font) {
+    static func load(type: AwesomeFont) {
         #if os(iOS) || os(watchOS) || os(tvOS)
         if (!Font.fontNames(forFamilyName: type.name).contains(type.memberName)) {
             let bundle = Bundle(for: Fonts.self)

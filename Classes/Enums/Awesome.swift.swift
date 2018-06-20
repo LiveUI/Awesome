@@ -1,5 +1,5 @@
 //
-//  Awesome.swift
+//  Awesome.swift.swift
 //  FASwift
 //
 //  Originally created by Ondrej Rafaj on 13/10/2017.
@@ -10,7 +10,7 @@
 import Foundation
 
 
-public struct Awesome {
+public struct Awesome.swift {
 
 	public enum brand: String, Amazing {
 		case fa500px = "\u{f26e}"
@@ -396,7 +396,7 @@ public struct Awesome {
 		}
 
 		public var fontType: AwesomeFont {
-			return Awesome.Font.brand
+			return Awesome.swift.Font.brand
 		}
 
 	}
@@ -541,7 +541,7 @@ public struct Awesome {
 		}
 
 		public var fontType: AwesomeFont {
-			return Awesome.Font.regular
+			return Awesome.swift.Font.regular
 		}
 
 	}
@@ -1194,7 +1194,7 @@ public struct Awesome {
 		}
 
 		public var fontType: AwesomeFont {
-			return Awesome.Font.solid
+			return Awesome.swift.Font.solid
 		}
 
 	}
