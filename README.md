@@ -37,7 +37,7 @@ github "LiveUI/Awesome"
 Import will be slightly different for Cocoapods/Carthage. Sorry for the confusion of names but some unreasonable fellow has already registered an `Awesome` pod before us :).
 
 ```swift
-import AwesomeSwift // Cocoapods
+import AwesomeEnum // Cocoapods
 import Awesome // Carthage
 ```
 
