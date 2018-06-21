@@ -47,9 +47,9 @@ let image = Awesome.brand.android.asImage(size: CGSize(width: 40, height: 40), c
 let attributedText = Awesome.regular.envelopeOpen.asAttributedText(fontSize: 17, color: .red, backgroundColor: .blue)
 ```
 
-## Font Awesome Pro
+### Font Awesome Pro
 
-The FontAwesome Free files are included and loaded for you out of the box. FontAwesome Pro licensing terms don't allow to publish the font files however, so we can't add those for you. As such you will need to manually add the fonts to your project and register them once before using them:
+The FontAwesome Free files are included and loaded for you out of the box. FontAwesome Pro licensing terms don't allow to publish the font files however, so we can't add those for you. As such you will need to manually add the fonts to your project and register them before using them:
 
 ```swift
 // AppDelegate application(:didFinishLaunchingWithOptions:)
@@ -65,9 +65,10 @@ The filenames have to match FontAwesome's naming scheme (`fa-brands-400.ttf`, `f
 
 Once the fonts are registered you can use the `AwesomePro` enum just as you'd use the `Awesome` enum, except that you now have access to all FontAwesome Pro icons.
 
-## Author
+## Contributors
 
-Ondrej Rafaj , development@mangoweb.cz
+- **Author**: Ondrej Rafaj , development@mangoweb.cz
+- Christopher Mühl , christopher@padarom.io
 
 ## License
 
