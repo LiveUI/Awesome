@@ -1,6 +1,6 @@
 import SwiftSoup
 
-func parseCheatsheet(with category: String, html: String) -> [Icon] {
+func parseCheatsheet(from html: String) -> [Icon] {
   var icons: [Icon] = []
   do {
     let doc: Document = try SwiftSoup.parse(html)
