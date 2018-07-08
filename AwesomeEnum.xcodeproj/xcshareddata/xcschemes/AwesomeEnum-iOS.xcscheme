@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "15116D1720761BAD00BC08D3"
-               BuildableName = "AwesomeEnum.framework"
+               BuildableName = "Awesome.framework"
                BlueprintName = "AwesomeEnum-iOS"
                ReferencedContainer = "container:AwesomeEnum.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "15116D1720761BAD00BC08D3"
-            BuildableName = "AwesomeEnum.framework"
+            BuildableName = "Awesome.framework"
             BlueprintName = "AwesomeEnum-iOS"
             ReferencedContainer = "container:AwesomeEnum.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "15116D1720761BAD00BC08D3"
-            BuildableName = "AwesomeEnum.framework"
+            BuildableName = "Awesome.framework"
             BlueprintName = "AwesomeEnum-iOS"
             ReferencedContainer = "container:AwesomeEnum.xcodeproj">
          </BuildableReference>
