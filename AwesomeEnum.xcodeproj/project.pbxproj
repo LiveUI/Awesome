@@ -40,6 +40,19 @@
 		15116D6A20761F0A00BC08D3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2B20761C3300BC08D3 /* Fonts.swift */; };
 		15116D6B20761F0A00BC08D3 /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
 		15116D6C20761F0A00BC08D3 /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
+		639016C120F26235006F56AE /* AwesomeEnum_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 639016BF20F26235006F56AE /* AwesomeEnum_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		639016C520F2628F006F56AE /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3020761C3300BC08D3 /* fa-solid-900.ttf */; };
+		639016C620F2628F006F56AE /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3120761C3300BC08D3 /* fa-regular-400.ttf */; };
+		639016C720F2628F006F56AE /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3220761C3300BC08D3 /* fa-brands-400.ttf */; };
+		639016C820F26294006F56AE /* Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2520761C3300BC08D3 /* Awesome.swift */; };
+		639016C920F26294006F56AE /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
+		639016CA20F26298006F56AE /* NSAttributedString+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */; };
+		639016CB20F26298006F56AE /* Amazing+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2820761C3300BC08D3 /* Amazing+Tools.swift */; };
+		639016CC20F26298006F56AE /* Image+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2920761C3300BC08D3 /* Image+Awesome.swift */; };
+		639016CD20F2629B006F56AE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2B20761C3300BC08D3 /* Fonts.swift */; };
+		639016CE20F2629B006F56AE /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
+		639016CF20F2629F006F56AE /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
+		639016D020F2629F006F56AE /* AwesomeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */; };
 		9D338AF620DA7A04001F8AEA /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
 		9D338AF720DA7A04001F8AEA /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
 		9D338AF820DA7A04001F8AEA /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
@@ -71,6 +84,9 @@
 		15116D6F2076203F00BC08D3 /* AwesomeEnum.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AwesomeEnum.podspec; sourceTree = "<group>"; };
 		156225A9207B9FF90037CECA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		156225AA207B9FF90037CECA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		639016BD20F26234006F56AE /* Awesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Awesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		639016BF20F26235006F56AE /* AwesomeEnum_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeEnum_watchOS.h; sourceTree = "<group>"; };
+		639016C020F26235006F56AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D338AF520DA7A04001F8AEA /* AwesomePro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomePro.swift; sourceTree = "<group>"; };
 		9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +113,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		639016B920F26234006F56AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,6 +140,7 @@
 				15116D1820761BAD00BC08D3 /* Awesome.framework */,
 				15116D4420761EBF00BC08D3 /* Awesome.framework */,
 				15116D5120761ED400BC08D3 /* Awesome.framework */,
+				639016BD20F26234006F56AE /* Awesome.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,11 +243,21 @@
 		15116D6E2076201B00BC08D3 /* Platforms */ = {
 			isa = PBXGroup;
 			children = (
+				639016BE20F26235006F56AE /* AwesomeEnum-watchOS */,
 				15116D1A20761BAD00BC08D3 /* AwesomeEnum-iOS */,
 				15116D4520761EBF00BC08D3 /* AwesomeEnum-macOS */,
 				15116D5220761ED400BC08D3 /* AwesomeEnum-tvOS */,
 			);
 			name = Platforms;
+			sourceTree = "<group>";
+		};
+		639016BE20F26235006F56AE /* AwesomeEnum-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				639016BF20F26235006F56AE /* AwesomeEnum_watchOS.h */,
+				639016C020F26235006F56AE /* Info.plist */,
+			);
+			path = "AwesomeEnum-watchOS";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +284,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				15116D5520761ED400BC08D3 /* AwesomeEnum_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639016BA20F26234006F56AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639016C120F26235006F56AE /* AwesomeEnum_watchOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +352,24 @@
 			productReference = 15116D5120761ED400BC08D3 /* Awesome.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		639016BC20F26234006F56AE /* AwesomeEnum-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 639016C420F26235006F56AE /* Build configuration list for PBXNativeTarget "AwesomeEnum-watchOS" */;
+			buildPhases = (
+				639016B820F26234006F56AE /* Sources */,
+				639016B920F26234006F56AE /* Frameworks */,
+				639016BA20F26234006F56AE /* Headers */,
+				639016BB20F26234006F56AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AwesomeEnum-watchOS";
+			productName = "AwesomeEnum-watchOS";
+			productReference = 639016BD20F26234006F56AE /* Awesome.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -328,6 +388,9 @@
 					15116D5020761ED400BC08D3 = {
 						CreatedOnToolsVersion = 9.3;
 					};
+					639016BC20F26234006F56AE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 15116D1220761BAD00BC08D3 /* Build configuration list for PBXProject "AwesomeEnum" */;
@@ -345,6 +408,7 @@
 				15116D1720761BAD00BC08D3 /* AwesomeEnum-iOS */,
 				15116D4320761EBF00BC08D3 /* AwesomeEnum-macOS */,
 				15116D5020761ED400BC08D3 /* AwesomeEnum-tvOS */,
+				639016BC20F26234006F56AE /* AwesomeEnum-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -377,6 +441,16 @@
 				15116D6320761F0A00BC08D3 /* fa-solid-900.ttf in Resources */,
 				15116D6520761F0A00BC08D3 /* fa-brands-400.ttf in Resources */,
 				15116D6420761F0A00BC08D3 /* fa-regular-400.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639016BB20F26234006F56AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639016C520F2628F006F56AE /* fa-solid-900.ttf in Resources */,
+				639016C720F2628F006F56AE /* fa-brands-400.ttf in Resources */,
+				639016C620F2628F006F56AE /* fa-regular-400.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +502,22 @@
 				9D338AFC20DA7A52001F8AEA /* AwesomeFont.swift in Sources */,
 				15116D6620761F0A00BC08D3 /* Awesome.swift in Sources */,
 				15116D6820761F0A00BC08D3 /* Amazing+Tools.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		639016B820F26234006F56AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639016CA20F26298006F56AE /* NSAttributedString+Awesome.swift in Sources */,
+				639016CC20F26298006F56AE /* Image+Awesome.swift in Sources */,
+				639016CB20F26298006F56AE /* Amazing+Tools.swift in Sources */,
+				639016CE20F2629B006F56AE /* Crossplatform.swift in Sources */,
+				639016C820F26294006F56AE /* Awesome.swift in Sources */,
+				639016CD20F2629B006F56AE /* Fonts.swift in Sources */,
+				639016D020F2629F006F56AE /* AwesomeFont.swift in Sources */,
+				639016C920F26294006F56AE /* AwesomePro.swift in Sources */,
+				639016CF20F2629F006F56AE /* Amazing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +800,62 @@
 			};
 			name = Release;
 		};
+		639016C220F26235006F56AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7MLF4U25UX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "AwesomeEnum-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-watchOS";
+				PRODUCT_NAME = Awesome;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		639016C320F26235006F56AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7MLF4U25UX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "AwesomeEnum-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-watchOS";
+				PRODUCT_NAME = Awesome;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -745,6 +891,15 @@
 			buildConfigurations = (
 				15116D5720761ED400BC08D3 /* Debug */,
 				15116D5820761ED400BC08D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		639016C420F26235006F56AE /* Build configuration list for PBXNativeTarget "AwesomeEnum-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				639016C220F26235006F56AE /* Debug */,
+				639016C320F26235006F56AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

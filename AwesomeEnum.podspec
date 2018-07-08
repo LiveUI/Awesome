@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '9.0'
     s.tvos.deployment_target = '9.0'
     s.osx.deployment_target = '10.11'
+	s.watchos.deployment_target = '2.0'
     
     s.source_files = 'Classes/**/*'
 
@@ -33,4 +34,5 @@ Pod::Spec.new do |s|
     s.ios.frameworks = 'UIKit', 'CoreText', 'CoreGraphics'
     s.tvos.frameworks = 'UIKit', 'CoreText', 'CoreGraphics'
     s.osx.frameworks = 'Cocoa', 'CoreText', 'CoreGraphics'
+	s.watchos.frameworks = 'UIKit', 'CoreText', 'CoreGraphics'
 end
