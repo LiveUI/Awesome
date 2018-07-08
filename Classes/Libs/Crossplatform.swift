@@ -23,9 +23,11 @@ import Foundation
     public typealias Font = NSFont
     public typealias Image = NSImage
 
-	extension NSFont {
+	extension Font {
 		static func fontNames(forFamilyName: String) -> [String] {
-			return NSFontManager.shared.availableFontFamilies.filter { $0.hasPrefix(forFamilyName) }
+			return NSFontManager.shared.availableMembers(ofFontFamily: forFamilyName)?.compactMap { type -> String? in
+				return type.first as? String
+				} ?? []
 		}
 	}
 
