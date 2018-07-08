@@ -13,7 +13,7 @@ import CoreText
 public extension Awesome {
     
     public enum Font: String, AwesomeFont {
-        case brand = "fa-brands-400"
+        case brands = "fa-brands-400"
         case regular = "fa-regular-400"
         case solid = "fa-solid-900"
         
@@ -23,7 +23,7 @@ public extension Awesome {
         
         public var name: String {
             switch self {
-            case .brand:
+            case .brands:
                 return "Font Awesome 5 Brands"
             case .regular, .solid:
                 return "Font Awesome 5 Free"
@@ -32,7 +32,7 @@ public extension Awesome {
         
         public var memberName: String {
             switch self {
-            case .brand:
+            case .brands:
                 return "FontAwesome5BrandsRegular"
             case .regular:
                 return "FontAwesome5FreeRegular"
@@ -47,7 +47,7 @@ public extension Awesome {
 public extension AwesomePro {
 
     public enum Font: String, AwesomeFont {
-        case brand = "fa-brands-400"
+        case brands = "fa-brands-400"
         case regular = "fa-regular-400"
         case solid = "fa-solid-900"
         case light = "fa-light-300"
@@ -58,7 +58,7 @@ public extension AwesomePro {
 
         public var name: String {
             switch self {
-                case .brand:
+                case .brands:
                     return "Font Awesome 5 Brands"
                 case .regular, .solid, .light:
                     return "Font Awesome 5 Pro"
@@ -67,7 +67,7 @@ public extension AwesomePro {
 
         public var memberName: String {
             switch self {
-                case .brand:
+                case .brands:
                     return "FontAwesome5ProBrands"
                 case .regular:
                     return "FontAwesome5ProRegular"
@@ -80,7 +80,7 @@ public extension AwesomePro {
     }
 
     static func loadFonts(from bundle: Bundle, only: [Font] = []) {
-        var fonts: [Font] = [.brand, .regular, .solid, .light]
+        var fonts: [Font] = [.brands, .regular, .solid, .light]
 
         if only.count > 0 {
             fonts = fonts.filter { element in only.contains(element) }

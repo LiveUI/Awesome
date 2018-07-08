@@ -22,5 +22,11 @@ import Foundation
     public typealias Color = NSColor
     public typealias Font = NSFont
     public typealias Image = NSImage
-    
+
+	extension NSFont {
+		static func fontNames(forFamilyName: String) -> [String] {
+			return NSFontManager.shared.availableFontFamilies.filter { $0.hasPrefix(forFamilyName) }
+		}
+	}
+
 #endif

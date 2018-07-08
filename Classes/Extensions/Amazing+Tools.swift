@@ -27,9 +27,9 @@ public extension Amazing {
 }
 
 
-extension Awesome.brand {
+extension Awesome.brands {
 
-    public typealias AwesomeType = Awesome.brand
+    public typealias AwesomeType = Awesome.brands
 
     public static func fromType(_ code: String) -> AwesomeType? {
         guard let icon = AwesomeType(rawValue: code) else {
@@ -103,9 +103,9 @@ extension Awesome.solid {
 }
 
 
-extension AwesomePro.brand {
+extension AwesomePro.brands {
 
-    public typealias AwesomeType = AwesomePro.brand
+    public typealias AwesomeType = AwesomePro.brands
 
     public static func fromType(_ code: String) -> AwesomeType? {
         guard let icon = AwesomeType(rawValue: code) else {
