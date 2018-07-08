@@ -13,7 +13,7 @@ func buildEnum (_ name: String, from styles: [String: [Icon]]) -> String {
         content += "\n    public enum \(style): String, Amazing {\n"
         var names = [String]()
         for icon in list {
-            var name = icon.name.split(separator: "-").map({ $0.prefix(1).uppercased() + $0.dropFirst() }).joined(separator: "")
+            var name = icon.name.split(separator: "-").map { $0.firstUppercased() }.joined(separator: "")
             name = name.prefix(1).lowercased() + name.dropFirst()
             if Int(name.prefix(1)) != nil { name = "fa\(name)" }
             names.append(name)
@@ -21,10 +21,9 @@ func buildEnum (_ name: String, from styles: [String: [Icon]]) -> String {
 			content += "        case \(name.isKeyword ? "`\(name)`" : name) = \"\\u{\(icon.unicode)}\"\n"
         }
 
-        content += "\n        public static var all: [\(style)] {\n            return [ \(names.map({"\(style).\($0)"}).joined(separator: ", ")) ]\n        }\n"
-		content += "\n        public static var keys: [String] {\n            return [ \(list.map({"\"\($0.name)\""}).joined(separator: ", ")) ]\n        }\n"
-
-		content += "\n        public static var labels: [String] {\n            return [ \(list.map({"\"\($0.name)\""}).joined(separator: ", ")) ]\n        }\n"
+        content += "\n        public static var all: [\(style)] {\n            return [ \(names.map {"\(style).\($0)"}.joined(separator: ", ")) ]\n        }\n"
+		content += "\n        public static var keys: [String] {\n            return [ \(list.map {"\"\($0.name)\""}.joined(separator: ", ")) ]\n        }\n"
+		content += "\n        public static var labels: [String] {\n            return [ \(list.map {"\"\($0.name.split(separator: "-").map { $0.firstUppercased() }.joined(separator: " "))\""}.joined(separator: ", ")) ]\n        }\n"
         content += "\n        public var code: String {\n            return rawValue\n        }\n"
         content += "\n        public var fontType: AwesomeFont {\n            return \(name).Font.\(style)\n        }\n"
 

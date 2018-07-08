@@ -1,6 +1,17 @@
 import Foundation
 
+extension Substring {
+	func firstUppercased() -> Substring {
+		return prefix(1).uppercased() + dropFirst()
+	}
+}
+
 extension String {
+	
+	func firstUppercased() -> String {
+		return prefix(1).uppercased() + dropFirst()
+	}
+	
 	var isKeyword: Bool {
 		switch self {
 		case
