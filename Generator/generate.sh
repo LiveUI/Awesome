@@ -1,15 +1,21 @@
 #/bin/bash
 
 # Compile generator
-swift build
+swift build -c release
 
 # Run generator and generate Awesome enums
-# TODO: Retrieve this path from the output of "swift build"
-./.build/x86_64-apple-macosx10.10/debug/Generator
+./.build/release/Generator
 
-# Download FontAwesome Free assets
-# TODO: Find newest version number
-curl https://use.fontawesome.com/releases/v5.1.0/fontawesome-free-5.1.0-web.zip --output fontawesome-free.zip
+get_latest_release() {
+  curl --silent "https://api.github.com/repos/FortAwesome/Font-Awesome/releases/latest" |
+  grep '"browser_download_url":' |
+  grep 'web' |
+  sed -E 's/.*"([^"]+)".*/\1/'
+}
+
+url="$(get_latest_release)"
+echo "\nRequesting data from '$url'"
+curl -L "$url" --output fontawesome-free.zip
 unzip -joq ./fontawesome-free.zip -d FontAwesome
 
 # Copy assets and enums to target directories

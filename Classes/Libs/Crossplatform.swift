@@ -22,5 +22,12 @@ import Foundation
     public typealias Color = NSColor
     public typealias Font = NSFont
     public typealias Image = NSImage
-    
+
+	extension Font {
+		static func fontNames(forFamilyName: String) -> [String] {
+			return NSFontManager.shared.availableMembers(ofFontFamily: forFamilyName)?
+				.compactMap { return $0.first as? String } ?? []
+		}
+	}
+
 #endif

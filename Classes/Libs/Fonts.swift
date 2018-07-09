@@ -100,7 +100,6 @@ class Fonts {
             return
         }
 
-        #if os(iOS) || os(watchOS) || os(tvOS)
         let fontBundle: Bundle!
         if bundle == nil {
             fontBundle = Bundle(for: Fonts.self)
@@ -127,9 +126,6 @@ class Fonts {
             let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
             NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
         }
-        #elseif os(OSX)
-        
-        #endif
         
     }
     
