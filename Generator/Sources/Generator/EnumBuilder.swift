@@ -9,7 +9,9 @@ func buildEnum (_ name: String, from styles: [String: [Icon]]) -> String {
     content += "//  Copyright © 2017 manGoweb UK. All rights reserved.\n//\n"
 	content += "//  This file has been auto-generated on \(formatter.string(from: Date())).\n\nimport Foundation\n\npublic struct \(name) {\n"
 
-    for (style, list) in styles {
+    for (var style, list) in styles {
+		if style == "brands" { style = "brand" }
+		
         content += "\n    public enum \(style): String, Amazing {\n"
         var names = [String]()
         for icon in list {

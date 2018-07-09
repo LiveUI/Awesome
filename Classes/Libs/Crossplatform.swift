@@ -25,9 +25,8 @@ import Foundation
 
 	extension Font {
 		static func fontNames(forFamilyName: String) -> [String] {
-			return NSFontManager.shared.availableMembers(ofFontFamily: forFamilyName)?.compactMap { type -> String? in
-				return type.first as? String
-				} ?? []
+			return NSFontManager.shared.availableMembers(ofFontFamily: forFamilyName)?
+				.compactMap { return $0.first as? String } ?? []
 		}
 	}
 
