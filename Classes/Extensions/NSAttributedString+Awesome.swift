@@ -19,7 +19,7 @@ public extension NSAttributedString {
         Fonts.load(type: icon.fontType)
         
         guard let font = Font(name: icon.fontType.memberName, size: fontSize) else {
-            fatalError("Error! Font did not load properly")
+            fatalError("Font \(icon.fontType.memberName) not loaded properly. Did you forget to call AwesomePro.loadFonts(from:)?")
         }
         
         let paragraph = NSMutableParagraphStyle()

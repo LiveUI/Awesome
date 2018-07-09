@@ -45,7 +45,11 @@ public extension Image {
             attributedString.draw(in: rect)
             image.unlockFocus()
             
-            self.init(cgImage: image.cgImage as! CGImage, size: boxSize)
+			if let cgImage = image.cgImage(forProposedRect: nil, context: nil, hints: nil) {
+				self.init(cgImage: cgImage, size: boxSize)
+			} else {
+				self.init()
+			}
         #endif
     }
     

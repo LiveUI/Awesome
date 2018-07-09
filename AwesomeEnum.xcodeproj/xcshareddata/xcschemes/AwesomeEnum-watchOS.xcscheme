@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "0940"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "15116D4320761EBF00BC08D3"
+               BlueprintIdentifier = "639016BC20F26234006F56AE"
                BuildableName = "Awesome.framework"
-               BlueprintName = "AwesomeEnum-macOS"
+               BlueprintName = "AwesomeEnum-watchOS"
                ReferencedContainer = "container:AwesomeEnum.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "15116D4320761EBF00BC08D3"
+            BlueprintIdentifier = "639016BC20F26234006F56AE"
             BuildableName = "Awesome.framework"
-            BlueprintName = "AwesomeEnum-macOS"
+            BlueprintName = "AwesomeEnum-watchOS"
             ReferencedContainer = "container:AwesomeEnum.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "15116D4320761EBF00BC08D3"
+            BlueprintIdentifier = "639016BC20F26234006F56AE"
             BuildableName = "Awesome.framework"
-            BlueprintName = "AwesomeEnum-macOS"
+            BlueprintName = "AwesomeEnum-watchOS"
             ReferencedContainer = "container:AwesomeEnum.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

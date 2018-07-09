@@ -12,7 +12,7 @@ import CoreText
 
 public extension Awesome {
     
-    public enum Font: String {
+    public enum Font: String, AwesomeFont {
         case brand = "fa-brands-400"
         case regular = "fa-regular-400"
         case solid = "fa-solid-900"
@@ -44,39 +44,88 @@ public extension Awesome {
     
 }
 
+public extension AwesomePro {
 
-class Fonts {
-    
-    static func load(type: Awesome.Font) {
-        #if os(iOS) || os(watchOS) || os(tvOS)
-        if (!Font.fontNames(forFamilyName: type.name).contains(type.memberName)) {
-            let bundle = Bundle(for: Fonts.self)
-            var fontURL: URL!
-            let identifier = bundle.bundleIdentifier
-            
-            if identifier?.hasPrefix("org.cocoapods") == true {
-                fontURL = bundle.url(forResource: type.file, withExtension: "ttf", subdirectory: "Awesome.bundle")
-            }
-            else {
-                fontURL = bundle.url(forResource: type.file, withExtension: "ttf")
-            }
-            let data = try! Data(contentsOf: fontURL as URL)
-            let provider = CGDataProvider(data: data as CFData)
-            let font = CGFont(provider!)
-            
-            print("Registering: \(font!.fullName!)")
-            
-            var error: Unmanaged<CFError>?
-            
-            if CTFontManagerRegisterGraphicsFont(font!, &error) == false {
-                let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
-                let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
-                NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
+    public enum Font: String, AwesomeFont {
+        case brand = "fa-brands-400"
+        case regular = "fa-regular-400"
+        case solid = "fa-solid-900"
+        case light = "fa-light-300"
+
+        public var file: String {
+            return rawValue
+        }
+
+        public var name: String {
+            switch self {
+                case .brand:
+                    return "Font Awesome 5 Brands"
+                case .regular, .solid, .light:
+                    return "Font Awesome 5 Pro"
             }
         }
-        #elseif os(OSX)
-        
-        #endif
+
+        public var memberName: String {
+            switch self {
+                case .brand:
+                    return "FontAwesome5ProBrands"
+                case .regular:
+                    return "FontAwesome5ProRegular"
+                case .solid:
+                    return "FontAwesome5ProSolid"
+                case .light:
+                    return "FontAwesome5ProLight"
+            }
+        }
+    }
+
+    static func loadFonts(from bundle: Bundle, only: [Font] = []) {
+        var fonts: [Font] = [.brand, .regular, .solid, .light]
+
+        if only.count > 0 {
+            fonts = fonts.filter { element in only.contains(element) }
+        }
+
+        for font in fonts {
+            Fonts.load(type: font, from: bundle)
+        }
+    }
+
+}
+
+class Fonts {
+
+    static func load(type: AwesomeFont, from bundle: Bundle? = nil) {
+        guard !Font.fontNames(forFamilyName: type.name).contains(type.memberName) else {
+            return
+        }
+
+        let fontBundle: Bundle!
+        if bundle == nil {
+            fontBundle = Bundle(for: Fonts.self)
+        } else {
+            fontBundle = bundle
+        }
+
+        let identifier = fontBundle.bundleIdentifier
+        let isCocoapods = identifier?.hasPrefix("org.cocoapods") == true
+
+        let fontURL = fontBundle.url(forResource: type.file, withExtension: "ttf", subdirectory: isCocoapods ? "Awesome.bundle" : nil)
+        guard let url = fontURL else {
+            return
+        }
+
+        let data = try! Data(contentsOf: url as URL)
+        let provider = CGDataProvider(data: data as CFData)
+        let font = CGFont(provider!)
+
+        var error: Unmanaged<CFError>?
+
+        if CTFontManagerRegisterGraphicsFont(font!, &error) == false {
+            let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
+            let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
+            NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
+        }
         
     }
     

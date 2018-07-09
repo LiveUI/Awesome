@@ -28,78 +28,179 @@ public extension Amazing {
 
 
 extension Awesome.brand {
-    
+
     public typealias AwesomeType = Awesome.brand
-    
+
     public static func fromType(_ code: String) -> AwesomeType? {
         guard let icon = AwesomeType(rawValue: code) else {
             return nil
         }
         return icon
     }
-    
+
     public var name: String {
         let index = AwesomeType.all.index(of: self)!
         let name = AwesomeType.keys[index]
         return name
     }
-    
+
     public var label: String {
         let index = AwesomeType.all.index(of: self)!
         let name = AwesomeType.labels[index]
         return name
     }
-    
+
 }
 
 extension Awesome.regular {
-    
+
     public typealias AwesomeType = Awesome.regular
-    
+
     public static func fromType(_ code: String) -> AwesomeType? {
         guard let icon = AwesomeType(rawValue: code) else {
             return nil
         }
         return icon
     }
-    
+
     public var name: String {
         let index = AwesomeType.all.index(of: self)!
         let name = AwesomeType.keys[index]
         return name
     }
-    
+
     public var label: String {
         let index = AwesomeType.all.index(of: self)!
         let name = AwesomeType.labels[index]
         return name
     }
-    
+
 }
 
 extension Awesome.solid {
-    
+
     public typealias AwesomeType = Awesome.solid
-    
+
     public static func fromType(_ code: String) -> AwesomeType? {
         guard let icon = AwesomeType(rawValue: code) else {
             return nil
         }
         return icon
     }
-    
+
     public var name: String {
         let index = AwesomeType.all.index(of: self)!
         let name = AwesomeType.keys[index]
         return name
     }
-    
+
     public var label: String {
         let index = AwesomeType.all.index(of: self)!
         let name = AwesomeType.labels[index]
         return name
     }
-    
+
+}
+
+
+extension AwesomePro.brand {
+
+    public typealias AwesomeType = AwesomePro.brand
+
+    public static func fromType(_ code: String) -> AwesomeType? {
+        guard let icon = AwesomeType(rawValue: code) else {
+            return nil
+        }
+        return icon
+    }
+
+    public var name: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.keys[index]
+        return name
+    }
+
+    public var label: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.labels[index]
+        return name
+    }
+
+}
+
+extension AwesomePro.regular {
+
+    public typealias AwesomeType = AwesomePro.regular
+
+    public static func fromType(_ code: String) -> AwesomeType? {
+        guard let icon = AwesomeType(rawValue: code) else {
+            return nil
+        }
+        return icon
+    }
+
+    public var name: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.keys[index]
+        return name
+    }
+
+    public var label: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.labels[index]
+        return name
+    }
+
+}
+
+extension AwesomePro.solid {
+
+    public typealias AwesomeType = AwesomePro.solid
+
+    public static func fromType(_ code: String) -> AwesomeType? {
+        guard let icon = AwesomeType(rawValue: code) else {
+            return nil
+        }
+        return icon
+    }
+
+    public var name: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.keys[index]
+        return name
+    }
+
+    public var label: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.labels[index]
+        return name
+    }
+
+}
+
+extension AwesomePro.light {
+
+    public typealias AwesomeType = AwesomePro.light
+
+    public static func fromType(_ code: String) -> AwesomeType? {
+        guard let icon = AwesomeType(rawValue: code) else {
+            return nil
+        }
+        return icon
+    }
+
+    public var name: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.keys[index]
+        return name
+    }
+
+    public var label: String {
+        let index = AwesomeType.all.index(of: self)!
+        let name = AwesomeType.labels[index]
+        return name
+    }
+
 }
 
 
