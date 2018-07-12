@@ -8,11 +8,11 @@
 
 Pod::Spec.new do |s|
     s.name             = 'AwesomeEnum'
-    s.version          = '1.2.0'
-    s.summary          = 'Swift implementation of Font Awesome 5!'
+    s.version          = '1.3.0'
+    s.summary          = 'Swift implementation of Font Awesome 5 and Font Awesome 5 Pro!'
     s.swift_version    = '4.0'
 
-    s.description      = 'Swift implementation of Font Awesome 5 allows you to implement this amazing web font on iOS, tvOS and macOS devices easily!'
+    s.description      = 'Swift implementation of Font Awesome 5 and Font Awesome 5 Pro allows you to implement this amazing web font on iOS, tvOS and macOS devices easily!'
 
     s.homepage         = 'https://github.com/LiveUI/Awesome'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
