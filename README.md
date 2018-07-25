@@ -57,7 +57,7 @@ let attributedText = Awesome.regular.envelopeOpen.asAttributedText(fontSize: 17,
 The Font Awesome Free files are included and loaded for you out of the box. Font Awesome Pro licensing terms don't allow to publish the font files however, so we can't add those for you. As such you will need to manually add the fonts to your project and register them before using them:
 
 ```swift
-// AppDelegate application(:didFinishLaunchingWithOptions:)
+// AppDelegate application(_:didFinishLaunchingWithOptions:)
 
 // Load all fonts
 AwesomePro.loadFonts(from: Bundle.main)
