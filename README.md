@@ -1,6 +1,6 @@
 # Awesome
 
-[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-5.1.0-brightgreen.svg)](https://fontawesome.com/v5.1.0/icons)
+[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-5.2.0-brightgreen.svg)](https://fontawesome.com/v5.2.0/icons)
 [![Slack](https://img.shields.io/badge/join-slack-745EAF.svg?style=flat)](http://bit.ly/2B0dEyt)
 [![Version](https://img.shields.io/cocoapods/v/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
 [![License](https://img.shields.io/cocoapods/l/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
@@ -57,7 +57,7 @@ let attributedText = Awesome.regular.envelopeOpen.asAttributedText(fontSize: 17,
 The Font Awesome Free files are included and loaded for you out of the box. Font Awesome Pro licensing terms don't allow to publish the font files however, so we can't add those for you. As such you will need to manually add the fonts to your project and register them before using them:
 
 ```swift
-// AppDelegate application(:didFinishLaunchingWithOptions:)
+// AppDelegate application(_:didFinishLaunchingWithOptions:)
 
 // Load all fonts
 AwesomePro.loadFonts(from: Bundle.main)
