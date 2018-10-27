@@ -26,7 +26,7 @@ public extension NSAttributedString {
         paragraph.alignment = .center
         let attributes = [NSAttributedString.Key.font: font, .foregroundColor: color, .backgroundColor: backgroundColor, .paragraphStyle: paragraph]
         
-        let attributedString = NSAttributedString(string: icon.code, attributes: attributes)
+        let attributedString = NSAttributedString(string: icon.rawValue, attributes: attributes)
         
         return attributedString
     }
