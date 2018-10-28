@@ -7,10 +7,11 @@
 
 import Foundation
 
-public protocol AwesomeFont {
+public protocol AwesomeFont: CustomStringConvertible {
 
     var file: String { get }
-    var name: String { get }
     var memberName: String { get }
 
+    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .description instead.")
+    var name: String { get }
 }

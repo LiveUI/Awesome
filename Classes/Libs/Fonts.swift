@@ -10,6 +10,12 @@ import CoreGraphics
 import CoreText
 
 
+public extension AwesomeFont {
+    public var name: String {
+        return self.description
+    }
+}
+
 public extension Awesome {
     
     public enum Font: String, AwesomeFont {
@@ -21,7 +27,7 @@ public extension Awesome {
             return rawValue
         }
         
-        public var name: String {
+        public var description: String {
             switch self {
             case .brand:
                 return "Font Awesome 5 Brands"
@@ -55,8 +61,8 @@ public extension AwesomePro {
         public var file: String {
             return rawValue
         }
-
-        public var name: String {
+        
+        public var description: String {
             switch self {
                 case .brand:
                     return "Font Awesome 5 Brands"
@@ -96,7 +102,7 @@ public extension AwesomePro {
 class Fonts {
 
     static func load(type: AwesomeFont, from bundle: Bundle? = nil) {
-        guard !Font.fontNames(forFamilyName: type.name).contains(type.memberName) else {
+        guard !Font.fontNames(forFamilyName: type.description).contains(type.memberName) else {
             return
         }
 
