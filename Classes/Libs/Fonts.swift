@@ -11,9 +11,12 @@ import CoreText
 
 
 public extension AwesomeFont {
+    
+    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .description instead.")
     public var name: String {
         return self.description
     }
+    
 }
 
 public extension Awesome {
