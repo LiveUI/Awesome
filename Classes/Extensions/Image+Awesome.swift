@@ -19,7 +19,7 @@ public extension Image {
     public convenience init<AmazingType: Amazing>(icon: AmazingType, size: CGSize, color: Color = .black, backgroundColor: Color = .clear) {
         let fontAspectRatio: CGFloat = 1.28571429
         let fontSize = min(size.width / fontAspectRatio, size.height)
-        let attributedString = NSAttributedString.awesome(icon: icon, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
+        let attributedString = NSAttributedString(icon: icon, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
         
         #if os(iOS) || os(watchOS) || os(tvOS)
             UIGraphicsBeginImageContextWithOptions(size, false , 0.0)

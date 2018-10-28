@@ -7,14 +7,35 @@
 //
 
 import Foundation
+#if os(iOS) || os(watchOS) || os(tvOS)
+    import UIKit
+#elseif os(OSX)
+    import Cocoa
+#endif
 
 extension StringProtocol {
+    
     var firstUppercased: String {
         guard let first = first else { return "" }
         return String(first).uppercased() + dropFirst()
     }
+    
     var firstCapitalized: String {
         guard let first = first else { return "" }
         return String(first).capitalized + dropFirst()
     }
+    
+    func camelCaseToString(with separator: String = " ") -> String {
+        let string = self.firstUppercased
+        let regex = try! NSRegularExpression(pattern: "([A-Z][a-z\\.]*)")
+        let range = NSRange(string.startIndex..., in: string)
+        
+        return regex.matches(
+            in: string,
+            options: .anchored,
+            range: range )
+            .map { String(string[Range($0.range, in: string)!]) }
+            .joined(separator: separator)
+    }
+    
 }
