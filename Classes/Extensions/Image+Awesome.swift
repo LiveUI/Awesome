@@ -16,7 +16,7 @@ import Foundation
 
 public extension Image {
     
-    public convenience init(icon: Amazing, size: CGSize, color: Color = Color.black, backgroundColor: Color = Color.clear) {
+    public convenience init<AmazingType: Amazing>(icon: AmazingType, size: CGSize, color: Color = .black, backgroundColor: Color = .clear) {
         let fontAspectRatio: CGFloat = 1.28571429
         let fontSize = min(size.width / fontAspectRatio, size.height)
         let attributedString = NSAttributedString.awesome(icon: icon, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
@@ -53,14 +53,14 @@ public extension Image {
         #endif
     }
     
-    public convenience init(icon: Amazing, size: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) {
+    public convenience init<AmazingType:Amazing>(icon: AmazingType, size: CGFloat, color: Color = .black, backgroundColor: Color = .clear) {
         self.init(icon: icon, size: CGSize.init(width: size, height: size), color: color, backgroundColor: backgroundColor)
     }
     
     
     #if os(iOS) || os(watchOS) || os(tvOS)
     
-    public convenience init(topIcon: Amazing, bottomIcon: Amazing, topIconColor: Color = .black, bottomIconColor: Color = .black, backgroundColor: Color = .clear, size: CGSize? = nil) {
+    public convenience init<AmazingType:Amazing>(topIcon: AmazingType, bottomIcon: AmazingType, topIconColor: Color = .black, bottomIconColor: Color = .black, backgroundColor: Color = .clear, size: CGSize? = nil) {
         let bgSize: CGSize = size ?? CGSize(width: 32, height: 32)
         let topSize: CGSize = CGSize(width: 2 * bgSize.width, height: 2 * bgSize.height)
         
@@ -88,5 +88,3 @@ public extension Image {
     #endif
     
 }
-
-

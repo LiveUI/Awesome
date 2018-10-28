@@ -15,7 +15,7 @@ import Foundation
 
 public extension NSAttributedString {
     
-    public static func awesome(icon: Amazing, fontSize: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> NSAttributedString {
+    public static func awesome<AmazingType:Amazing>(icon: AmazingType, fontSize: CGFloat, color: Color = .black, backgroundColor: Color = .clear) -> NSAttributedString {
         Fonts.load(type: icon.fontType)
         
         guard let font = Font(name: icon.fontType.memberName, size: fontSize) else {

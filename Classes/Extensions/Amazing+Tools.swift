@@ -25,317 +25,90 @@ public extension Amazing {
     
 }
 
+extension Awesome {
+    @available(*, deprecated, renamed: "Brand")
+    public typealias brand = Awesome.Brand
+    
+    @available(*, deprecated, renamed: "Regular")
+    public typealias regular = Awesome.Regular
+    
+    @available(*, deprecated, renamed: "Solid")
+    public typealias solid = Awesome.Solid
+}
+
+extension AwesomePro {
+    @available(*, deprecated, renamed: "Brand")
+    public typealias brand = AwesomePro.Brand
+    
+    @available(*, deprecated, renamed: "Regular")
+    public typealias regular = AwesomePro.Regular
+    
+    @available(*, deprecated, renamed: "Solid")
+    public typealias solid = AwesomePro.Solid
+    
+    @available(*, deprecated, renamed: "Light")
+    public typealias light = AwesomePro.Light
+}
+
 extension Awesome.Brand {
-    
-    public var code: String {
-        return self.rawValue
-    }
-    
-    public var key: String {
-        return String(describing: self)
-    }
-    
-    public var description: String {
-        return String(describing: self).split(separator: "-").map { $0.firstUppercased }.joined(separator: " ")
-    }
-    
-    public var name: String {
-        return self.key
-    }
-    
-    public var label: String {
-        return self.description
-    }
     
     @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
     public static var all: [Awesome.brand] {
         return allCases
     }
-    
-    public static var allKeys: [String] {
-        return allCases.map { $0.key }
-    }
-    
-    public static var allDescriptions: [String] {
-        return allCases.map { $0.description }
-    }
-    
-    public static var keys: [String] {
-        return allKeys
-    }
-    
-    public static var labels: [String] {
-        return allDescriptions
-    }
-    
+        
 }
 
 extension Awesome.Regular {
-    
-    public var code: String {
-        return self.rawValue
-    }
-    
-    public var key: String {
-        return String(describing: self)
-    }
-    
-    public var description: String {
-        return String(describing: self).split(separator: "-").map { $0.firstUppercased }.joined(separator: " ")
-    }
-    
-    public var name: String {
-        return self.key
-    }
-    
-    public var label: String {
-        return self.description
-    }
     
     @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
     public static var all: [Awesome.regular] {
         return allCases
     }
     
-    public static var allKeys: [String] {
-        return allCases.map { $0.key }
-    }
-    
-    public static var allDescriptions: [String] {
-        return allCases.map { $0.description }
-    }
-    
-    public static var keys: [String] {
-        return allKeys
-    }
-    
-    public static var labels: [String] {
-        return allDescriptions
-    }
-    
 }
 
 extension Awesome.Solid {
-    
-    public var code: String {
-        return self.rawValue
-    }
-    
-    public var key: String {
-        return String(describing: self)
-    }
-    
-    public var description: String {
-        return String(describing: self).split(separator: "-").map { $0.firstUppercased }.joined(separator: " ")
-    }
-    
-    public var name: String {
-        return self.key
-    }
-    
-    public var label: String {
-        return self.description
-    }
     
     @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
     public static var all: [Awesome.solid] {
         return allCases
     }
     
-    public static var allKeys: [String] {
-        return allCases.map { $0.key }
-    }
-    
-    public static var allDescriptions: [String] {
-        return allCases.map { $0.description }
-    }
-    
-    public static var keys: [String] {
-        return allKeys
-    }
-    
-    public static var labels: [String] {
-        return allDescriptions
-    }
-    
 }
 
 extension AwesomePro.Brand {
-    
-    public var code: String {
-        return self.rawValue
-    }
-    
-    public var key: String {
-        return String(describing: self)
-    }
-    
-    public var description: String {
-        return String(describing: self).split(separator: "-").map { $0.firstUppercased }.joined(separator: " ")
-    }
-    
-    public var name: String {
-        return self.key
-    }
-    
-    public var label: String {
-        return self.description
-    }
     
     @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
     public static var all: [AwesomePro.brand] {
         return allCases
     }
     
-    public static var allKeys: [String] {
-        return allCases.map { $0.key }
-    }
-    
-    public static var allDescriptions: [String] {
-        return allCases.map { $0.description }
-    }
-    
-    public static var keys: [String] {
-        return allKeys
-    }
-    
-    public static var labels: [String] {
-        return allDescriptions
-    }
-    
 }
 
 extension AwesomePro.Regular {
-    
-    public var code: String {
-        return self.rawValue
-    }
-    
-    public var key: String {
-        return String(describing: self)
-    }
-    
-    public var description: String {
-        return String(describing: self).split(separator: "-").map { $0.firstUppercased }.joined(separator: " ")
-    }
-    
-    public var name: String {
-        return self.key
-    }
-    
-    public var label: String {
-        return self.description
-    }
     
     @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
     public static var all: [AwesomePro.regular] {
         return allCases
     }
     
-    public static var allKeys: [String] {
-        return allCases.map { $0.key }
-    }
-    
-    public static var allDescriptions: [String] {
-        return allCases.map { $0.description }
-    }
-    
-    public static var keys: [String] {
-        return allKeys
-    }
-    
-    public static var labels: [String] {
-        return allDescriptions
-    }
-    
 }
 
 extension AwesomePro.Solid {
-    
-    public var code: String {
-        return self.rawValue
-    }
-    
-    public var key: String {
-        return String(describing: self)
-    }
-    
-    public var description: String {
-        return String(describing: self).split(separator: "-").map { $0.firstUppercased }.joined(separator: " ")
-    }
-    
-    public var name: String {
-        return self.key
-    }
-    
-    public var label: String {
-        return self.description
-    }
     
     @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
     public static var all: [AwesomePro.solid] {
         return allCases
     }
     
-    public static var allKeys: [String] {
-        return allCases.map { $0.key }
-    }
-    
-    public static var allDescriptions: [String] {
-        return allCases.map { $0.description }
-    }
-    
-    public static var keys: [String] {
-        return allKeys
-    }
-    
-    public static var labels: [String] {
-        return allDescriptions
-    }
-    
 }
 
 extension AwesomePro.Light {
     
-    public var code: String {
-        return self.rawValue
-    }
-    
-    public var key: String {
-        return String(describing: self)
-    }
-    
-    public var description: String {
-        return String(describing: self).split(separator: "-").map { $0.firstUppercased }.joined(separator: " ")
-    }
-
-    public var name: String {
-        return self.key
-    }
-    
-    public var label: String {
-        return self.description
-    }
-
     @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
     public static var all: [AwesomePro.light] {
         return allCases
     }
     
-    public static var allKeys: [String] {
-        return allCases.map { $0.key }
-    }
-
-    public static var allDescriptions: [String] {
-        return allCases.map { $0.description }
-    }
-
-    public static var keys: [String] {
-        return allKeys
-    }
-
-    public static var labels: [String] {
-        return allDescriptions
-    }
-
 }

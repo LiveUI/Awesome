@@ -12,9 +12,7 @@ func buildEnum (_ name: String, from styles: [String: [Icon]]) -> String {
     for (var style, list) in styles {
         if style == "brands" { style = "brand" }
 
-        content += "\n    @available(*, deprecated, renamed: \"\(style.firstUppercased())\")"
-        content += "\n    public typealias \(style) = \(style.firstUppercased())"
-        content += "\n    public enum \(style.firstUppercased()): String, CaseIterable, Amazing {\n"
+        content += "\n    public enum \(style.firstUppercased()): String, Amazing {\n"
         var names = [String]()
         for icon in list {
             var name = icon.name.split(separator: "-").map { $0.firstUppercased() }.joined(separator: "")

@@ -5,14 +5,12 @@
 //  Originally created by Ondrej Rafaj on 13/10/2017.
 //  Copyright © 2017 manGoweb UK. All rights reserved.
 //
-//  This file has been auto-generated on 27/10/2018 18:12.
+//  This file has been auto-generated on 28/10/2018 08:25.
 
 import Foundation
 
 public struct AwesomePro {
 
-    @available(*, deprecated, renamed: "Brand")
-    public typealias brand = Brand
     public enum Brand: String, CaseIterable, Amazing {
         case fa500px = "\u{f26e}"
         case accessibleIcon = "\u{f368}"
@@ -410,8 +408,6 @@ public struct AwesomePro {
         }
     }
 
-    @available(*, deprecated, renamed: "Light")
-    public typealias light = Light
     public enum Light: String, CaseIterable, Amazing {
         case abacus = "\u{f640}"
         case acorn = "\u{f6ae}"
@@ -1743,8 +1739,6 @@ public struct AwesomePro {
         }
     }
 
-    @available(*, deprecated, renamed: "Solid")
-    public typealias solid = Solid
     public enum Solid: String, CaseIterable, Amazing {
         case abacus = "\u{f640}"
         case acorn = "\u{f6ae}"
@@ -3076,8 +3070,6 @@ public struct AwesomePro {
         }
     }
 
-    @available(*, deprecated, renamed: "Regular")
-    public typealias regular = Regular
     public enum Regular: String, CaseIterable, Amazing {
         case abacus = "\u{f640}"
         case acorn = "\u{f6ae}"
