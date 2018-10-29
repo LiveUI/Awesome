@@ -11,14 +11,35 @@ import CoreGraphics
 
 public extension Amazing {
     
+    /// Returns an image with the selected icon
+    ///
+    /// - Parameters:
+    ///   - size: the size of the returned image
+    ///   - color: the foreground color of the icon
+    ///   - backgroundColor: the background color of the icon
+    /// - Returns: an image that contains the selected icon
     public func asImage(size: CGSize, color: Color = Color.black, backgroundColor: Color = Color.clear) -> Image {
         return Image(icon: self, size: size, color: color, backgroundColor: backgroundColor)
     }
     
+    /// Returns a square image with the selected icon
+    ///
+    /// - Parameters:
+    ///   - size: the height and width of the returned image
+    ///   - color: the foreground color of the icon
+    ///   - backgroundColor: the background color of the icon
+    /// - Returns: a square image that contains the selected icon
     public func asImage(size: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> Image {
         return Image(icon: self, size: CGSize(width: size, height: size), color: color, backgroundColor: backgroundColor)
     }
     
+    /// Returns an attributed string with the selected icon
+    ///
+    /// - Parameters:
+    ///   - fontSize: the size of the font used in the string
+    ///   - color: the foreground color of the selected icon
+    ///   - backgroundColor: the background color of the selected icon
+    /// - Returns: an attributed string that contains the selected icon
     public func asAttributedText(fontSize: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> NSAttributedString {
         return NSAttributedString(icon: self, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
     }
@@ -27,12 +48,16 @@ public extension Amazing {
 
 extension Amazing {
     
-    public var key: String {
+    public var detailedKey: String {
         return String(reflecting: self)
             .split(separator: ".")
             .suffix(3)
             .map { String($0).camelCaseToString(with: "-").lowercased() }
             .joined(separator: ".")
+    }
+    
+    public var key: String {
+        return String(describing: self).lowercased()
     }
     
     public var description: String {
@@ -41,6 +66,10 @@ extension Amazing {
     
     public static var allKeys: [String] {
         return allCases.map { $0.key }
+    }
+
+    public static var allDetailedKeys: [String] {
+        return allCases.map { $0.detailedKey }
     }
     
     public static var allDescriptions: [String] {
@@ -62,7 +91,7 @@ extension Amazing {
         return self.rawValue
     }
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .key instead.")
+    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .key or .detailedKey instead.")
     public var name: String {
         return String(describing: self).camelCaseToString(with: "-").lowercased()
     }
