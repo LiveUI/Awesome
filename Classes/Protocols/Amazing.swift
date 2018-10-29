@@ -18,7 +18,7 @@ public protocol Amazing: RawRepresentable, CaseIterable where RawValue == String
     /// Returns a human readable string that describes the icon
     var description: String { get }
     
-    /// Retuns an object with information about the font used by the icon
+    /// Returns an object with information about the font used by the icon
     var fontType: AwesomeFont { get }
     
     /// An array with all keys of all icons of the font style

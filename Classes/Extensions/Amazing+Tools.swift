@@ -48,6 +48,7 @@ public extension Amazing {
 
 extension Amazing {
     
+    /// Returns an unique identifier string that contains the font name, font style and icon name
     public var detailedKey: String {
         return String(reflecting: self)
             .split(separator: ".")
@@ -56,22 +57,27 @@ extension Amazing {
             .joined(separator: ".")
     }
     
+    /// Returns an unique identifier string that contains the icon name
     public var key: String {
         return String(describing: self).lowercased()
     }
     
+    /// Returns a human readable string that describes the icon
     public var description: String {
         return String(describing: self).camelCaseToString()
     }
     
+    /// An array with all keys of all icons of the font style
     public static var allKeys: [String] {
         return allCases.map { $0.key }
     }
 
+    /// An array with all detailed keys of all icons of the font style
     public static var allDetailedKeys: [String] {
         return allCases.map { $0.detailedKey }
     }
     
+    /// An array with all human readable descriptions of all icons of the font style
     public static var allDescriptions: [String] {
         return allCases.map { $0.description }
     }
