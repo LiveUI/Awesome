@@ -9,6 +9,7 @@ import Foundation
 
 public protocol Amazing: RawRepresentable, CaseIterable where RawValue == String {
     
+    // Test comment
     var key: String { get }
     var description: String { get }
     var fontType: AwesomeFont { get }
