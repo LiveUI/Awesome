@@ -1,6 +1,6 @@
 # Awesome
 
-[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-5.4.1-brightgreen.svg)](https://fontawesome.com/v5.4.1/icons)
+[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-5.4.2-brightgreen.svg)](https://fontawesome.com/v5.4.2/icons)
 [![Slack](https://img.shields.io/badge/join-slack-745EAF.svg?style=flat)](http://bit.ly/2B0dEyt)
 [![Version](https://img.shields.io/cocoapods/v/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
 [![License](https://img.shields.io/cocoapods/l/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
@@ -75,6 +75,7 @@ Once the fonts are registered you can use the `AwesomePro` enum just as you'd us
 - **Author**: Ondrej Rafaj , development@mangoweb.cz
 - Christopher Mühl , christopher@padarom.io
 - David Walter, hi@davidwalter.at
+- Georg von der Howen, georg@beaconeer.com
 
 ## License
 
