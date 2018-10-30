@@ -40,6 +40,10 @@
 		15116D6A20761F0A00BC08D3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2B20761C3300BC08D3 /* Fonts.swift */; };
 		15116D6B20761F0A00BC08D3 /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
 		15116D6C20761F0A00BC08D3 /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
+		63202F172185E62B008928EF /* StringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63202F162185E62B008928EF /* StringProtocol.swift */; };
+		63202F182185E62B008928EF /* StringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63202F162185E62B008928EF /* StringProtocol.swift */; };
+		63202F192185E62B008928EF /* StringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63202F162185E62B008928EF /* StringProtocol.swift */; };
+		63202F1A2185E62B008928EF /* StringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63202F162185E62B008928EF /* StringProtocol.swift */; };
 		639016C120F26235006F56AE /* AwesomeEnum_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 639016BF20F26235006F56AE /* AwesomeEnum_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		639016C520F2628F006F56AE /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3020761C3300BC08D3 /* fa-solid-900.ttf */; };
 		639016C620F2628F006F56AE /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3120761C3300BC08D3 /* fa-regular-400.ttf */; };
@@ -84,6 +88,7 @@
 		15116D6F2076203F00BC08D3 /* AwesomeEnum.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = AwesomeEnum.podspec; sourceTree = "<group>"; };
 		156225A9207B9FF90037CECA /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		156225AA207B9FF90037CECA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		63202F162185E62B008928EF /* StringProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringProtocol.swift; sourceTree = "<group>"; };
 		639016BD20F26234006F56AE /* Awesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Awesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		639016BF20F26235006F56AE /* AwesomeEnum_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeEnum_watchOS.h; sourceTree = "<group>"; };
 		639016C020F26235006F56AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -180,6 +185,7 @@
 				15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */,
 				15116D2820761C3300BC08D3 /* Amazing+Tools.swift */,
 				15116D2920761C3300BC08D3 /* Image+Awesome.swift */,
+				63202F162185E62B008928EF /* StringProtocol.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -466,6 +472,7 @@
 				15116D3720761C3300BC08D3 /* Fonts.swift in Sources */,
 				15116D3920761C3300BC08D3 /* Amazing.swift in Sources */,
 				15116D3620761C3300BC08D3 /* Image+Awesome.swift in Sources */,
+				63202F172185E62B008928EF /* StringProtocol.swift in Sources */,
 				15116D3820761C3300BC08D3 /* Crossplatform.swift in Sources */,
 				9D338AF620DA7A04001F8AEA /* AwesomePro.swift in Sources */,
 				9D338AFA20DA7A52001F8AEA /* AwesomeFont.swift in Sources */,
@@ -482,6 +489,7 @@
 				15116D6020761F0A00BC08D3 /* Fonts.swift in Sources */,
 				15116D6220761F0A00BC08D3 /* Amazing.swift in Sources */,
 				15116D5F20761F0A00BC08D3 /* Image+Awesome.swift in Sources */,
+				63202F182185E62B008928EF /* StringProtocol.swift in Sources */,
 				15116D6120761F0A00BC08D3 /* Crossplatform.swift in Sources */,
 				9D338AF720DA7A04001F8AEA /* AwesomePro.swift in Sources */,
 				9D338AFB20DA7A52001F8AEA /* AwesomeFont.swift in Sources */,
@@ -498,6 +506,7 @@
 				15116D6A20761F0A00BC08D3 /* Fonts.swift in Sources */,
 				15116D6C20761F0A00BC08D3 /* Amazing.swift in Sources */,
 				15116D6920761F0A00BC08D3 /* Image+Awesome.swift in Sources */,
+				63202F192185E62B008928EF /* StringProtocol.swift in Sources */,
 				15116D6B20761F0A00BC08D3 /* Crossplatform.swift in Sources */,
 				9D338AF820DA7A04001F8AEA /* AwesomePro.swift in Sources */,
 				9D338AFC20DA7A52001F8AEA /* AwesomeFont.swift in Sources */,
@@ -514,6 +523,7 @@
 				639016CC20F26298006F56AE /* Image+Awesome.swift in Sources */,
 				639016CB20F26298006F56AE /* Amazing+Tools.swift in Sources */,
 				639016CE20F2629B006F56AE /* Crossplatform.swift in Sources */,
+				63202F1A2185E62B008928EF /* StringProtocol.swift in Sources */,
 				639016C820F26294006F56AE /* Awesome.swift in Sources */,
 				639016CD20F2629B006F56AE /* Fonts.swift in Sources */,
 				639016D020F2629F006F56AE /* AwesomeFont.swift in Sources */,
@@ -718,7 +728,7 @@
 				PRODUCT_NAME = Awesome;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -745,7 +755,7 @@
 				PRODUCT_NAME = Awesome;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -769,7 +779,7 @@
 				PRODUCT_NAME = Awesome;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -795,7 +805,7 @@
 				PRODUCT_NAME = Awesome;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -823,7 +833,7 @@
 				PRODUCT_NAME = Awesome;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
@@ -851,7 +861,7 @@
 				PRODUCT_NAME = Awesome;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};

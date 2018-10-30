@@ -12,7 +12,7 @@ func buildEnum (_ name: String, from styles: [String: [Icon]]) -> String {
     for (var style, list) in styles {
         if style == "brands" { style = "brand" }
 
-        content += "\n    public enum \(style): String, Amazing {\n"
+        content += "\n    public enum \(style.firstUppercased()): String, Amazing {\n"
         var names = [String]()
         for icon in list {
             var name = icon.name.split(separator: "-").map { $0.firstUppercased() }.joined(separator: "")
@@ -22,13 +22,7 @@ func buildEnum (_ name: String, from styles: [String: [Icon]]) -> String {
 
             content += "        case \(name.isKeyword ? "`\(name)`" : name) = \"\\u{\(icon.unicode)}\"\n"
         }
-
-        content += "\n        public static var all: [\(style)] {\n            return [ \(names.map {"\(style).\($0)"}.joined(separator: ", ")) ]\n        }\n"
-        content += "\n        public static var keys: [String] {\n            return [ \(list.map {"\"\($0.name)\""}.joined(separator: ", ")) ]\n        }\n"
-        content += "\n        public static var labels: [String] {\n            return [ \(list.map {"\"\($0.name.split(separator: "-").map { $0.firstUppercased() }.joined(separator: " "))\""}.joined(separator: ", ")) ]\n        }\n"
-        content += "\n        public var code: String {\n            return rawValue\n        }\n"
         content += "\n        public var fontType: AwesomeFont {\n            return \(name).Font.\(style)\n        }\n"
-
         content += "    }\n"
 
         print("  Style \"\(style)\" has \(list.count) icons.")

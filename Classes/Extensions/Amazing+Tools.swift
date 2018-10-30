@@ -9,198 +9,216 @@
 import Foundation
 import CoreGraphics
 
-
 public extension Amazing {
     
+    /// Returns an image with the selected icon
+    ///
+    /// - Parameters:
+    ///   - size: the size of the returned image
+    ///   - color: the foreground color of the icon
+    ///   - backgroundColor: the background color of the icon
+    /// - Returns: an image that contains the selected icon
     public func asImage(size: CGSize, color: Color = Color.black, backgroundColor: Color = Color.clear) -> Image {
         return Image(icon: self, size: size, color: color, backgroundColor: backgroundColor)
     }
     
+    /// Returns a square image with the selected icon
+    ///
+    /// - Parameters:
+    ///   - size: the height and width of the returned image
+    ///   - color: the foreground color of the icon
+    ///   - backgroundColor: the background color of the icon
+    /// - Returns: a square image that contains the selected icon
     public func asImage(size: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> Image {
         return Image(icon: self, size: CGSize(width: size, height: size), color: color, backgroundColor: backgroundColor)
     }
     
+    /// Returns an attributed string with the selected icon
+    ///
+    /// - Parameters:
+    ///   - fontSize: the size of the font used in the string
+    ///   - color: the foreground color of the selected icon
+    ///   - backgroundColor: the background color of the selected icon
+    /// - Returns: an attributed string that contains the selected icon
     public func asAttributedText(fontSize: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> NSAttributedString {
-        return NSAttributedString.awesome(icon: self, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
+        return NSAttributedString(icon: self, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
     }
     
 }
 
+extension Amazing {
+    
+    /// Returns an unique identifier string that contains the font name, font style and icon name
+    public var detailedKey: String {
+        return String(reflecting: self)
+            .split(separator: ".")
+            .suffix(3)
+            .map { String($0).camelCaseToString(with: "-").lowercased() }
+            .joined(separator: ".")
+    }
+    
+    /// Returns an unique identifier string that contains the icon name
+    public var key: String {
+        return String(describing: self).lowercased()
+    }
+    
+    /// Returns a human readable string that describes the icon
+    public var description: String {
+        return String(describing: self).camelCaseToString()
+    }
+    
+    /// An array with all keys of all icons of the font style
+    public static var allKeys: [String] {
+        return allCases.map { $0.key }
+    }
 
-extension Awesome.brand {
-
-    public typealias AwesomeType = Awesome.brand
-
-    public static func fromType(_ code: String) -> AwesomeType? {
-        guard let icon = AwesomeType(rawValue: code) else {
-            return nil
+    /// An array with all detailed keys of all icons of the font style
+    public static var allDetailedKeys: [String] {
+        return allCases.map { $0.detailedKey }
+    }
+    
+    /// An array with all human readable descriptions of all icons of the font style
+    public static var allDescriptions: [String] {
+        return allCases.map { $0.description }
+    }
+    
+    // MARK: - Removed
+    
+    @available(*, unavailable, renamed: "allKeys")
+    public static var keys: [String] {
+        get {
+            fatalError()
         }
-        return icon
     }
-
+    
+    @available(*, unavailable, renamed: "allDescriptions")
+    public static var labels: [String] {
+        get {
+            fatalError()
+        }
+    }
+    
+    @available(*, unavailable, renamed: "rawValue")
+    public var code: String {
+        get {
+            fatalError()
+        }
+    }
+    
+    @available(*, unavailable, renamed: "key")
     public var name: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.keys[index]
-        return name
+        get {
+            fatalError()
+        }
     }
-
+    
+    @available(*, unavailable, renamed: "description")
     public var label: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.labels[index]
-        return name
+        get {
+            fatalError()
+        }
     }
-
+    
 }
 
-extension Awesome.regular {
-
-    public typealias AwesomeType = Awesome.regular
-
-    public static func fromType(_ code: String) -> AwesomeType? {
-        guard let icon = AwesomeType(rawValue: code) else {
-            return nil
-        }
-        return icon
-    }
-
-    public var name: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.keys[index]
-        return name
-    }
-
-    public var label: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.labels[index]
-        return name
-    }
-
+extension Awesome {
+    @available(*, unavailable, renamed: "Brand")
+    public typealias brand = Awesome.Brand
+    
+    @available(*, unavailable, renamed: "Regular")
+    public typealias regular = Awesome.Regular
+    
+    @available(*, unavailable, renamed: "Solid")
+    public typealias solid = Awesome.Solid
 }
 
-extension Awesome.solid {
-
-    public typealias AwesomeType = Awesome.solid
-
-    public static func fromType(_ code: String) -> AwesomeType? {
-        guard let icon = AwesomeType(rawValue: code) else {
-            return nil
-        }
-        return icon
-    }
-
-    public var name: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.keys[index]
-        return name
-    }
-
-    public var label: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.labels[index]
-        return name
-    }
-
+extension AwesomePro {
+    @available(*, unavailable, renamed: "Brand")
+    public typealias brand = AwesomePro.Brand
+    
+    @available(*, unavailable, renamed: "Regular")
+    public typealias regular = AwesomePro.Regular
+    
+    @available(*, unavailable, renamed: "Solid")
+    public typealias solid = AwesomePro.Solid
+    
+    @available(*, unavailable, renamed: "Light")
+    public typealias light = AwesomePro.Light
 }
 
-
-extension AwesomePro.brand {
-
-    public typealias AwesomeType = AwesomePro.brand
-
-    public static func fromType(_ code: String) -> AwesomeType? {
-        guard let icon = AwesomeType(rawValue: code) else {
-            return nil
+extension Awesome.Brand {
+    
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [Awesome.Brand] {
+        get {
+            fatalError()
         }
-        return icon
     }
-
-    public var name: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.keys[index]
-        return name
-    }
-
-    public var label: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.labels[index]
-        return name
-    }
-
+        
 }
 
-extension AwesomePro.regular {
-
-    public typealias AwesomeType = AwesomePro.regular
-
-    public static func fromType(_ code: String) -> AwesomeType? {
-        guard let icon = AwesomeType(rawValue: code) else {
-            return nil
+extension Awesome.Regular {
+    
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [Awesome.Regular] {
+        get {
+            fatalError()
         }
-        return icon
     }
-
-    public var name: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.keys[index]
-        return name
-    }
-
-    public var label: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.labels[index]
-        return name
-    }
-
+    
 }
 
-extension AwesomePro.solid {
-
-    public typealias AwesomeType = AwesomePro.solid
-
-    public static func fromType(_ code: String) -> AwesomeType? {
-        guard let icon = AwesomeType(rawValue: code) else {
-            return nil
+extension Awesome.Solid {
+    
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [Awesome.Solid] {
+        get {
+            fatalError()
         }
-        return icon
     }
-
-    public var name: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.keys[index]
-        return name
-    }
-
-    public var label: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.labels[index]
-        return name
-    }
-
+    
 }
 
-extension AwesomePro.light {
-
-    public typealias AwesomeType = AwesomePro.light
-
-    public static func fromType(_ code: String) -> AwesomeType? {
-        guard let icon = AwesomeType(rawValue: code) else {
-            return nil
+extension AwesomePro.Brand {
+    
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [AwesomePro.Brand] {
+        get {
+            fatalError()
         }
-        return icon
     }
-
-    public var name: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.keys[index]
-        return name
-    }
-
-    public var label: String {
-        let index = AwesomeType.all.index(of: self)!
-        let name = AwesomeType.labels[index]
-        return name
-    }
-
+    
 }
 
+extension AwesomePro.Regular {
+    
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [AwesomePro.Regular] {
+        get {
+            fatalError()
+        }
+    }
+    
+}
 
+extension AwesomePro.Solid {
+    
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [AwesomePro.Solid] {
+        get {
+            fatalError()
+        }
+    }
+    
+}
+
+extension AwesomePro.Light {
+    
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [AwesomePro.Light] {
+        get {
+            fatalError()
+        }
+    }
+    
+}

@@ -15,7 +15,7 @@ import Foundation
 
 public extension NSAttributedString {
     
-    public static func awesome(icon: Amazing, fontSize: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> NSAttributedString {
+    public convenience init<AmazingType: Amazing>(icon: AmazingType, fontSize: CGFloat, color: Color = .black, backgroundColor: Color = .clear) {
         Fonts.load(type: icon.fontType)
         
         guard let font = Font(name: icon.fontType.memberName, size: fontSize) else {
@@ -26,9 +26,7 @@ public extension NSAttributedString {
         paragraph.alignment = .center
         let attributes = [NSAttributedString.Key.font: font, .foregroundColor: color, .backgroundColor: backgroundColor, .paragraphStyle: paragraph]
         
-        let attributedString = NSAttributedString(string: icon.code, attributes: attributes)
-        
-        return attributedString
+        self.init(string: icon.rawValue, attributes: attributes)
     }
     
 }
