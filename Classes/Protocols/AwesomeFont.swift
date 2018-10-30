@@ -14,10 +14,5 @@ public protocol AwesomeFont: CustomStringConvertible {
     
     /// A unique string that describes the font, version and style
     var memberName: String { get }
-
-    // MARK: Deprecated
-    
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .description instead.")
-    var name: String { get }
     
 }

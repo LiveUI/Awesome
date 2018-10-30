@@ -9,12 +9,13 @@ import Foundation
 import CoreGraphics
 import CoreText
 
-
 public extension AwesomeFont {
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .description instead.")
+    @available(*, unavailable, renamed: "description")
     public var name: String {
-        return self.description
+        get {
+            fatalError()
+        }
     }
     
 }
@@ -22,6 +23,7 @@ public extension AwesomeFont {
 public extension Awesome {
     
     public enum Font: String, AwesomeFont {
+        
         case brand = "fa-brands-400"
         case regular = "fa-regular-400"
         case solid = "fa-solid-900"

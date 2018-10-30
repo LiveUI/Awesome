@@ -29,22 +29,5 @@ public protocol Amazing: RawRepresentable, CaseIterable where RawValue == String
 
     /// An array with all human readable descriptions of all icons of the font style
     static var allDescriptions: [String] { get }
-    
-    // MARK: Deprecated
-    
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allKeys instead")
-    static var keys: [String] { get }
-    
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allDescriptions instead")
-    static var labels: [String] { get }
-    
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .rawValue instead.")
-    var code: String { get }
-    
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .key or .detailedKey instead.")
-    var name: String { get }
-    
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .description instead.")
-    var label: String { get }
-    
+        
 }

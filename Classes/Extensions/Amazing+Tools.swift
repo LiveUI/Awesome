@@ -82,117 +82,143 @@ extension Amazing {
         return allCases.map { $0.description }
     }
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allKeys instead")
+    // MARK: - Removed
+    
+    @available(*, unavailable, renamed: "allKeys")
     public static var keys: [String] {
-        return allKeys
+        get {
+            fatalError()
+        }
     }
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allDescriptions instead")
+    @available(*, unavailable, renamed: "allDescriptions")
     public static var labels: [String] {
-        return allDescriptions
+        get {
+            fatalError()
+        }
     }
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .rawValue instead.")
+    @available(*, unavailable, renamed: "rawValue")
     public var code: String {
-        return self.rawValue
+        get {
+            fatalError()
+        }
     }
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .key or .detailedKey instead.")
+    @available(*, unavailable, renamed: "key")
     public var name: String {
-        return String(describing: self).camelCaseToString(with: "-").lowercased()
+        get {
+            fatalError()
+        }
     }
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .description instead.")
+    @available(*, unavailable, renamed: "description")
     public var label: String {
-        return self.description
+        get {
+            fatalError()
+        }
     }
     
 }
 
 extension Awesome {
-    @available(*, deprecated, renamed: "Brand")
+    @available(*, unavailable, renamed: "Brand")
     public typealias brand = Awesome.Brand
     
-    @available(*, deprecated, renamed: "Regular")
+    @available(*, unavailable, renamed: "Regular")
     public typealias regular = Awesome.Regular
     
-    @available(*, deprecated, renamed: "Solid")
+    @available(*, unavailable, renamed: "Solid")
     public typealias solid = Awesome.Solid
 }
 
 extension AwesomePro {
-    @available(*, deprecated, renamed: "Brand")
+    @available(*, unavailable, renamed: "Brand")
     public typealias brand = AwesomePro.Brand
     
-    @available(*, deprecated, renamed: "Regular")
+    @available(*, unavailable, renamed: "Regular")
     public typealias regular = AwesomePro.Regular
     
-    @available(*, deprecated, renamed: "Solid")
+    @available(*, unavailable, renamed: "Solid")
     public typealias solid = AwesomePro.Solid
     
-    @available(*, deprecated, renamed: "Light")
+    @available(*, unavailable, renamed: "Light")
     public typealias light = AwesomePro.Light
 }
 
 extension Awesome.Brand {
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
-    public static var all: [Awesome.brand] {
-        return allCases
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [Awesome.Brand] {
+        get {
+            fatalError()
+        }
     }
         
 }
 
 extension Awesome.Regular {
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
-    public static var all: [Awesome.regular] {
-        return allCases
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [Awesome.Regular] {
+        get {
+            fatalError()
+        }
     }
     
 }
 
 extension Awesome.Solid {
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
-    public static var all: [Awesome.solid] {
-        return allCases
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [Awesome.Solid] {
+        get {
+            fatalError()
+        }
     }
     
 }
 
 extension AwesomePro.Brand {
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
-    public static var all: [AwesomePro.brand] {
-        return allCases
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [AwesomePro.Brand] {
+        get {
+            fatalError()
+        }
     }
     
 }
 
 extension AwesomePro.Regular {
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
-    public static var all: [AwesomePro.regular] {
-        return allCases
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [AwesomePro.Regular] {
+        get {
+            fatalError()
+        }
     }
     
 }
 
 extension AwesomePro.Solid {
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
-    public static var all: [AwesomePro.solid] {
-        return allCases
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [AwesomePro.Solid] {
+        get {
+            fatalError()
+        }
     }
     
 }
 
 extension AwesomePro.Light {
     
-    @available(swift, deprecated: 4.2, message: "This will be removed in the future. Please use .allCases instead")
-    public static var all: [AwesomePro.light] {
-        return allCases
+    @available(*, unavailable, renamed: "allCases")
+    public static var all: [AwesomePro.Light] {
+        get {
+            fatalError()
+        }
     }
     
 }
