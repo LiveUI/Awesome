@@ -59,7 +59,8 @@ extension Amazing {
     
     /// Returns an unique identifier string that contains the icon name
     public var key: String {
-        return String(describing: self).lowercased()
+        return String(describing: self).camelCaseToString(with: "-").lowercased()
+
     }
     
     /// Returns a human readable string that describes the icon
