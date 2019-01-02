@@ -1,6 +1,6 @@
 # Awesome
 
-[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-5.5.0-brightgreen.svg)](https://fontawesome.com/v5.5.0/icons)
+[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-5.6.3-brightgreen.svg)](https://fontawesome.com/v5.6.3/icons)
 [![Slack](https://img.shields.io/badge/join-slack-745EAF.svg?style=flat)](http://bit.ly/2B0dEyt)
 [![Version](https://img.shields.io/cocoapods/v/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
 [![License](https://img.shields.io/cocoapods/l/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
