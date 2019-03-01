@@ -44,11 +44,11 @@ public extension Awesome {
         public var memberName: String {
             switch self {
             case .brand:
-                return "FontAwesome5BrandsRegular"
+                return "FontAwesome5Brands-Regular"
             case .regular:
-                return "FontAwesome5FreeRegular"
+                return "FontAwesome5Free-Regular"
             case .solid:
-                return "FontAwesome5FreeSolid"
+                return "FontAwesome5Free-Solid"
             }
         }
     }
