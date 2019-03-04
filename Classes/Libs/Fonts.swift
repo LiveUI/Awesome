@@ -44,11 +44,11 @@ public extension Awesome {
         public var memberName: String {
             switch self {
             case .brand:
-                return "FontAwesome5BrandsRegular"
+                return "FontAwesome5Brands-Regular"
             case .regular:
-                return "FontAwesome5FreeRegular"
+                return "FontAwesome5Free-Regular"
             case .solid:
-                return "FontAwesome5FreeSolid"
+                return "FontAwesome5Free-Solid"
             }
         }
     }
@@ -75,17 +75,17 @@ public extension AwesomePro {
                     return "Font Awesome 5 Pro"
             }
         }
-
+        
         public var memberName: String {
             switch self {
-                case .brand:
-                    return "FontAwesome5ProBrands"
-                case .regular:
-                    return "FontAwesome5ProRegular"
-                case .solid:
-                    return "FontAwesome5ProSolid"
-                case .light:
-                    return "FontAwesome5ProLight"
+            case .brand:
+                return "FontAwesome5Brands-Regular"
+            case .regular:
+                return "FontAwesome5Pro-Regular"
+            case .solid:
+                return "FontAwesome5Pro-Solid"
+            case .light:
+                return "FontAwesome5Pro-Light"
             }
         }
     }
