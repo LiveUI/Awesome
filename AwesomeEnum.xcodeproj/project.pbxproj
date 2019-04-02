@@ -387,7 +387,7 @@
 				TargetAttributes = {
 					15116D1720761BAD00BC08D3 = {
 						CreatedOnToolsVersion = 9.3;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 					};
 					15116D4320761EBF00BC08D3 = {
 						CreatedOnToolsVersion = 9.3;
@@ -406,6 +406,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 15116D0E20761BAD00BC08D3;
 			productRefGroup = 15116D1920761BAD00BC08D3 /* Products */;
@@ -675,7 +676,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.AwesomeEnum;
 				PRODUCT_NAME = Awesome;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -700,7 +701,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.AwesomeEnum;
 				PRODUCT_NAME = Awesome;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -6,7 +6,7 @@ let package = Package(
     name: "Generator",
     dependencies: [
         .package(url: "https://github.com/scinfu/SwiftSoup", from: "1.7.0"),
-        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "4.0.0"),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", .branch("hotfix")),
         .package(url: "https://github.com/SwiftyJSON/SwiftyJSON.git", from: "4.0.0"),
     ],
     targets: [

@@ -5,9 +5,9 @@
         "package": "Alamofire",
         "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
         "state": {
-          "branch": null,
-          "revision": "2fb881a1702cb1976c36192aceb54dcedab6fdc2",
-          "version": "4.7.2"
+          "branch": "hotfix",
+          "revision": "75bba56748359f297a83f620d45f72cf4ebee4e7",
+          "version": null
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/scinfu/SwiftSoup",
         "state": {
           "branch": null,
-          "revision": "52a9a9e2ae73669111e3f74c7ce833b195e942a3",
-          "version": "1.7.1"
+          "revision": "11da8c685ddde2d519fad04a7daf8485bbbc773e",
+          "version": "1.7.5"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/SwiftyJSON/SwiftyJSON.git",
         "state": {
           "branch": null,
-          "revision": "ebfc0d7e314f15c1df02fcb198beb40624421839",
-          "version": "4.1.0"
+          "revision": "15634683bf71fd33b6bb022117ba48b9c7ac64dc",
+          "version": "4.3.0"
         }
       }
     ]
