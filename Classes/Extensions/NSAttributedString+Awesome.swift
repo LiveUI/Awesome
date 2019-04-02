@@ -15,7 +15,7 @@ import Foundation
 
 public extension NSAttributedString {
     
-    public convenience init<AmazingType: Amazing>(icon: AmazingType, fontSize: CGFloat, color: Color = .black, backgroundColor: Color = .clear) {
+    convenience init<AmazingType: Amazing>(icon: AmazingType, fontSize: CGFloat, color: Color = .black, backgroundColor: Color = .clear) {
         Fonts.load(type: icon.fontType)
         
         guard let font = Font(name: icon.fontType.memberName, size: fontSize) else {

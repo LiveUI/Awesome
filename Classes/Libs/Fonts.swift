@@ -12,7 +12,7 @@ import CoreText
 public extension AwesomeFont {
     
     @available(*, unavailable, renamed: "description")
-    public var name: String {
+    var name: String {
         get {
             fatalError()
         }
@@ -22,7 +22,7 @@ public extension AwesomeFont {
 
 public extension Awesome {
     
-    public enum Font: String, AwesomeFont {
+    enum Font: String, AwesomeFont {
         
         case brand = "fa-brands-400"
         case regular = "fa-regular-400"
@@ -57,7 +57,7 @@ public extension Awesome {
 
 public extension AwesomePro {
 
-    public enum Font: String, AwesomeFont {
+    enum Font: String, AwesomeFont {
         case brand = "fa-brands-400"
         case regular = "fa-regular-400"
         case solid = "fa-solid-900"
