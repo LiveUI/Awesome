@@ -62,7 +62,7 @@ public extension AwesomePro {
         case regular = "fa-regular-400"
         case solid = "fa-solid-900"
         case light = "fa-light-300"
-        case duotone = "fa-duotone-solid-900"
+        case duotone = "fa-duotone-900"
 
         public var file: String {
             return rawValue
@@ -88,7 +88,7 @@ public extension AwesomePro {
             case .light:
                 return "FontAwesome5Pro-Light"
             case .duotone:
-                return "FontAwesome5Pro-Duotone"
+                return "FontAwesome5Duotone-Solid"
             }
         }
     }
