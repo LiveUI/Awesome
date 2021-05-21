@@ -24,9 +24,9 @@ public extension Awesome {
     
     enum Font: String, AwesomeFont {
         
-        case brand = "fa-brands-400"
+        case brand   = "fa-brands-400"
         case regular = "fa-regular-400"
-        case solid = "fa-solid-900"
+        case solid   = "fa-solid-900"
         
         public var file: String {
             return rawValue
@@ -58,11 +58,12 @@ public extension Awesome {
 public extension AwesomePro {
 
     enum Font: String, AwesomeFont {
-        case brand = "fa-brands-400"
-        case regular = "fa-regular-400"
-        case solid = "fa-solid-900"
-        case light = "fa-light-300"
-
+        case brand      = "fa-brands-400"
+        case regular    = "fa-regular-400"
+        case solid      = "fa-solid-900"
+        case light      = "fa-light-300"
+        case duotone    = "fa-duotone-900"
+        
         public var file: String {
             return rawValue
         }
@@ -71,7 +72,7 @@ public extension AwesomePro {
             switch self {
                 case .brand:
                     return "Font Awesome 5 Brands"
-                case .regular, .solid, .light:
+            case .regular, .solid, .light, .duotone:
                     return "Font Awesome 5 Pro"
             }
         }
@@ -86,12 +87,14 @@ public extension AwesomePro {
                 return "FontAwesome5Pro-Solid"
             case .light:
                 return "FontAwesome5Pro-Light"
+            case .duotone:
+                return "FontAwesome5Pro-DuoTone"
             }
         }
     }
 
     static func loadFonts(from bundle: Bundle, only: [Font] = []) {
-        var fonts: [Font] = [.brand, .regular, .solid, .light]
+        var fonts: [Font] = [.brand, .regular, .solid, .light, .duotone]
 
         if only.count > 0 {
             fonts = fonts.filter { element in only.contains(element) }
