@@ -15,6 +15,6 @@ let package = Package(
         .target(
             name: "Awesome",
             dependencies: [],
-            path: "Sources"),
+            path: "Classes"),
     ]
 )
