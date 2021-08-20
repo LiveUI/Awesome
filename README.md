@@ -29,15 +29,30 @@ for Carthage just add:
 github "LiveUI/Awesome"
 ```
 
+for Swift Package Manager 
+1. You can add in your project settings under swift packages package by entering url and select version to complete.
+```
+https://github.com/LiveUI/Awesome
+```
+2. If you want to add in package.swift manifest file add under dependencies.
+```
+.package(url "https://github.com/LiveUI/Awesome", from: 2.0.0)
+```
+
 ## Usage
 
-Import will be slightly different for Cocoapods/Carthage. Sorry for the confusion of names but some unreasonable fellow has already registered an `Awesome` pod before us :).
+Import will be slightly different for Cocoapods/Carthage/SPM. Sorry for the confusion of names but some unreasonable fellow has already registered an `Awesome` pod before us :).
 
 ### Cocoapods
 ```swift
 import AwesomeEnum
 ```
 ### Carthage
+```swift
+import Awesome
+```
+
+### Swift Package Manager
 ```swift
 import Awesome
 ```
