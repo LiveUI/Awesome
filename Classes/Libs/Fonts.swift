@@ -93,7 +93,7 @@ public extension AwesomePro {
         }
     }
 
-    static func loadFonts(from bundle: Bundle, only: [Font] = []) {
+    static func loadFonts(from bundle: Bundle.module, only: [Font] = []) {
         var fonts: [Font] = [.brand, .regular, .solid, .light, .duotone]
 
         if only.count > 0 {
@@ -109,7 +109,7 @@ public extension AwesomePro {
 
 class Fonts {
 
-    static func load(type: AwesomeFont, from bundle: Bundle? = nil) {
+    static func load(type: AwesomeFont, from bundle: Bundle.module? = nil) {
         guard !Font.fontNames(forFamilyName: type.description).contains(type.memberName) else {
             return
         }
