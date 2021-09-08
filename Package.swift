@@ -17,7 +17,7 @@ let package = Package(
             dependencies: [],
             path: "Classes",
             resources: [
-                .process("Assets/"),
+                .copy("Assets"),
             ],
             swiftSettings: [
                 .define("AwesomeSPM")
