@@ -17,7 +17,10 @@ let package = Package(
             dependencies: [],
             path: "Classes",
             resources: [
-                .copy("Assets"),
+//                .copy("Assets"),
+                .process("fa-solid-900.ttf"),
+                .process("fa-brands-400.ttf"),
+                .process("fa-regular-400.ttf"),
             ],
             swiftSettings: [
                 .define("AwesomeSPM")
