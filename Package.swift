@@ -18,7 +18,11 @@ let package = Package(
             path: "Classes",
             resources: [
                 .process("Assets/"),
+            ],
+            swiftSettings: [
+                .define("AwesomeSPM")
             ]
         )
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
