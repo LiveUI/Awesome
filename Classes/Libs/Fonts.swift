@@ -55,8 +55,6 @@ public extension Awesome {
     
 }
 
-public let awesomeModule: Bundle = Bundle.resource
-
 public extension AwesomePro {
 
     enum Font: String, AwesomeFont {
@@ -104,7 +102,7 @@ public extension AwesomePro {
 
         for font in fonts {
             #if AwesomeSPM
-            Fonts.load(type: font, from: awesomeModule)
+            Fonts.load(type: font, from: Bundle.module)
             #else
             Fonts.load(type: font, from: bundle)
             #endif
@@ -121,15 +119,11 @@ class Fonts {
         }
 
         let fontBundle: Bundle!
-        #if AwesomeSPM
-        fontBundle = awesomeModule
-        #else
         if bundle == nil {
             fontBundle = Bundle(for: object_getClass(self)!)
         } else {
             fontBundle = bundle
         }
-        #endif
 
         let identifier = fontBundle.bundleIdentifier
         let isCocoapods = identifier?.hasPrefix("org.cocoapods") == true
