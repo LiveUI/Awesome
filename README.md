@@ -30,7 +30,7 @@ github "LiveUI/Awesome"
 ```
 
 for Swift Package Manager 
-1. You can add in your project settings under swift packages package by entering url and select version to complete.
+1. You can add in your project settings under Swift Packages or  File -> Swift Packages -> Add Package to enter the following url and select version to complete.
 ```
 https://github.com/LiveUI/Awesome
 ```
@@ -79,6 +79,9 @@ AwesomePro.loadFonts(from: Bundle.main)
 
 // Load only some fonts
 AwesomePro.loadFonts(from: Bundle.main, only: [.brand, .solid])
+
+//For registering fonts use Bundle.module
+let resourceURLString = Bundle.module.url(forResource: fontName, withExtension: nil)
 ```
 
 The filenames have to match Font Awesome's naming scheme (`fa-brands-400.ttf`, `fa-light-300.ttf`, `fa-regular-400.ttf`, `fa-solid-900.ttf`). You only have to include the fonts you are using.
