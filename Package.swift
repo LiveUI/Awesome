@@ -4,7 +4,7 @@ import PackageDescription
 
 let package = Package(
     name: "Awesome",
-    platforms: [.iOS(.v9)],
+    platforms: [.iOS(.v9), .macOS(.v10_11), .watchOS(.v2), .tvOS(.v9)],
     products: [
         .library(
             name: "Awesome",
@@ -17,10 +17,7 @@ let package = Package(
             dependencies: [],
             path: "Classes",
             resources: [
-                .process("Resources"),
-//                .process("fa-solid-900.ttf"),
-//                .process("fa-brands-400.ttf"),
-//                .process("fa-regular-400.ttf"),
+                .process("Assets"),
             ],
             swiftSettings: [
                 .define("AwesomeSPM")
