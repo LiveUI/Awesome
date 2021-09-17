@@ -119,11 +119,15 @@ class Fonts {
         }
 
         let fontBundle: Bundle!
+        #if AwesomeSPM
+        fontBundle = Bundle.module
+        #else
         if bundle == nil {
             fontBundle = Bundle(for: object_getClass(self)!)
         } else {
             fontBundle = bundle
         }
+        #endif
 
         let identifier = fontBundle.bundleIdentifier
         let isCocoapods = identifier?.hasPrefix("org.cocoapods") == true
