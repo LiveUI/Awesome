@@ -114,12 +114,12 @@ class Fonts {
             return
         }
 
-        let fontBundle: Bundle!
-        if bundle == nil {
-            fontBundle = Bundle(for: object_getClass(self)!)
-        } else {
-            fontBundle = bundle
-        }
+        let fontBundle: Bundle
+        #if SWIFT_PACKAGE
+        fontBundle = bundle ?? Bundle.module
+        #else
+        fontBundle = bundle ?? Bundle(for: Self.self)
+        #endif
 
         let identifier = fontBundle.bundleIdentifier
         let isCocoapods = identifier?.hasPrefix("org.cocoapods") == true

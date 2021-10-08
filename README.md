@@ -29,15 +29,30 @@ for Carthage just add:
 github "LiveUI/Awesome"
 ```
 
+for Swift Package Manager 
+1. You can add in your project settings under Swift Packages or  File -> Swift Packages -> Add Package to enter the following url and select version to complete.
+```
+https://github.com/LiveUI/Awesome
+```
+2. If you want to add in package.swift manifest file add under dependencies.
+```
+.package(url "https://github.com/LiveUI/Awesome", from: 2.0.0)
+```
+
 ## Usage
 
-Import will be slightly different for Cocoapods/Carthage. Sorry for the confusion of names but some unreasonable fellow has already registered an `Awesome` pod before us :).
+Import will be slightly different for Cocoapods/Carthage/SPM. Sorry for the confusion of names but some unreasonable fellow has already registered an `Awesome` pod before us :).
 
 ### Cocoapods
 ```swift
 import AwesomeEnum
 ```
 ### Carthage
+```swift
+import Awesome
+```
+
+### Swift Package Manager
 ```swift
 import Awesome
 ```
@@ -64,6 +79,9 @@ AwesomePro.loadFonts(from: Bundle.main)
 
 // Load only some fonts
 AwesomePro.loadFonts(from: Bundle.main, only: [.brand, .solid])
+
+//For registering fonts use Bundle.module
+let resourceURLString = Bundle.module.url(forResource: fontName, withExtension: nil)
 ```
 
 The filenames have to match Font Awesome's naming scheme (`fa-brands-400.ttf`, `fa-light-300.ttf`, `fa-regular-400.ttf`, `fa-solid-900.ttf`). You only have to include the fonts you are using.
