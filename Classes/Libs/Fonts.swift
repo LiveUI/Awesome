@@ -101,11 +101,7 @@ public extension AwesomePro {
         }
 
         for font in fonts {
-            #if AwesomeSPM
-            Fonts.load(type: font, from: Bundle.module)
-            #else
             Fonts.load(type: font, from: bundle)
-            #endif
         }
     }
 
@@ -118,15 +114,11 @@ class Fonts {
             return
         }
 
-        let fontBundle: Bundle!
-        #if AwesomeSPM
-        fontBundle = Bundle.module
+        let fontBundle: Bundle
+        #if SWIFT_PACKAGE
+        fontBundle = bundle ?? Bundle.module
         #else
-        if bundle == nil {
-            fontBundle = Bundle(for: object_getClass(self)!)
-        } else {
-            fontBundle = bundle
-        }
+        fontBundle = bundle ?? Bundle(for: Self.self)
         #endif
 
         let identifier = fontBundle.bundleIdentifier
