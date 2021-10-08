@@ -12,7 +12,7 @@ import CoreText
 public extension AwesomeFont {
     
     @available(*, unavailable, renamed: "description")
-    public var name: String {
+    var name: String {
         get {
             fatalError()
         }
@@ -22,7 +22,7 @@ public extension AwesomeFont {
 
 public extension Awesome {
     
-    public enum Font: String, AwesomeFont {
+    enum Font: String, AwesomeFont {
         
         case brand = "fa-brands-400"
         case regular = "fa-regular-400"
@@ -44,11 +44,11 @@ public extension Awesome {
         public var memberName: String {
             switch self {
             case .brand:
-                return "FontAwesome5BrandsRegular"
+                return "FontAwesome5Brands-Regular"
             case .regular:
-                return "FontAwesome5FreeRegular"
+                return "FontAwesome5Free-Regular"
             case .solid:
-                return "FontAwesome5FreeSolid"
+                return "FontAwesome5Free-Solid"
             }
         }
     }
@@ -57,11 +57,12 @@ public extension Awesome {
 
 public extension AwesomePro {
 
-    public enum Font: String, AwesomeFont {
+    enum Font: String, AwesomeFont {
         case brand = "fa-brands-400"
         case regular = "fa-regular-400"
         case solid = "fa-solid-900"
         case light = "fa-light-300"
+        case duotone = "fa-duotone-900"
 
         public var file: String {
             return rawValue
@@ -71,27 +72,29 @@ public extension AwesomePro {
             switch self {
                 case .brand:
                     return "Font Awesome 5 Brands"
-                case .regular, .solid, .light:
+                case .regular, .solid, .light, .duotone:
                     return "Font Awesome 5 Pro"
             }
         }
-
+        
         public var memberName: String {
             switch self {
-                case .brand:
-                    return "FontAwesome5ProBrands"
-                case .regular:
-                    return "FontAwesome5ProRegular"
-                case .solid:
-                    return "FontAwesome5ProSolid"
-                case .light:
-                    return "FontAwesome5ProLight"
+            case .brand:
+                return "FontAwesome5Brands-Regular"
+            case .regular:
+                return "FontAwesome5Pro-Regular"
+            case .solid:
+                return "FontAwesome5Pro-Solid"
+            case .light:
+                return "FontAwesome5Pro-Light"
+            case .duotone:
+                return "FontAwesome5Duotone-Solid"
             }
         }
     }
 
     static func loadFonts(from bundle: Bundle, only: [Font] = []) {
-        var fonts: [Font] = [.brand, .regular, .solid, .light]
+        var fonts: [Font] = [.brand, .regular, .solid, .light, .duotone]
 
         if only.count > 0 {
             fonts = fonts.filter { element in only.contains(element) }
@@ -111,12 +114,12 @@ class Fonts {
             return
         }
 
-        let fontBundle: Bundle!
-        if bundle == nil {
-            fontBundle = Bundle(for: Fonts.self)
-        } else {
-            fontBundle = bundle
-        }
+        let fontBundle: Bundle
+        #if SWIFT_PACKAGE
+        fontBundle = bundle ?? Bundle.module
+        #else
+        fontBundle = bundle ?? Bundle(for: Self.self)
+        #endif
 
         let identifier = fontBundle.bundleIdentifier
         let isCocoapods = identifier?.hasPrefix("org.cocoapods") == true
