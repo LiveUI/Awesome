@@ -44,7 +44,7 @@ Package.pins
 .swiftpm/
 Package.resolved
 /*.xcodeproj
-.swiftpm/xcode
+.swiftpm/xcode/
 
 # CocoaPods
 #
