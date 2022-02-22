@@ -1,14 +1,12 @@
 # Awesome
 
-[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-5.15.3-brightgreen.svg)](https://fontawesome.com/v5.6.3/icons)
+[![Font Awesome](https://img.shields.io/badge/Font%20Awesome-6.0.0-brightgreen.svg)](https://fontawesome.com/v6.0.0/icons)
 [![Slack](https://img.shields.io/badge/join-slack-745EAF.svg?style=flat)](http://bit.ly/2B0dEyt)
 [![Version](https://img.shields.io/cocoapods/v/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
 [![License](https://img.shields.io/cocoapods/l/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
 [![Platform](https://img.shields.io/cocoapods/p/AwesomeEnum.svg?style=flat)](http://cocoapods.org/pods/AwesomeEnum)
 
-## 
-
-Super easy to use library containing the brand new Font Awesome 5, completely redesigned for Swift 4
+Super easy to use library containing the brand new Font Awesome 6, completely redesigned for Swift 5
 
 ## Slack
 
@@ -16,8 +14,7 @@ Get help using and installing this product on our [Slack](http://bit.ly/2B0dEyt)
 
 ## Installation
 
-Awesome is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Awesome is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'AwesomeEnum'
@@ -30,12 +27,16 @@ github "LiveUI/Awesome"
 ```
 
 for Swift Package Manager 
-1. You can add in your project settings under Swift Packages or  File -> Swift Packages -> Add Package to enter the following url and select version to complete.
+
+You can add in your project settings under Swift Packages or  File -> Swift Packages -> Add Package to enter the following url and select version to complete.
+
 ```
 https://github.com/LiveUI/Awesome
 ```
-2. If you want to add in package.swift manifest file add under dependencies.
-```
+
+If you want to add in package.swift manifest file add under dependencies.
+
+```swift
 .package(url "https://github.com/LiveUI/Awesome", from: 2.0.0)
 ```
 
@@ -44,15 +45,18 @@ https://github.com/LiveUI/Awesome
 Import will be slightly different for Cocoapods/Carthage/SPM. Sorry for the confusion of names but some unreasonable fellow has already registered an `Awesome` pod before us :).
 
 ### Cocoapods
+
 ```swift
 import AwesomeEnum
 ```
 ### Carthage
+
 ```swift
 import Awesome
 ```
 
 ### Swift Package Manager
+
 ```swift
 import Awesome
 ```

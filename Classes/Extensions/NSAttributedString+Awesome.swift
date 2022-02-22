@@ -15,10 +15,10 @@ import Foundation
 
 public extension NSAttributedString {
     
-    convenience init<AmazingType: Amazing>(icon: AmazingType, fontSize: CGFloat, color: Color = .black, backgroundColor: Color = .clear) {
+    convenience init<AmazingType: Amazing>(icon: AmazingType, fontSize: CGFloat, color: Amazing.Color = .black, backgroundColor: Amazing.Color = .clear) {
         Fonts.load(type: icon.fontType)
         
-        guard let font = Font(name: icon.fontType.memberName, size: fontSize) else {
+        guard let font = Amazing.Font(name: icon.fontType.memberName, size: fontSize) else {
             fatalError("Font \(icon.fontType.memberName) not loaded properly. Did you forget to call AwesomePro.loadFonts(from:)?")
         }
         

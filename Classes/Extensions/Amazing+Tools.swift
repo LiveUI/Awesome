@@ -18,7 +18,7 @@ public extension Amazing {
     ///   - color: the foreground color of the icon
     ///   - backgroundColor: the background color of the icon
     /// - Returns: an image that contains the selected icon
-    func asImage(size: CGSize, color: Color = Color.black, backgroundColor: Color = Color.clear) -> Image {
+    func asImage(size: CGSize, color: Color = Color.black, backgroundColor: Color = Color.clear) -> Amazing.Image {
         return Image(icon: self, size: size, color: color, backgroundColor: backgroundColor)
     }
     
@@ -29,7 +29,7 @@ public extension Amazing {
     ///   - color: the foreground color of the icon
     ///   - backgroundColor: the background color of the icon
     /// - Returns: a square image that contains the selected icon
-    func asImage(size: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> Image {
+    func asImage(size: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> Amazing.Image {
         return Image(icon: self, size: CGSize(width: size, height: size), color: color, backgroundColor: backgroundColor)
     }
     
@@ -43,7 +43,6 @@ public extension Amazing {
     func asAttributedText(fontSize: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> NSAttributedString {
         return NSAttributedString(icon: self, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
     }
-    
 }
 
 extension Amazing {

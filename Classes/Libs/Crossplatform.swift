@@ -11,23 +11,27 @@ import Foundation
     
     import UIKit
     
+extension Amazing {
     public typealias Color = UIColor
     public typealias Font = UIFont
     public typealias Image = UIImage
+}
     
 #elseif os(OSX)
     
     import Cocoa
     
+extension Amazing {
     public typealias Color = NSColor
     public typealias Font = NSFont
     public typealias Image = NSImage
+}
 
-	extension Font {
-		static func fontNames(forFamilyName: String) -> [String] {
-			return NSFontManager.shared.availableMembers(ofFontFamily: forFamilyName)?
-				.compactMap { return $0.first as? String } ?? []
-		}
-	}
+extension Amazing.Font {
+    static func fontNames(forFamilyName: String) -> [String] {
+        return NSFontManager.shared.availableMembers(ofFontFamily: forFamilyName)?
+            .compactMap { return $0.first as? String } ?? []
+    }
+}
 
 #endif

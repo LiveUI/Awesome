@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol Amazing: RawRepresentable, CaseIterable where RawValue == String {
+public protocol Amazing: RawRepresentable, Hashable, CaseIterable where RawValue == String {
     
     /// Returns an unique identifier string that contains the icon name
     var key: String { get }

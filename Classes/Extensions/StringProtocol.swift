@@ -7,11 +7,6 @@
 //
 
 import Foundation
-#if os(iOS) || os(watchOS) || os(tvOS)
-    import UIKit
-#elseif os(OSX)
-    import Cocoa
-#endif
 
 extension StringProtocol {
     
