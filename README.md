@@ -69,6 +69,8 @@ let image = Awesome.Solid.handScissors.asImage(size: 40.0)
 let image = Awesome.Brand.android.asImage(size: CGSize(width: 40, height: 40), color: .red, backgroundColor: .blue) // :trollface:
 // or
 let attributedText = Awesome.Regular.envelopeOpen.asAttributedText(fontSize: 17, color: .red, backgroundColor: .blue)
+// SwiftUI
+Awesome.Image(icon: Awesome.Brand.apple)
 ```
 
 ### Font Awesome Pro
