@@ -8,6 +8,13 @@
 #if canImport(SwiftUI)
 import SwiftUI
 
+public extension Amazing {
+    @available(iOS 13, macOS 11, watchOS 6, tvOS 13, *)
+    var image: Awesome.Image<Self> {
+        Awesome.Image(icon: self)
+    }
+}
+
 extension Awesome {
     @available(iOS 13, macOS 11, watchOS 6, tvOS 13, *)
     /// A view wrapper around an Awesome.Icon
@@ -78,27 +85,7 @@ extension Awesome {
         /// - Parameter color: The background color
         public func backgroundColor(_ color: Amazing.Color) -> Self {
             var view = self
-            view.backgroundColor = backgroundColor
-            return view
-        }
-        
-        @available(iOS 14, macOS 11, watchOS 7, tvOS 14, *)
-        /// Changes the foreground color of the underlying image
-        ///
-        /// - Parameter color: The color
-        public func foregroundColor(_ color: Color) -> Self {
-            var view = self
-            view.color = Amazing.Color(color)
-            return view
-        }
-        
-        @available(iOS 14, macOS 11, watchOS 7, tvOS 14, *)
-        /// Changes the background color of the underlying image
-        ///
-        /// - Parameter color: The background color
-        public func backgroundColor(_ color: Color) -> Self {
-            var view = self
-            view.backgroundColor = Amazing.Color(color)
+            view.backgroundColor = color
             return view
         }
     }
