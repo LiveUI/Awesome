@@ -5,7 +5,7 @@
 //  Originally created by Ondrej Rafaj on 13/10/2017.
 //  Copyright © 2017 manGoweb UK. All rights reserved.
 //
-//  This file has been auto-generated on 22/02/2022 16:57.
+//  This file has been auto-generated on 27/02/2022 16:18.
 
 import Foundation
 
