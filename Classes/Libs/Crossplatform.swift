@@ -9,7 +9,7 @@ import Foundation
 
 #if os(iOS) || os(watchOS) || os(tvOS)
     
-    import UIKit
+import UIKit
     
 extension Amazing {
     public typealias Color = UIColor
@@ -19,7 +19,7 @@ extension Amazing {
     
 #elseif os(OSX)
     
-    import Cocoa
+import Cocoa
     
 extension Amazing {
     public typealias Color = NSColor

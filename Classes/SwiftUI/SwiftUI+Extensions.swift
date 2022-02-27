@@ -9,7 +9,7 @@
 import SwiftUI
 
 @available(iOS 13, macOS 11, watchOS 6, tvOS 13, *)
-extension SwiftUI.Font {
+extension Font {
     var textStyle: Amazing.Font.TextStyle? {
         switch self {
         case .largeTitle:
