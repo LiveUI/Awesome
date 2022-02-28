@@ -15,14 +15,8 @@
 		15116D3720761C3300BC08D3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2B20761C3300BC08D3 /* Fonts.swift */; };
 		15116D3820761C3300BC08D3 /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
 		15116D3920761C3300BC08D3 /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
-		15116D3A20761C3300BC08D3 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3020761C3300BC08D3 /* fa-solid-900.ttf */; };
-		15116D3B20761C3300BC08D3 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3120761C3300BC08D3 /* fa-regular-400.ttf */; };
-		15116D3C20761C3300BC08D3 /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3220761C3300BC08D3 /* fa-brands-400.ttf */; };
 		15116D4820761EBF00BC08D3 /* AwesomeEnum_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 15116D4620761EBF00BC08D3 /* AwesomeEnum_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15116D5520761ED400BC08D3 /* AwesomeEnum_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 15116D5320761ED400BC08D3 /* AwesomeEnum_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15116D5920761F0A00BC08D3 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3020761C3300BC08D3 /* fa-solid-900.ttf */; };
-		15116D5A20761F0A00BC08D3 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3120761C3300BC08D3 /* fa-regular-400.ttf */; };
-		15116D5B20761F0A00BC08D3 /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3220761C3300BC08D3 /* fa-brands-400.ttf */; };
 		15116D5C20761F0A00BC08D3 /* Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2520761C3300BC08D3 /* Awesome.swift */; };
 		15116D5D20761F0A00BC08D3 /* NSAttributedString+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */; };
 		15116D5E20761F0A00BC08D3 /* Amazing+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2820761C3300BC08D3 /* Amazing+Tools.swift */; };
@@ -30,9 +24,6 @@
 		15116D6020761F0A00BC08D3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2B20761C3300BC08D3 /* Fonts.swift */; };
 		15116D6120761F0A00BC08D3 /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
 		15116D6220761F0A00BC08D3 /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
-		15116D6320761F0A00BC08D3 /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3020761C3300BC08D3 /* fa-solid-900.ttf */; };
-		15116D6420761F0A00BC08D3 /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3120761C3300BC08D3 /* fa-regular-400.ttf */; };
-		15116D6520761F0A00BC08D3 /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3220761C3300BC08D3 /* fa-brands-400.ttf */; };
 		15116D6620761F0A00BC08D3 /* Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2520761C3300BC08D3 /* Awesome.swift */; };
 		15116D6720761F0A00BC08D3 /* NSAttributedString+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */; };
 		15116D6820761F0A00BC08D3 /* Amazing+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2820761C3300BC08D3 /* Amazing+Tools.swift */; };
@@ -45,9 +36,6 @@
 		63202F192185E62B008928EF /* StringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63202F162185E62B008928EF /* StringProtocol.swift */; };
 		63202F1A2185E62B008928EF /* StringProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63202F162185E62B008928EF /* StringProtocol.swift */; };
 		639016C120F26235006F56AE /* AwesomeEnum_watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 639016BF20F26235006F56AE /* AwesomeEnum_watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		639016C520F2628F006F56AE /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3020761C3300BC08D3 /* fa-solid-900.ttf */; };
-		639016C620F2628F006F56AE /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3120761C3300BC08D3 /* fa-regular-400.ttf */; };
-		639016C720F2628F006F56AE /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 15116D3220761C3300BC08D3 /* fa-brands-400.ttf */; };
 		639016C820F26294006F56AE /* Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2520761C3300BC08D3 /* Awesome.swift */; };
 		639016C920F26294006F56AE /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
 		639016CA20F26298006F56AE /* NSAttributedString+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */; };
@@ -57,6 +45,18 @@
 		639016CE20F2629B006F56AE /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
 		639016CF20F2629F006F56AE /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
 		639016D020F2629F006F56AE /* AwesomeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */; };
+		63DD7B7327C5AC7500F6DD0A /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7027C5AC7500F6DD0A /* fa-solid-900.ttf */; };
+		63DD7B7427C5AC7500F6DD0A /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7027C5AC7500F6DD0A /* fa-solid-900.ttf */; };
+		63DD7B7527C5AC7500F6DD0A /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7027C5AC7500F6DD0A /* fa-solid-900.ttf */; };
+		63DD7B7627C5AC7500F6DD0A /* fa-solid-900.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7027C5AC7500F6DD0A /* fa-solid-900.ttf */; };
+		63DD7B7727C5AC7500F6DD0A /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7127C5AC7500F6DD0A /* fa-regular-400.ttf */; };
+		63DD7B7827C5AC7500F6DD0A /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7127C5AC7500F6DD0A /* fa-regular-400.ttf */; };
+		63DD7B7927C5AC7500F6DD0A /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7127C5AC7500F6DD0A /* fa-regular-400.ttf */; };
+		63DD7B7A27C5AC7500F6DD0A /* fa-regular-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7127C5AC7500F6DD0A /* fa-regular-400.ttf */; };
+		63DD7B7B27C5AC7500F6DD0A /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7227C5AC7500F6DD0A /* fa-brands-400.ttf */; };
+		63DD7B7C27C5AC7500F6DD0A /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7227C5AC7500F6DD0A /* fa-brands-400.ttf */; };
+		63DD7B7D27C5AC7500F6DD0A /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7227C5AC7500F6DD0A /* fa-brands-400.ttf */; };
+		63DD7B7E27C5AC7500F6DD0A /* fa-brands-400.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63DD7B7227C5AC7500F6DD0A /* fa-brands-400.ttf */; };
 		9D338AF620DA7A04001F8AEA /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
 		9D338AF720DA7A04001F8AEA /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
 		9D338AF820DA7A04001F8AEA /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
@@ -76,9 +76,6 @@
 		15116D2B20761C3300BC08D3 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		15116D2C20761C3300BC08D3 /* Crossplatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crossplatform.swift; sourceTree = "<group>"; };
 		15116D2E20761C3300BC08D3 /* Amazing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amazing.swift; sourceTree = "<group>"; };
-		15116D3020761C3300BC08D3 /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
-		15116D3120761C3300BC08D3 /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
-		15116D3220761C3300BC08D3 /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
 		15116D4420761EBF00BC08D3 /* Awesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Awesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15116D4620761EBF00BC08D3 /* AwesomeEnum_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeEnum_macOS.h; sourceTree = "<group>"; };
 		15116D4720761EBF00BC08D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +89,9 @@
 		639016BD20F26234006F56AE /* Awesome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Awesome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		639016BF20F26235006F56AE /* AwesomeEnum_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeEnum_watchOS.h; sourceTree = "<group>"; };
 		639016C020F26235006F56AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DD7B7027C5AC7500F6DD0A /* fa-solid-900.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-solid-900.ttf"; sourceTree = "<group>"; };
+		63DD7B7127C5AC7500F6DD0A /* fa-regular-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-regular-400.ttf"; sourceTree = "<group>"; };
+		63DD7B7227C5AC7500F6DD0A /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
 		9D338AF520DA7A04001F8AEA /* AwesomePro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomePro.swift; sourceTree = "<group>"; };
 		9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeFont.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				15116D6D20761F5C00BC08D3 /* Other */,
-				15116D2F20761C3300BC08D3 /* Assets */,
 				15116D2320761C3300BC08D3 /* Classes */,
 				15116D6E2076201B00BC08D3 /* Platforms */,
 				15116D1920761BAD00BC08D3 /* Products */,
@@ -162,6 +161,7 @@
 		15116D2320761C3300BC08D3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				63DD7B6F27C5AC7500F6DD0A /* Assets */,
 				15116D2420761C3300BC08D3 /* Enums */,
 				15116D2620761C3300BC08D3 /* Extensions */,
 				15116D2A20761C3300BC08D3 /* Libs */,
@@ -206,16 +206,6 @@
 				9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		15116D2F20761C3300BC08D3 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				15116D3020761C3300BC08D3 /* fa-solid-900.ttf */,
-				15116D3120761C3300BC08D3 /* fa-regular-400.ttf */,
-				15116D3220761C3300BC08D3 /* fa-brands-400.ttf */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		15116D4520761EBF00BC08D3 /* AwesomeEnum-macOS */ = {
@@ -264,6 +254,16 @@
 				639016C020F26235006F56AE /* Info.plist */,
 			);
 			path = "AwesomeEnum-watchOS";
+			sourceTree = "<group>";
+		};
+		63DD7B6F27C5AC7500F6DD0A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				63DD7B7027C5AC7500F6DD0A /* fa-solid-900.ttf */,
+				63DD7B7127C5AC7500F6DD0A /* fa-regular-400.ttf */,
+				63DD7B7227C5AC7500F6DD0A /* fa-brands-400.ttf */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,9 +426,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15116D3A20761C3300BC08D3 /* fa-solid-900.ttf in Resources */,
-				15116D3C20761C3300BC08D3 /* fa-brands-400.ttf in Resources */,
-				15116D3B20761C3300BC08D3 /* fa-regular-400.ttf in Resources */,
+				63DD7B7327C5AC7500F6DD0A /* fa-solid-900.ttf in Resources */,
+				63DD7B7B27C5AC7500F6DD0A /* fa-brands-400.ttf in Resources */,
+				63DD7B7727C5AC7500F6DD0A /* fa-regular-400.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,9 +436,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15116D5920761F0A00BC08D3 /* fa-solid-900.ttf in Resources */,
-				15116D5B20761F0A00BC08D3 /* fa-brands-400.ttf in Resources */,
-				15116D5A20761F0A00BC08D3 /* fa-regular-400.ttf in Resources */,
+				63DD7B7427C5AC7500F6DD0A /* fa-solid-900.ttf in Resources */,
+				63DD7B7C27C5AC7500F6DD0A /* fa-brands-400.ttf in Resources */,
+				63DD7B7827C5AC7500F6DD0A /* fa-regular-400.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,9 +446,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15116D6320761F0A00BC08D3 /* fa-solid-900.ttf in Resources */,
-				15116D6520761F0A00BC08D3 /* fa-brands-400.ttf in Resources */,
-				15116D6420761F0A00BC08D3 /* fa-regular-400.ttf in Resources */,
+				63DD7B7527C5AC7500F6DD0A /* fa-solid-900.ttf in Resources */,
+				63DD7B7D27C5AC7500F6DD0A /* fa-brands-400.ttf in Resources */,
+				63DD7B7927C5AC7500F6DD0A /* fa-regular-400.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,9 +456,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639016C520F2628F006F56AE /* fa-solid-900.ttf in Resources */,
-				639016C720F2628F006F56AE /* fa-brands-400.ttf in Resources */,
-				639016C620F2628F006F56AE /* fa-regular-400.ttf in Resources */,
+				63DD7B7627C5AC7500F6DD0A /* fa-solid-900.ttf in Resources */,
+				63DD7B7E27C5AC7500F6DD0A /* fa-brands-400.ttf in Resources */,
+				63DD7B7A27C5AC7500F6DD0A /* fa-regular-400.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,20 +35,20 @@ public extension Awesome {
         public var description: String {
             switch self {
             case .brand:
-                return "Font Awesome 5 Brands"
+                return "Font Awesome 6 Brands"
             case .regular, .solid:
-                return "Font Awesome 5 Free"
+                return "Font Awesome 6 Free"
             }
         }
         
         public var memberName: String {
             switch self {
             case .brand:
-                return "FontAwesome5Brands-Regular"
+                return "FontAwesome6Brands-Regular"
             case .regular:
-                return "FontAwesome5Free-Regular"
+                return "FontAwesome6Free-Regular"
             case .solid:
-                return "FontAwesome5Free-Solid"
+                return "FontAwesome6Free-Solid"
             }
         }
     }
@@ -71,24 +71,24 @@ public extension AwesomePro {
         public var description: String {
             switch self {
                 case .brand:
-                    return "Font Awesome 5 Brands"
+                    return "Font Awesome 6 Brands"
                 case .regular, .solid, .light, .duotone:
-                    return "Font Awesome 5 Pro"
+                    return "Font Awesome 6 Pro"
             }
         }
         
         public var memberName: String {
             switch self {
             case .brand:
-                return "FontAwesome5Brands-Regular"
+                return "FontAwesome6Brands-Regular"
             case .regular:
-                return "FontAwesome5Pro-Regular"
+                return "FontAwesome6Pro-Regular"
             case .solid:
-                return "FontAwesome5Pro-Solid"
+                return "FontAwesome6Pro-Solid"
             case .light:
-                return "FontAwesome5Pro-Light"
+                return "FontAwesome6Pro-Light"
             case .duotone:
-                return "FontAwesome5Duotone-Solid"
+                return "FontAwesome6Duotone-Solid"
             }
         }
     }
@@ -110,7 +110,7 @@ public extension AwesomePro {
 class Fonts {
 
     static func load(type: AwesomeFont, from bundle: Bundle? = nil) {
-        guard !Font.fontNames(forFamilyName: type.description).contains(type.memberName) else {
+        guard !Amazing.Font.fontNames(forFamilyName: type.description).contains(type.memberName) else {
             return
         }
 

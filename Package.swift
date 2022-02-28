@@ -20,6 +20,5 @@ let package = Package(
                 .process("Assets"),
             ]
         )
-    ],
-    swiftLanguageVersions: [.v5]
+    ]
 )
