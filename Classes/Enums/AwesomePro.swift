@@ -10,8 +10,8 @@
 import Foundation
 
 public struct AwesomePro {
-
-    public enum Regular: String, Amazing {
+    
+    public enum Regular: String, Amazing, CaseIterable {
         case abacus = "\u{f640}"
         case acorn = "\u{f6ae}"
         case ad = "\u{f641}"
@@ -1865,12 +1865,16 @@ public struct AwesomePro {
         case yenSign = "\u{f157}"
         case yinYang = "\u{f6ad}"
 
+        static func withKey(_ label: String) -> Regular? {
+            return self.allCases.first { label == "\($0)" }
+        }
+
         public var fontType: AwesomeFont {
             return AwesomePro.Font.regular
         }
     }
 
-    public enum Brand: String, Amazing {
+    public enum Brand: String, Amazing, CaseIterable {
         case fa500px = "\u{f26e}"
         case accessibleIcon = "\u{f368}"
         case accusoft = "\u{f369}"
@@ -2328,12 +2332,16 @@ public struct AwesomePro {
         case youtubeSquare = "\u{f431}"
         case zhihu = "\u{f63f}"
 
+        static func withKey(_ label: String) -> Brand? {
+            return self.allCases.first { label == "\($0)" }
+        }
+
         public var fontType: AwesomeFont {
             return AwesomePro.Font.brand
         }
     }
 
-    public enum Solid: String, Amazing {
+    public enum Solid: String, Amazing, CaseIterable {
         case abacus = "\u{f640}"
         case acorn = "\u{f6ae}"
         case ad = "\u{f641}"
@@ -4186,13 +4194,17 @@ public struct AwesomePro {
         case xRay = "\u{f497}"
         case yenSign = "\u{f157}"
         case yinYang = "\u{f6ad}"
+
+        static func withKey(_ label: String) -> Solid? {
+            return self.allCases.first { label == "\($0)" }
+        }
 
         public var fontType: AwesomeFont {
             return AwesomePro.Font.solid
         }
     }
 
-    public enum Light: String, Amazing {
+    public enum Light: String, Amazing, CaseIterable {
         case abacus = "\u{f640}"
         case acorn = "\u{f6ae}"
         case ad = "\u{f641}"
@@ -6045,13 +6057,17 @@ public struct AwesomePro {
         case xRay = "\u{f497}"
         case yenSign = "\u{f157}"
         case yinYang = "\u{f6ad}"
+
+        static func withKey(_ label: String) -> Light? {
+            return self.allCases.first { label == "\($0)" }
+        }
 
         public var fontType: AwesomeFont {
             return AwesomePro.Font.light
         }
     }
 
-    public enum Duotone: String, Amazing {
+    public enum Duotone: String, Amazing, CaseIterable {
         case abacus = "\u{f640}"
         case acorn = "\u{f6ae}"
         case ad = "\u{f641}"
@@ -7905,9 +7921,12 @@ public struct AwesomePro {
         case yenSign = "\u{f157}"
         case yinYang = "\u{f6ad}"
 
+        static func withKey(_ label: String) -> Duotone? {
+            return self.allCases.first { label == "\($0)" }
+        }
+
         public var fontType: AwesomeFont {
             return AwesomePro.Font.duotone
         }
     }
-
 }

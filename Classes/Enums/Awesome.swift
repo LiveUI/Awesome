@@ -11,7 +11,7 @@ import Foundation
 
 public struct Awesome {
 
-    public enum Brand: String, Amazing {
+    public enum Brand: String, Amazing, CaseIterable {
         case fa500px = "\u{f26e}"
         case accessibleIcon = "\u{f368}"
         case accusoft = "\u{f369}"
@@ -469,12 +469,16 @@ public struct Awesome {
         case youtubeSquare = "\u{f431}"
         case zhihu = "\u{f63f}"
 
+        static func withKey(_ label: String) -> Brand? {
+            return self.allCases.first { label == "\($0)" }
+        }
+
         public var fontType: AwesomeFont {
             return Awesome.Font.brand
         }
     }
 
-    public enum Solid: String, Amazing {
+    public enum Solid: String, Amazing, CaseIterable {
         case ad = "\u{f641}"
         case addressBook = "\u{f2b9}"
         case addressCard = "\u{f2bb}"
@@ -1477,12 +1481,16 @@ public struct Awesome {
         case yenSign = "\u{f157}"
         case yinYang = "\u{f6ad}"
 
+        static func withKey(_ label: String) -> Solid? {
+            return self.allCases.first { label == "\($0)" }
+        }
+
         public var fontType: AwesomeFont {
             return Awesome.Font.solid
         }
     }
 
-    public enum Regular: String, Amazing {
+    public enum Regular: String, Amazing, CaseIterable {
         case addressBook = "\u{f2b9}"
         case addressCard = "\u{f2bb}"
         case angry = "\u{f556}"
@@ -1634,6 +1642,10 @@ public struct Awesome {
         case windowMaximize = "\u{f2d0}"
         case windowMinimize = "\u{f2d1}"
         case windowRestore = "\u{f2d2}"
+
+        static func withKey(_ label: String) -> Regular? {
+            return self.allCases.first { label == "\($0)" }
+        }
 
         public var fontType: AwesomeFont {
             return Awesome.Font.regular
