@@ -10,7 +10,7 @@
 import Foundation
 
 public struct AwesomePro {
-    
+
     public enum Regular: String, Amazing, CaseIterable {
         case abacus = "\u{f640}"
         case acorn = "\u{f6ae}"
@@ -1865,7 +1865,7 @@ public struct AwesomePro {
         case yenSign = "\u{f157}"
         case yinYang = "\u{f6ad}"
 
-        static func withKey(_ label: String) -> Regular? {
+        public static func withKey(_ label: String) -> Regular? {
             return self.allCases.first { label == "\($0)" }
         }
 
@@ -2332,7 +2332,7 @@ public struct AwesomePro {
         case youtubeSquare = "\u{f431}"
         case zhihu = "\u{f63f}"
 
-        static func withKey(_ label: String) -> Brand? {
+        public static func withKey(_ label: String) -> Brand? {
             return self.allCases.first { label == "\($0)" }
         }
 
@@ -4195,7 +4195,7 @@ public struct AwesomePro {
         case yenSign = "\u{f157}"
         case yinYang = "\u{f6ad}"
 
-        static func withKey(_ label: String) -> Solid? {
+        public static func withKey(_ label: String) -> Solid? {
             return self.allCases.first { label == "\($0)" }
         }
 
@@ -6058,7 +6058,7 @@ public struct AwesomePro {
         case yenSign = "\u{f157}"
         case yinYang = "\u{f6ad}"
 
-        static func withKey(_ label: String) -> Light? {
+        public static func withKey(_ label: String) -> Light? {
             return self.allCases.first { label == "\($0)" }
         }
 
@@ -7921,7 +7921,7 @@ public struct AwesomePro {
         case yenSign = "\u{f157}"
         case yinYang = "\u{f6ad}"
 
-        static func withKey(_ label: String) -> Duotone? {
+        public static func withKey(_ label: String) -> Duotone? {
             return self.allCases.first { label == "\($0)" }
         }
 

@@ -469,7 +469,7 @@ public struct Awesome {
         case youtubeSquare = "\u{f431}"
         case zhihu = "\u{f63f}"
 
-        static func withKey(_ label: String) -> Brand? {
+        public static func withKey(_ label: String) -> Brand? {
             return self.allCases.first { label == "\($0)" }
         }
 
@@ -1481,7 +1481,7 @@ public struct Awesome {
         case yenSign = "\u{f157}"
         case yinYang = "\u{f6ad}"
 
-        static func withKey(_ label: String) -> Solid? {
+        public static func withKey(_ label: String) -> Solid? {
             return self.allCases.first { label == "\($0)" }
         }
 
@@ -1643,7 +1643,7 @@ public struct Awesome {
         case windowMinimize = "\u{f2d1}"
         case windowRestore = "\u{f2d2}"
 
-        static func withKey(_ label: String) -> Regular? {
+        public static func withKey(_ label: String) -> Regular? {
             return self.allCases.first { label == "\($0)" }
         }
 
