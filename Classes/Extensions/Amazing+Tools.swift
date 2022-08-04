@@ -45,17 +45,18 @@ public extension Amazing {
     }
 }
 
-#if canImport(SwiftUI)
-import SwiftUI
-
-@available(iOS 13, macOS 11, watchOS 6, tvOS 13, *)
-public extension Amazing {
-    /// A SwiftUI Image of the icon
-    var image: Awesome.Image<Self> {
-        Awesome.Image(icon: self)
-    }
-}
-#endif
+// TODO: Uncomment when arch compat issue is fixed
+//#if canImport(SwiftUI)
+//import SwiftUI
+//
+//@available(iOS 13, macOS 11, watchOS 6, tvOS 13, *)
+//public extension Amazing {
+//    /// A SwiftUI Image of the icon
+//    var image: Awesome.Image<Self> {
+//        Awesome.Image(icon: self)
+//    }
+//}
+//#endif
 
 extension Amazing {
     
