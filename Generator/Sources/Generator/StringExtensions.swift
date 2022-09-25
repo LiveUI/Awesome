@@ -2,13 +2,17 @@ import Foundation
 
 extension Substring {
     func firstUppercased() -> Substring {
-        return prefix(1).uppercased() + dropFirst()
+        prefix(1).uppercased() + dropFirst()
     }
 }
 
 extension String {
     func firstUppercased() -> String {
-        return prefix(1).uppercased() + dropFirst()
+        prefix(1).uppercased() + dropFirst()
+    }
+    
+    func fullCasing() -> String {
+        self.replacingOccurrences(of: "_", with: " ").split(separator: " ").map { $0.firstUppercased() }.joined(separator: " ")
     }
     
     var isKeyword: Bool {

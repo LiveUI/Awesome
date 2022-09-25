@@ -43,6 +43,23 @@ public extension Amazing {
     func asAttributedText(fontSize: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> NSAttributedString {
         return NSAttributedString(icon: self, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
     }
+    
+    init?(unicode: String) {
+        guard
+            let bytes = (unicode.count > 2 ? unicode : "00\(unicode)").bytes(),
+            let value = String(data: Data(bytes), encoding: .utf16)
+        else {
+            return nil
+        }
+        self.init(rawValue: value)
+    }
+
+    var unicode: String {
+        let scalars = rawValue.unicodeScalars
+        let value = scalars[scalars.startIndex].value
+
+        return String(format: "%02x", value)
+    }
 }
 
 #if canImport(SwiftUI)
@@ -126,108 +143,6 @@ extension Amazing {
     
     @available(*, unavailable, renamed: "description")
     public var label: String {
-        get {
-            fatalError()
-        }
-    }
-    
-}
-
-extension Awesome {
-    @available(*, unavailable, renamed: "Brand")
-    public typealias brand = Awesome.Brand
-    
-    @available(*, unavailable, renamed: "Regular")
-    public typealias regular = Awesome.Regular
-    
-    @available(*, unavailable, renamed: "Solid")
-    public typealias solid = Awesome.Solid
-}
-
-extension AwesomePro {
-    @available(*, unavailable, renamed: "Brand")
-    public typealias brand = AwesomePro.Brand
-    
-    @available(*, unavailable, renamed: "Regular")
-    public typealias regular = AwesomePro.Regular
-    
-    @available(*, unavailable, renamed: "Solid")
-    public typealias solid = AwesomePro.Solid
-    
-    @available(*, unavailable, renamed: "Light")
-    public typealias light = AwesomePro.Light
-}
-
-extension Awesome.Brand {
-    
-    @available(*, unavailable, renamed: "allCases")
-    public static var all: [Awesome.Brand] {
-        get {
-            fatalError()
-        }
-    }
-        
-}
-
-extension Awesome.Regular {
-    
-    @available(*, unavailable, renamed: "allCases")
-    public static var all: [Awesome.Regular] {
-        get {
-            fatalError()
-        }
-    }
-    
-}
-
-extension Awesome.Solid {
-    
-    @available(*, unavailable, renamed: "allCases")
-    public static var all: [Awesome.Solid] {
-        get {
-            fatalError()
-        }
-    }
-    
-}
-
-extension AwesomePro.Brand {
-    
-    @available(*, unavailable, renamed: "allCases")
-    public static var all: [AwesomePro.Brand] {
-        get {
-            fatalError()
-        }
-    }
-    
-}
-
-extension AwesomePro.Regular {
-    
-    @available(*, unavailable, renamed: "allCases")
-    public static var all: [AwesomePro.Regular] {
-        get {
-            fatalError()
-        }
-    }
-    
-}
-
-extension AwesomePro.Solid {
-    
-    @available(*, unavailable, renamed: "allCases")
-    public static var all: [AwesomePro.Solid] {
-        get {
-            fatalError()
-        }
-    }
-    
-}
-
-extension AwesomePro.Light {
-    
-    @available(*, unavailable, renamed: "allCases")
-    public static var all: [AwesomePro.Light] {
         get {
             fatalError()
         }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'AwesomeEnum'
-    s.version          = '2.2.2'
+    s.version          = '3.0.0'
     s.summary          = 'Swift implementation of Font Awesome 5 and Font Awesome 5 Pro!'
     s.swift_version    = '5.0'
 
@@ -21,9 +21,9 @@ Pod::Spec.new do |s|
     s.source           = { :git => 'https://github.com/LiveUI/Awesome.git', :tag => s.version.to_s }
     s.social_media_url = 'https://twitter.com/rafiki270'
 
-    s.ios.deployment_target = '9.0'
-    s.tvos.deployment_target = '9.0'
-    s.osx.deployment_target = '10.11'
+    s.ios.deployment_target = '11.0'
+    s.tvos.deployment_target = '11.0'
+    s.osx.deployment_target = '10.13'
 	s.watchos.deployment_target = '2.0'
     
     s.source_files = 'Classes/**/*'
