@@ -100,6 +100,7 @@ struct EnumFileGenerator {
 
             fileBody += options.buildHeader(for: .enum,
                                             with: family.key.firstUppercased(),
+                                            modifiers: [.public],
                                             indentBy: .increase())
             
             for style in family.value {
@@ -113,7 +114,7 @@ struct EnumFileGenerator {
 
                 fileBody += options.buildHeader(for: .enum,
                                                 with: style.key.enumName(onlyStyle: true).firstUppercased(),
-                                                modifiers: [.string, .amazing],
+                                                modifiers: [.string, .amazing, .public],
                                                 indentBy: .increase())
                 
                 for icon in style.value {
