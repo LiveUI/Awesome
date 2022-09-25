@@ -67,6 +67,14 @@
 		D06BBAB728DB11E8001F2802 /* SwiftUI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06BBAB528DB11E4001F2802 /* SwiftUI+Extensions.swift */; };
 		D06BBAB828DB11E8001F2802 /* SwiftUI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06BBAB528DB11E4001F2802 /* SwiftUI+Extensions.swift */; };
 		D06BBAB928DB11E8001F2802 /* SwiftUI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06BBAB528DB11E4001F2802 /* SwiftUI+Extensions.swift */; };
+		D0F6554F28DB013F00667700 /* Awesome+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6554D28DB013E00667700 /* Awesome+Extension.swift */; };
+		D0F6555028DB013F00667700 /* Awesome+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6554D28DB013E00667700 /* Awesome+Extension.swift */; };
+		D0F6555128DB013F00667700 /* Awesome+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6554D28DB013E00667700 /* Awesome+Extension.swift */; };
+		D0F6555228DB013F00667700 /* Awesome+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6554D28DB013E00667700 /* Awesome+Extension.swift */; };
+		D0F6555328DB013F00667700 /* AwesomePro+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6554E28DB013F00667700 /* AwesomePro+Extension.swift */; };
+		D0F6555428DB013F00667700 /* AwesomePro+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6554E28DB013F00667700 /* AwesomePro+Extension.swift */; };
+		D0F6555528DB013F00667700 /* AwesomePro+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6554E28DB013F00667700 /* AwesomePro+Extension.swift */; };
+		D0F6555628DB013F00667700 /* AwesomePro+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F6554E28DB013F00667700 /* AwesomePro+Extension.swift */; };
 		D0FE71CA28DFE8B900B12687 /* Amazing+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FE71C928DFE8B900B12687 /* Amazing+Image.swift */; };
 		D0FE71CB28DFE8B900B12687 /* Amazing+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FE71C928DFE8B900B12687 /* Amazing+Image.swift */; };
 		D0FE71CC28DFE8B900B12687 /* Amazing+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FE71C928DFE8B900B12687 /* Amazing+Image.swift */; };
@@ -173,7 +181,7 @@
 		15116D2320761C3300BC08D3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D05F130E28D83EBB0089495D /* Swift UI */,
+				D05F130E28D83EBB0089495D /* SwiftUI */,
 				63DD7B6F27C5AC7500F6DD0A /* Assets */,
 				15116D2420761C3300BC08D3 /* Enums */,
 				15116D2620761C3300BC08D3 /* Extensions */,
@@ -281,13 +289,13 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		D05F130E28D83EBB0089495D /* Swift UI */ = {
+		D05F130E28D83EBB0089495D /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
 				D06BBAB528DB11E4001F2802 /* SwiftUI+Extensions.swift */,
 				D05F130928D83EAC0089495D /* Awesome+Image.swift */,
 			);
-			path = "Swift UI";
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
