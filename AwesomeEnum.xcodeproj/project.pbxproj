@@ -11,7 +11,6 @@
 		15116D3320761C3300BC08D3 /* Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2520761C3300BC08D3 /* Awesome.swift */; };
 		15116D3420761C3300BC08D3 /* NSAttributedString+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */; };
 		15116D3520761C3300BC08D3 /* Amazing+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2820761C3300BC08D3 /* Amazing+Tools.swift */; };
-		15116D3620761C3300BC08D3 /* Image+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2920761C3300BC08D3 /* Image+Awesome.swift */; };
 		15116D3720761C3300BC08D3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2B20761C3300BC08D3 /* Fonts.swift */; };
 		15116D3820761C3300BC08D3 /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
 		15116D3920761C3300BC08D3 /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
@@ -20,14 +19,12 @@
 		15116D5C20761F0A00BC08D3 /* Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2520761C3300BC08D3 /* Awesome.swift */; };
 		15116D5D20761F0A00BC08D3 /* NSAttributedString+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */; };
 		15116D5E20761F0A00BC08D3 /* Amazing+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2820761C3300BC08D3 /* Amazing+Tools.swift */; };
-		15116D5F20761F0A00BC08D3 /* Image+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2920761C3300BC08D3 /* Image+Awesome.swift */; };
 		15116D6020761F0A00BC08D3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2B20761C3300BC08D3 /* Fonts.swift */; };
 		15116D6120761F0A00BC08D3 /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
 		15116D6220761F0A00BC08D3 /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
 		15116D6620761F0A00BC08D3 /* Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2520761C3300BC08D3 /* Awesome.swift */; };
 		15116D6720761F0A00BC08D3 /* NSAttributedString+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */; };
 		15116D6820761F0A00BC08D3 /* Amazing+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2820761C3300BC08D3 /* Amazing+Tools.swift */; };
-		15116D6920761F0A00BC08D3 /* Image+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2920761C3300BC08D3 /* Image+Awesome.swift */; };
 		15116D6A20761F0A00BC08D3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2B20761C3300BC08D3 /* Fonts.swift */; };
 		15116D6B20761F0A00BC08D3 /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
 		15116D6C20761F0A00BC08D3 /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
@@ -40,7 +37,6 @@
 		639016C920F26294006F56AE /* AwesomePro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF520DA7A04001F8AEA /* AwesomePro.swift */; };
 		639016CA20F26298006F56AE /* NSAttributedString+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */; };
 		639016CB20F26298006F56AE /* Amazing+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2820761C3300BC08D3 /* Amazing+Tools.swift */; };
-		639016CC20F26298006F56AE /* Image+Awesome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2920761C3300BC08D3 /* Image+Awesome.swift */; };
 		639016CD20F2629B006F56AE /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2B20761C3300BC08D3 /* Fonts.swift */; };
 		639016CE20F2629B006F56AE /* Crossplatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2C20761C3300BC08D3 /* Crossplatform.swift */; };
 		639016CF20F2629F006F56AE /* Amazing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15116D2E20761C3300BC08D3 /* Amazing.swift */; };
@@ -63,6 +59,18 @@
 		9D338AFA20DA7A52001F8AEA /* AwesomeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */; };
 		9D338AFB20DA7A52001F8AEA /* AwesomeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */; };
 		9D338AFC20DA7A52001F8AEA /* AwesomeFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */; };
+		D05F130A28D83EAC0089495D /* Awesome+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F130928D83EAC0089495D /* Awesome+Image.swift */; };
+		D05F130B28D83EAC0089495D /* Awesome+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F130928D83EAC0089495D /* Awesome+Image.swift */; };
+		D05F130C28D83EAC0089495D /* Awesome+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F130928D83EAC0089495D /* Awesome+Image.swift */; };
+		D05F130D28D83EAC0089495D /* Awesome+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05F130928D83EAC0089495D /* Awesome+Image.swift */; };
+		D06BBAB628DB11E4001F2802 /* SwiftUI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06BBAB528DB11E4001F2802 /* SwiftUI+Extensions.swift */; };
+		D06BBAB728DB11E8001F2802 /* SwiftUI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06BBAB528DB11E4001F2802 /* SwiftUI+Extensions.swift */; };
+		D06BBAB828DB11E8001F2802 /* SwiftUI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06BBAB528DB11E4001F2802 /* SwiftUI+Extensions.swift */; };
+		D06BBAB928DB11E8001F2802 /* SwiftUI+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06BBAB528DB11E4001F2802 /* SwiftUI+Extensions.swift */; };
+		D0FE71CA28DFE8B900B12687 /* Amazing+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FE71C928DFE8B900B12687 /* Amazing+Image.swift */; };
+		D0FE71CB28DFE8B900B12687 /* Amazing+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FE71C928DFE8B900B12687 /* Amazing+Image.swift */; };
+		D0FE71CC28DFE8B900B12687 /* Amazing+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FE71C928DFE8B900B12687 /* Amazing+Image.swift */; };
+		D0FE71CD28DFE8B900B12687 /* Amazing+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0FE71C928DFE8B900B12687 /* Amazing+Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +80,6 @@
 		15116D2520761C3300BC08D3 /* Awesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Awesome.swift; sourceTree = "<group>"; };
 		15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+Awesome.swift"; sourceTree = "<group>"; };
 		15116D2820761C3300BC08D3 /* Amazing+Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Amazing+Tools.swift"; sourceTree = "<group>"; };
-		15116D2920761C3300BC08D3 /* Image+Awesome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+Awesome.swift"; sourceTree = "<group>"; };
 		15116D2B20761C3300BC08D3 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		15116D2C20761C3300BC08D3 /* Crossplatform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Crossplatform.swift; sourceTree = "<group>"; };
 		15116D2E20761C3300BC08D3 /* Amazing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Amazing.swift; sourceTree = "<group>"; };
@@ -94,6 +101,11 @@
 		63DD7B7227C5AC7500F6DD0A /* fa-brands-400.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fa-brands-400.ttf"; sourceTree = "<group>"; };
 		9D338AF520DA7A04001F8AEA /* AwesomePro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomePro.swift; sourceTree = "<group>"; };
 		9D338AF920DA7A52001F8AEA /* AwesomeFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AwesomeFont.swift; sourceTree = "<group>"; };
+		D05F130928D83EAC0089495D /* Awesome+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Awesome+Image.swift"; sourceTree = "<group>"; };
+		D06BBAB528DB11E4001F2802 /* SwiftUI+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Extensions.swift"; sourceTree = "<group>"; };
+		D0F6554D28DB013E00667700 /* Awesome+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Awesome+Extension.swift"; sourceTree = "<group>"; };
+		D0F6554E28DB013F00667700 /* AwesomePro+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AwesomePro+Extension.swift"; sourceTree = "<group>"; };
+		D0FE71C928DFE8B900B12687 /* Amazing+Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Amazing+Image.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +173,7 @@
 		15116D2320761C3300BC08D3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D05F130E28D83EBB0089495D /* Swift UI */,
 				63DD7B6F27C5AC7500F6DD0A /* Assets */,
 				15116D2420761C3300BC08D3 /* Enums */,
 				15116D2620761C3300BC08D3 /* Extensions */,
@@ -182,9 +195,11 @@
 		15116D2620761C3300BC08D3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D0FE71C928DFE8B900B12687 /* Amazing+Image.swift */,
+				D0F6554D28DB013E00667700 /* Awesome+Extension.swift */,
+				D0F6554E28DB013F00667700 /* AwesomePro+Extension.swift */,
 				15116D2720761C3300BC08D3 /* NSAttributedString+Awesome.swift */,
 				15116D2820761C3300BC08D3 /* Amazing+Tools.swift */,
-				15116D2920761C3300BC08D3 /* Image+Awesome.swift */,
 				63202F162185E62B008928EF /* StringProtocol.swift */,
 			);
 			path = Extensions;
@@ -264,6 +279,15 @@
 				63DD7B7227C5AC7500F6DD0A /* fa-brands-400.ttf */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		D05F130E28D83EBB0089495D /* Swift UI */ = {
+			isa = PBXGroup;
+			children = (
+				D06BBAB528DB11E4001F2802 /* SwiftUI+Extensions.swift */,
+				D05F130928D83EAC0089495D /* Awesome+Image.swift */,
+			);
+			path = "Swift UI";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,7 +406,7 @@
 		15116D0F20761BAD00BC08D3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = LiveUI;
 				TargetAttributes = {
 					15116D1720761BAD00BC08D3 = {
@@ -471,14 +495,18 @@
 			files = (
 				15116D3420761C3300BC08D3 /* NSAttributedString+Awesome.swift in Sources */,
 				15116D3720761C3300BC08D3 /* Fonts.swift in Sources */,
+				D06BBAB628DB11E4001F2802 /* SwiftUI+Extensions.swift in Sources */,
+				D05F130A28D83EAC0089495D /* Awesome+Image.swift in Sources */,
 				15116D3920761C3300BC08D3 /* Amazing.swift in Sources */,
-				15116D3620761C3300BC08D3 /* Image+Awesome.swift in Sources */,
 				63202F172185E62B008928EF /* StringProtocol.swift in Sources */,
 				15116D3820761C3300BC08D3 /* Crossplatform.swift in Sources */,
+				D0F6555328DB013F00667700 /* AwesomePro+Extension.swift in Sources */,
 				9D338AF620DA7A04001F8AEA /* AwesomePro.swift in Sources */,
 				9D338AFA20DA7A52001F8AEA /* AwesomeFont.swift in Sources */,
 				15116D3320761C3300BC08D3 /* Awesome.swift in Sources */,
 				15116D3520761C3300BC08D3 /* Amazing+Tools.swift in Sources */,
+				D0F6554F28DB013F00667700 /* Awesome+Extension.swift in Sources */,
+				D0FE71CA28DFE8B900B12687 /* Amazing+Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,14 +516,18 @@
 			files = (
 				15116D5D20761F0A00BC08D3 /* NSAttributedString+Awesome.swift in Sources */,
 				15116D6020761F0A00BC08D3 /* Fonts.swift in Sources */,
+				D06BBAB828DB11E8001F2802 /* SwiftUI+Extensions.swift in Sources */,
+				D05F130B28D83EAC0089495D /* Awesome+Image.swift in Sources */,
 				15116D6220761F0A00BC08D3 /* Amazing.swift in Sources */,
-				15116D5F20761F0A00BC08D3 /* Image+Awesome.swift in Sources */,
 				63202F182185E62B008928EF /* StringProtocol.swift in Sources */,
 				15116D6120761F0A00BC08D3 /* Crossplatform.swift in Sources */,
+				D0F6555428DB013F00667700 /* AwesomePro+Extension.swift in Sources */,
 				9D338AF720DA7A04001F8AEA /* AwesomePro.swift in Sources */,
 				9D338AFB20DA7A52001F8AEA /* AwesomeFont.swift in Sources */,
 				15116D5C20761F0A00BC08D3 /* Awesome.swift in Sources */,
 				15116D5E20761F0A00BC08D3 /* Amazing+Tools.swift in Sources */,
+				D0F6555028DB013F00667700 /* Awesome+Extension.swift in Sources */,
+				D0FE71CB28DFE8B900B12687 /* Amazing+Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,14 +537,18 @@
 			files = (
 				15116D6720761F0A00BC08D3 /* NSAttributedString+Awesome.swift in Sources */,
 				15116D6A20761F0A00BC08D3 /* Fonts.swift in Sources */,
+				D06BBAB928DB11E8001F2802 /* SwiftUI+Extensions.swift in Sources */,
+				D05F130C28D83EAC0089495D /* Awesome+Image.swift in Sources */,
 				15116D6C20761F0A00BC08D3 /* Amazing.swift in Sources */,
-				15116D6920761F0A00BC08D3 /* Image+Awesome.swift in Sources */,
 				63202F192185E62B008928EF /* StringProtocol.swift in Sources */,
 				15116D6B20761F0A00BC08D3 /* Crossplatform.swift in Sources */,
+				D0F6555528DB013F00667700 /* AwesomePro+Extension.swift in Sources */,
 				9D338AF820DA7A04001F8AEA /* AwesomePro.swift in Sources */,
 				9D338AFC20DA7A52001F8AEA /* AwesomeFont.swift in Sources */,
 				15116D6620761F0A00BC08D3 /* Awesome.swift in Sources */,
 				15116D6820761F0A00BC08D3 /* Amazing+Tools.swift in Sources */,
+				D0F6555128DB013F00667700 /* Awesome+Extension.swift in Sources */,
+				D0FE71CC28DFE8B900B12687 /* Amazing+Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,15 +557,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				639016CA20F26298006F56AE /* NSAttributedString+Awesome.swift in Sources */,
-				639016CC20F26298006F56AE /* Image+Awesome.swift in Sources */,
 				639016CB20F26298006F56AE /* Amazing+Tools.swift in Sources */,
+				D06BBAB728DB11E8001F2802 /* SwiftUI+Extensions.swift in Sources */,
+				D05F130D28D83EAC0089495D /* Awesome+Image.swift in Sources */,
 				639016CE20F2629B006F56AE /* Crossplatform.swift in Sources */,
 				63202F1A2185E62B008928EF /* StringProtocol.swift in Sources */,
 				639016C820F26294006F56AE /* Awesome.swift in Sources */,
+				D0F6555628DB013F00667700 /* AwesomePro+Extension.swift in Sources */,
 				639016CD20F2629B006F56AE /* Fonts.swift in Sources */,
 				639016D020F2629F006F56AE /* AwesomeFont.swift in Sources */,
 				639016C920F26294006F56AE /* AwesomePro.swift in Sources */,
 				639016CF20F2629F006F56AE /* Amazing.swift in Sources */,
+				D0F6555228DB013F00667700 /* Awesome+Extension.swift in Sources */,
+				D0FE71CD28DFE8B900B12687 /* Amazing+Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +602,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -588,12 +629,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -625,6 +668,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -645,11 +689,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -668,12 +714,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "AwesomeEnum-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.AwesomeEnum;
 				PRODUCT_NAME = Awesome;
 				SKIP_INSTALL = YES;
@@ -694,12 +741,13 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "AwesomeEnum-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = io.liveui.AwesomeEnum;
 				PRODUCT_NAME = Awesome;
 				SKIP_INSTALL = YES;
@@ -714,6 +762,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -726,7 +775,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-macOS";
 				PRODUCT_NAME = Awesome;
 				SDKROOT = macosx;
@@ -741,6 +790,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -753,7 +803,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-macOS";
 				PRODUCT_NAME = Awesome;
 				SDKROOT = macosx;
@@ -778,13 +828,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-tvOS";
 				PRODUCT_NAME = Awesome;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Debug;
 		};
@@ -804,13 +855,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-tvOS";
 				PRODUCT_NAME = Awesome;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
 			name = Release;
 		};
@@ -832,6 +884,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-watchOS";
 				PRODUCT_NAME = Awesome;
 				SDKROOT = watchos;
@@ -860,6 +913,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.liveui.AwesomeEnum-watchOS";
 				PRODUCT_NAME = Awesome;
 				SDKROOT = watchos;
