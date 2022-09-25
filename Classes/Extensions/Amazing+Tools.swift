@@ -43,6 +43,23 @@ public extension Amazing {
     func asAttributedText(fontSize: CGFloat, color: Color = Color.black, backgroundColor: Color = Color.clear) -> NSAttributedString {
         return NSAttributedString(icon: self, fontSize: fontSize, color: color, backgroundColor: backgroundColor)
     }
+    
+    init?(unicode: String) {
+        guard
+            let bytes = (unicode.count > 2 ? unicode : "00\(unicode)").bytes(),
+            let value = String(data: Data(bytes), encoding: .utf16)
+        else {
+            return nil
+        }
+        self.init(rawValue: value)
+    }
+
+    var unicode: String {
+        let scalars = rawValue.unicodeScalars
+        let value = scalars[scalars.startIndex].value
+
+        return String(format: "%02x", value)
+    }
 }
 
 #if canImport(SwiftUI)

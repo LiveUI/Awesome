@@ -101,7 +101,13 @@ struct EnumFileGenerator {
             fileBody += options.buildHeader(for: .enum,
                                             with: family.key.firstUppercased(),
                                             indentBy: .increase())
+            
+            for style in family.value {
+                fileBody += options.generateCase("\(style.key.enumName(onlyStyle: true).lowercased())(\(style.key.enumName(onlyStyle: true).firstUppercased()))") + "\n"
+            }
 
+            fileBody += "\n"
+            
             for style in family.value {
                 var iconCount = 0
 
